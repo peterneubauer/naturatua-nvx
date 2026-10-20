@@ -175,7 +175,7 @@ details summary { cursor: pointer; font: 600 12px var(--body); text-transform: u
         <h3>Gapfilling</h3>
         <p>Rumslig gapfilling (<code>GF-S01</code>): saknad indikator ersätts med medianen för biotoper med samma expertklass. Objekt 27–30 saknar objektsblad i textexporten och är därför till stor del gapfyllda. eDNA saknas överallt (levereras våren 2027) och räknas som <em>saknad</em>, inte gapfylld.</p>
       </div>
-      <div class="note">Lagren <b>Strukturell variation</b> (drönare/3D), <b>Konnektivitet</b> (satellit), <b>Markkol</b> (jordprover) och <b>Akustisk artrikedom</b> (AudioMoth) är hypotetiska och slumpade med frö 2026, för att testa punkt-till-polygon-aggregering och gapfilling. Byt ut dem mot Conifer Visions leverans, Sentinel-2, jordproverna och ljudanalysen från 2025 när de finns.</div>
+      <div class="note">Lagren <b>Strukturell variation</b> (drönare/3D), <b>Konnektivitet</b> (satellit), <b>Markkol</b> (jordprover) och <b>Akustisk artrikedom</b> (AudioMoth; punkternas lägen är verkliga, artantalen inte) är hypotetiska och slumpade med frö 2026, för att testa punkt-till-polygon-aggregering och gapfilling. Byt ut dem mot Conifer Visions leverans, Sentinel-2, jordproverna och ljudanalysen från 2025 när de finns.</div>
     </div>
   </section>
 
@@ -294,7 +294,7 @@ function drawMap() {
   if (pts) h += D.points.map(p => `<g class="pt"><circle class="r" cx="${(p.x - x0).toFixed(1)}" cy="${(y1 - p.y).toFixed(1)}" r="${p.radius}"/><circle class="${p.value == null ? 'na' : ''}" cx="${(p.x - x0).toFixed(1)}" cy="${(y1 - p.y).toFixed(1)}" r="${fs * 0.7}"/><text x="${(p.x - x0 + fs).toFixed(1)}" y="${(y1 - p.y + fs / 3).toFixed(1)}">${p.id}${p.value == null ? ' (trasig)' : ''}</text></g>`).join('');
   map.innerHTML = h;
   const L = document.getElementById('legend');
-  const base = `<span><i class="sw" style="border:1.5px solid var(--fg);background:none"></i>BDU-området</span><span><i class="sw" style="border-radius:50%;background:var(--av)"></i>AudioMoth (hypotetiskt läge)</span>`;
+  const base = `<span><i class="sw" style="border:1.5px solid var(--fg);background:none"></i>BDU-området</span><span><i class="sw" style="border-radius:50%;background:var(--av)"></i>AudioMoth-punkt juli 2025 (sökradie 150 m)</span>`;
   const ramp = (col, lbl) => `<span><i class="sw" style="background:${seqFill(0, col)}"></i>0</span><span><i class="sw" style="background:${seqFill(50, col)}"></i>50</span><span><i class="sw" style="background:${seqFill(100, col)}"></i>100 ${lbl}</span>`;
   if (mode === 'klass' || mode === 'expert' || mode === 'future') L.innerHTML = [1, 2, 3, 4, 5].map(k => `<span><i class="sw" style="background:${kc(k)}"></i>${k} ${KN[k]}</span>`).join('') + base;
   else if (mode === 'pressure') L.innerHTML = ramp('var(--press)', 'tryck') + base;

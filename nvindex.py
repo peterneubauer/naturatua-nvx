@@ -227,7 +227,7 @@ def pressure_layers(raw, zone):
     )
 
 
-def hypothetical_layers(zones, area):
+def hypothetical_layers(zones):
     """HYPOTETISKA testlager, slumpade med frö så att de är reproducerbara. Byts ut mot riktiga
     leveranser (Conifer Vision hösten 2026, eDNA våren 2027, Sentinel-2, jordprover, ljudanalysen)."""
     rnd = random.Random(2026)
@@ -241,16 +241,14 @@ def hypothetical_layers(zones, area):
             struktur=round(max(0, rnd.gauss(base if forest(z) else base * 0.4, 1.2)), 1),
             konnektivitet=round(min(100, max(0, rnd.gauss(70 if k <= 3 else 50, 12)))),
             markkol=round(max(0.5, rnd.gauss(12 if wet(z) else (4 if forest(z) else 3), 1.0) * (1.1 if k <= 2 else 1)), 1))
-    # Ljudpunkter: sex AudioMoth-punkter (DN9, JRE, N88, NMN, PSU, UE8). Lägena är HYPOTETISKA (riktiga finns i
-    # fältmarkeringarna i S3) och artantalen påhittade. N88 och PSU hade trasiga enheter -> NA.
-    minx, miny, maxx, maxy = area.bounds
+    # Ljudpunkter: sex AudioMoth-punkter från fältarbetet i juli 2025. Lägena är VERKLIGA: medelpunkt av de
+    # tre panoramaplaceringarna per punkt i fältmarkeringarna (OsmAnd-GPX i Drive), kontrollerade mot
+    # drönarblockens KML. Artantalen är däremot påhittade. N88 och PSU hade trasiga enheter -> NA.
     pts = []
-    for name, val in [('DN9', 22), ('JRE', 17), ('N88', None), ('NMN', 28), ('PSU', None), ('UE8', 31)]:
-        for _ in range(200):
-            pt = Point(rnd.uniform(minx, maxx), rnd.uniform(miny, maxy))
-            if area.contains(pt):
-                break
-        pts.append(dict(id=name, layer='akustik', value=val, x=pt.x, y=pt.y, radius=150))
+    for name, lat, lon, val in [('DN9', 57.54182, 15.18240, 22), ('JRE', 57.54295, 15.17790, 17), ('PSU', 57.53997, 15.17640, None),
+                                ('UE8', 57.53888, 15.18045, 31), ('NMN', 57.53508, 15.17803, 28), ('N88', 57.53259, 15.18528, None)]:
+        x, y = to_tm(lon, lat)
+        pts.append(dict(id=name, layer='akustik', value=val, x=x, y=y, lat=lat, lon=lon, radius=150))
     return hyp, pts
 
 
@@ -374,7 +372,7 @@ zones = load_zones()
 units, area = load_units(zones)
 inter = intersections(zones, units)
 raw = {r['id']: r for r in json.load(open(HERE / 'data/biotopes_raw.json'))}
-hyp, points = hypothetical_layers(zones, area)
+hyp, points = hypothetical_layers(zones)
 akustik = point_to_polygon(points, zones, 'akustik')
 in_bdu = {r['zone_id']: r['fraction_of_zone'] for r in inter if r['assess_unit_id'] == 'BDU'}
 
@@ -441,6 +439,10 @@ for r in rows + agg:
     d = r['dims']
     print(f"{r['id']:>10} {r['area_ha']:>6} {r.get('coverage', 1):>5} {r['expert_klass']:>4.1f} {d['status']:>6} {r['nvx_klass']:>2} "
           f"{d['pressure']:>5.0f} {d['resilience']:>5.0f} {d['future']:>5.0f} {d['score']:>5.0f}")
+
+for q in points:
+    inside = [u['name'] for u in units if u['level'] == 'skifte' and u['geom'].contains(Point(q['x'], q['y']))]
+    print(f"{q['id']}: {inside or 'utanför fastigheten'}")
 
 # ── 10. Visualisering ───────────────────────────────────────────────────────────────────────────────
 tpl = (HERE / 'nvx_template.html').read_text()
