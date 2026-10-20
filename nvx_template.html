@@ -1,3 +1,5 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ustorp Naturvärdesindex</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -96,6 +98,13 @@ code { font: 12.5px var(--mono); background: color-mix(in oklab, var(--fg) 6%, t
 .tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin: 12px 0 8px; flex-wrap: wrap; }
 .tabs button { font: 500 13px var(--body); padding: 6px 10px; border: 0; background: none; color: var(--fg2); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; }
 .tabs button[aria-pressed="true"] { color: var(--fg); border-bottom-color: var(--accent); }
+.mx td.c { text-align: center; font-family: var(--mono); width: 56px; }
+.mx .r0 { color: var(--muted); } .mx .r1 { background: color-mix(in oklab, var(--press) 15%, transparent); } .mx .r2 { background: color-mix(in oklab, var(--press) 35%, transparent); } .mx .r3 { background: color-mix(in oklab, var(--press) 60%, transparent); color: var(--bg); }
+.mx .w1 { background: color-mix(in oklab, var(--res) 20%, transparent); } .mx .w2 { background: color-mix(in oklab, var(--res) 50%, transparent); color: var(--bg); }
+.mx tr.sum td { font-weight: 600; border-top: 2px solid var(--line); }
+.calc td { font-size: 12.5px; } .calc .lvl0 td:first-child { font-weight: 600; } .calc .lvl1 td:first-child { padding-left: 22px; font-weight: 500; } .calc .lvl2 td:first-child { padding-left: 40px; }
+.calc .lvl0 td { background: color-mix(in oklab, var(--fg) 4%, transparent); } .calc .f { font-family: var(--mono); font-size: 11.5px; color: var(--fg2); }
+details summary { cursor: pointer; font: 600 12px var(--body); text-transform: uppercase; letter-spacing: .06em; color: var(--fg2); margin: 12px 0 8px; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 
@@ -236,7 +245,8 @@ function drawMap() {
   const units = atLevel(level);
   h += units.map(u => `<path class="poly${u.id === sel ? ' sel' : ''}" data-id="${u.id}" d="${path(u.geom)}" fill="${fillFor(u)}"><title>${esc(u.name)}</title></path>`).join('');
   if (level !== 'biotop') h += biotopes.map(b => `<path class="ctx" d="${path(b.geom)}"/>`).join('');
-  h += units.filter(u => level !== 'biotop' ? true : (u.area_ha > 0.6 && !u.id.startsWith('E'))).map(u => { const [cx, cy] = centroid(u.geom); const lbl = level === 'ruta' ? u.id.slice(-2) : level === 'biotop' ? u.id : u.name; return `<text class="lbl" x="${(cx - x0).toFixed(1)}" y="${(y1 - cy + fs / 3).toFixed(1)}">${esc(lbl)}</text>`; }).join('');
+  if (LV[level].spatial) h += units.filter(u => level !== 'biotop' ? true : (u.area_ha > 0.6 && !u.id.startsWith('E'))).map(u => { const [cx, cy] = centroid(u.geom); const lbl = level === 'ruta' ? u.id.slice(-2) : level === 'biotop' ? u.id : u.name; return `<text class="lbl" x="${(cx - x0).toFixed(1)}" y="${(y1 - cy + fs / 3).toFixed(1)}">${esc(lbl)}</text>`; }).join('');
+  else h += `<text class="lbl" x="${(W / 2).toFixed(1)}" y="${(fs * 1.5).toFixed(1)}" style="font-size:${fs * 1.4}px">${esc(U[sel].name)}: ${U[sel].parts.length} biotoper, ${fmt(U[sel].area_ha, 1)} ha</text>`;
   h += `<path class="ctx" style="stroke:var(--fg);opacity:1" d="${path(U['BDU'].geom)}"/>`;
   if (pts) h += D.points.map(p => `<g class="pt"><circle class="r" cx="${(p.x - x0).toFixed(1)}" cy="${(y1 - p.y).toFixed(1)}" r="${p.radius}"/><circle class="${p.value == null ? 'na' : ''}" cx="${(p.x - x0).toFixed(1)}" cy="${(y1 - p.y).toFixed(1)}" r="${fs * 0.7}"/><text x="${(p.x - x0 + fs).toFixed(1)}" y="${(y1 - p.y + fs / 3).toFixed(1)}">${p.id}${p.value == null ? ' (trasig)' : ''}</text></g>`).join('');
   map.innerHTML = h;
@@ -263,10 +273,11 @@ const segs = (id, key, cb) => document.getElementById(id).addEventListener('clic
 segs('mode', 'm', m => { mode = m; drawMap(); });
 segs('extent', 'e', e => { extent = e; drawMap(); });
 document.getElementById('level').innerHTML = D.levels.map((l, i) => `<button data-l="${l.id}" aria-pressed="${i === 0}">${esc(l.name)}</button>`).join('');
+const LV = Object.fromEntries(D.levels.map(l => [l.id, l]));
 function setLevel(l) {
   level = l; press('level', l, 'l');
   if (U[sel].level !== l) sel = atLevel(l)[0].id;
-  if (l === 'skifte' || l === 'fastighet') { extent = 'all'; press('extent', 'all', 'e'); }
+  if (l === 'skifte' || l === 'fastighet' || !LV[l].spatial) { extent = 'all'; press('extent', 'all', 'e'); }
   drawMap(); panel(); table();
 }
 segs('level', 'l', setLevel);
@@ -295,26 +306,55 @@ function flower(u) {
   return `<svg class="flower" viewBox="0 0 540 400" role="img" aria-label="Blomdiagram för ${esc(u.name)}">${h}</svg>`;
 }
 
+// ── Matris: tryck/resiliens × kategori, med den valda enhetens lagervärden (u=null: bara matrisen) ──
+function matrix(u, kind) {
+  const list = kind === 'p' ? D.pressures : D.resilience, key = kind === 'p' ? 'ranks' : 'weights', cls = kind === 'p' ? 'r' : 'w';
+  const rows = list.map(l => `<tr><td>${esc(l.name)} <span class="tag${l.hypothetical ? ' hyp' : ''}">${esc(l.source)}</span></td>${u ? `<td class="n">${u.layers[l.layer] == null ? '–' : fmt(u.layers[l.layer] * 100)}</td>` : ''}${CATS.map(c => { const r = l[key][c]; return `<td class="c ${cls}${r}">${r || '·'}</td>`; }).join('')}</tr>`).join('');
+  const sum = u ? `<tr class="sum"><td>${kind === 'p' ? 'Tryck = min(1, Σ rank·värde / 3)' : 'Resiliens = Σ vikt·värde / Σ vikt'}</td><td></td>${CATS.map(c => `<td class="c">${fmt(u.cat_dims[c]?.[kind === 'p' ? 'pressure' : 'resilience'])}</td>`).join('')}</tr>` : '';
+  return `<div class="scroll"><table class="mx"><tr><th>${kind === 'p' ? 'Tryck' : 'Resiliens'}${u ? '' : (kind === 'p' ? ' (rank 0–3 per kategori)' : ' (vikt per kategori)')}</th>${u ? '<th class="n">Värde</th>' : ''}${CATS.map(c => `<th style="text-align:center;color:${cc(c)}">${esc(BY[c].short)}</th>`).join('')}</tr>${rows}${sum}</table></div>`;
+}
+
+// ── Beräkningskedja: indikator → delmål → kategori → NVX, med vikter och bidrag ──
+function calcTable(u) {
+  const agg = u.level !== 'biotop';
+  let h = `<div class="scroll"><table class="calc"><tr><th>Gren</th><th class="n">Värde${agg ? ' (areaviktat)' : ''}</th><th>0 → 1 vid</th><th class="n">Poäng</th><th class="n">Vikt</th><th class="n">Andel av vikten</th></tr>`;
+  const row = (lvl, name, val, norm, score, w, contrib, col) => h += `<tr class="lvl${lvl}"><td>${col ? `<span class="sw" style="display:inline-block;vertical-align:-2px;margin-right:6px;background:${col}"></span>` : ''}${name}</td><td class="n">${val}</td><td class="f">${norm}</td><td class="n">${fmt(score)}</td><td class="n">${w ?? ''}</td><td class="n">${contrib}</td></tr>`;
+  const catW = CATS.reduce((a, c) => a + BY[c].w, 0);
+  CATS.forEach(c => {
+    const kids = KIDS[c], kw = kids.reduce((a, k) => a + BY[k].w, 0);
+    row(0, esc(BY[c].name), '', `medel av ${kids.length}`, u.scores[c], BY[c].w, u.scores[c] == null ? '–' : `${fmt(BY[c].w / catW * 100)} %`, cc(c));
+    kids.forEach(k => {
+      const ind = KIDS[k], iw = ind.reduce((a, i) => a + BY[i].w, 0);
+      row(1, esc(BY[k].name), '', `medel av ${ind.length}`, u.scores[k], BY[k].w, u.scores[k] == null ? '–' : `${fmt(BY[k].w / kw * 100)} %`);
+      ind.forEach(i => {
+        const s = BY[i], v = u.layers[i], sc = u.scores[i], f = (u.flags || {})[i];
+        const tags = `${s.hypothetical ? ' <span class="tag hyp">hyp</span>' : ''}${f === 'gapfilled' ? ' <span class="tag gf">gapfyllt</span>' : ''}${v == null ? ' <span class="tag miss">saknas</span>' : ''}`;
+        row(2, esc(s.name) + tags, v == null ? '–' : `${fmt(v, Number.isInteger(v) ? 0 : (v < 10 ? 2 : 1))} <span class="src">${esc(s.units)}</span>`, `${s.zero} → ${s.threshold}`, sc, s.w, sc == null ? '–' : `${fmt(s.w / iw * 100)} %`);
+      });
+    });
+  });
+  h += `<tr class="lvl0 sum"><td><b>NVX</b></td><td></td><td class="f">(Σ w·kategori^0,5 / Σ w)² · 100</td><td class="n"><b>${fmt(u.dims.status)}</b></td><td></td><td class="n">klass ${u.nvx_klass}</td></tr></table></div>`;
+  return h;
+}
+
 // ── Panel: vald enhet ──
 const dimBox = (label, v, col, main) => `<div class="dim${main ? ' main' : ''}"><span>${label}</span><b>${fmt(v)}</b><div class="b"><i style="width:${v ?? 0}%;background:${col}"></i></div></div>`;
 function panel() {
   const u = U[sel], P = document.getElementById('panel'), isBio = u.level === 'biotop';
-  const layerRows = list => list.map(s => {
-    const key = s.branch || s.layer, v = u.layers[key], sc = s.branch ? u.scores[key] : (v == null ? null : v * 100), f = (u.flags || {})[key];
-    const tags = `${s.hypothetical ? ' <span class="tag hyp">hyp</span>' : ''}${f === 'gapfilled' ? ' <span class="tag gf">gapfyllt</span>' : ''}${v == null ? ' <span class="tag miss">saknas</span>' : ''}`;
-    const col = s.branch ? cc(topCat(key)) : s.rank ? 'var(--press)' : 'var(--res)';
-    return `<tr><td><span class="sw" style="display:inline-block;vertical-align:-2px;margin-right:6px;background:${col}"></span>${esc(s.name)}${tags}</td><td class="n">${v == null ? '–' : fmt(v, Number.isInteger(v) ? 0 : (v < 10 ? 2 : 1))} <span class="src">${esc(s.units || (s.rank ? 'rank ' + s.rank : 'vikt ' + s.w))}</span></td><td class="n">${sc == null ? '–' : fmt(sc)}</td></tr>`;
-  }).join('');
   const head = isBio
     ? `<div class="sel-head"><span><span class="id">${esc(u.id)}</span> <span class="kl" data-k="${u.nvx_klass}">${u.nvx_klass}</span> <span class="sub">expert <span class="kl" data-k="${u.expert_klass}">${u.expert_klass}</span></span></span><span class="sub">${fmt(u.area_ha, 2)} ha · ${esc(u.org || '')}</span></div><p class="src" style="margin:4px 0 0">${esc(u.naturtyp)}${u.biotop ? ' · ' + esc(u.biotop) : ''}</p>`
     : `<div class="sel-head"><span><span class="id">${esc(u.name)}</span> <span class="kl" data-k="${u.nvx_klass}">${u.nvx_klass}</span> <span class="sub">expert ø ${fmt(u.expert_klass, 1)}</span></span><span class="sub">${fmt(u.area_ha, 2)} ha · täckning ${fmt(u.coverage * 100)} % · ${u.parts.length} biotoper</span></div>`;
   const dims = `<div class="dims">${dimBox('Status', u.dims.status, 'var(--accent)', true)}${dimBox('Tryck', u.dims.pressure, 'var(--press)')}${dimBox('Resiliens', u.dims.resilience, 'var(--res)')}${dimBox('Trolig framtid', u.dims.future, 'var(--accent)')}${dimBox('Poäng', u.dims.score, 'var(--accent)')}</div>`;
-  const comp = isBio ? '' : `<h3 style="margin-top:12px">Sammansättning</h3><div class="comp" style="margin-bottom:8px">${u.parts.map(p => `<i style="width:${(p.fraction * 100).toFixed(2)}%;background:${kc(p.klass)}" title="${esc(p.id)} ${fmt(p.fraction * 100)} %"></i>`).join('')}</div>
-    <div class="scroll"><table><tr><th>Biotop</th><th class="n">Andel av enheten</th><th class="n">Andel av biotopen</th><th class="n">Status</th><th class="n">Klass</th></tr>${u.parts.filter(p => p.fraction >= 0.002).map(p => { const b = U[p.id]; return `<tr class="clk" data-go="${p.id}"><td>${esc(p.id)} <span class="src">${esc((b.biotop || '').slice(0, 36))}</span></td><td class="n">${fmt(p.fraction * 100, 1)} %</td><td class="n">${fmt(p.fraction_of_zone * 100)} %</td><td class="n">${fmt(p.status)}</td><td class="n"><span class="kl" data-k="${p.klass}">${p.klass}</span></td></tr>`; }).join('')}</table></div>`;
+  const catTable = `<div class="scroll"><table><tr><th>Kategori</th><th class="n">Vikt</th><th class="n">Status</th><th class="n">Tryck</th><th class="n">Resiliens</th><th class="n">Trolig framtid</th><th class="n">Poäng</th></tr>${CATS.map(c => { const d = u.cat_dims[c] || {}; return `<tr><td><span class="sw" style="display:inline-block;vertical-align:-2px;margin-right:6px;background:${cc(c)}"></span>${esc(BY[c].name)}</td><td class="n">${BY[c].w}</td><td class="n">${fmt(d.status)}</td><td class="n">${fmt(d.pressure)}</td><td class="n">${fmt(d.resilience)}</td><td class="n">${fmt(d.future)}</td><td class="n">${fmt(d.score)}</td></tr>`; }).join('')}<tr class="sum" style="font-weight:600"><td>NVX</td><td class="n"></td><td class="n">${fmt(u.dims.status)}</td><td class="n">${fmt(u.dims.pressure)}</td><td class="n">${fmt(u.dims.resilience)}</td><td class="n">${fmt(u.dims.future)}</td><td class="n">${fmt(u.dims.score)}</td></tr></table></div><p class="src" style="margin-top:6px">Per kategori: framtid = (1 + (1−β)·(min(resiliens, tryck) − tryck)) · status, β = ${D.beta}. Poäng = (status + framtid)/2. NVX-raden är kategoriernas viktade medel (status: power mean p=0,5).</p>`;
+  const comp = isBio ? '' : `<h3 style="margin-top:12px">Sammansättning: status = Σ area·status / Σ area</h3><div class="comp" style="margin-bottom:8px">${u.parts.map(p => `<i style="width:${(p.fraction * 100).toFixed(2)}%;background:${kc(p.klass)}" title="${esc(p.id)} ${fmt(p.fraction * 100)} %"></i>`).join('')}</div>
+    <div class="scroll"><table><tr><th>Biotop</th><th class="n">Area i enheten</th><th class="n">Vikt (andel)</th><th class="n">Andel av biotopen</th><th class="n">Status</th><th class="n">Bidrag</th><th class="n">Klass</th></tr>${u.parts.filter(p => p.fraction >= 0.002).map(p => { const b = U[p.id]; return `<tr class="clk" data-go="${p.id}"><td>${esc(p.id)} <span class="src">${esc((b.biotop || '').slice(0, 30))}</span></td><td class="n">${fmt(p.area_ha, 2)} ha</td><td class="n">${fmt(p.fraction * 100, 1)} %</td><td class="n">${fmt(p.fraction_of_zone * 100)} %</td><td class="n">${fmt(p.status)}</td><td class="n">${fmt(p.fraction * p.status, 1)}</td><td class="n"><span class="kl" data-k="${p.klass}">${p.klass}</span></td></tr>`; }).join('')}<tr class="sum" style="font-weight:600"><td>Σ</td><td class="n">${fmt(u.parts.reduce((a, p) => a + p.area_ha, 0), 2)} ha</td><td class="n">100 %</td><td></td><td></td><td class="n">${fmt(u.dims.status)}</td><td></td></tr></table></div>`;
   P.innerHTML = head + dims + flower(u) +
     `<div class="legend" style="margin:0 0 10px;justify-content:center">${CATS.map(c => `<span><i class="sw" style="background:${cc(c)}"></i>${esc(BY[c].name)} ${fmt(u.scores[c])}</span>`).join('')}<span><i class="sw" style="background:repeating-linear-gradient(45deg,var(--hyp) 0 2px,transparent 2px 5px)"></i>hypotetiskt</span><span><i class="sw" style="border:1.5px dashed var(--av);background:none"></i>gapfyllt</span></div>` +
+    `<h3>Dimensioner per kategori</h3>` + catTable +
     comp +
-    `<h3 style="margin-top:12px">Indikatorer${isBio ? '' : ' (areaviktade)'}</h3><div class="scroll"><table><tr><th>Indikator</th><th class="n">Värde</th><th class="n">Poäng</th></tr>${layerRows(IND)}<tr class="grp"><td colspan="3">Tryck</td></tr>${layerRows(D.pressures)}<tr class="grp"><td colspan="3">Resiliens</td></tr>${layerRows(D.resilience)}</table></div>`;
+    `<details open><summary>Beräkning av status: indikator → delmål → kategori → NVX</summary>${calcTable(u)}</details>` +
+    `<details open><summary>Tryckmatris</summary>${matrix(u, 'p')}</details>` +
+    `<details open><summary>Resiliensmatris</summary>${matrix(u, 'r')}</details>`;
 }
 document.addEventListener('click', e => { const r = e.target.closest('[data-go]'); if (r) { const id = r.dataset.go; if (U[id].level !== level) { sel = id; setLevel(U[id].level); } else select(id); } });
 function select(id) { sel = id; drawMap(); panel(); document.querySelectorAll('tr.sel').forEach(x => x.classList.remove('sel')); document.querySelectorAll(`tr[data-go="${id}"]`).forEach(x => x.classList.add('sel')); }
@@ -333,12 +373,12 @@ document.getElementById('tabs').addEventListener('click', e => { const b = e.tar
 function treeHtml(b, d) {
   const s = BY[b], kids = KIDS[b] || [];
   const w = s.main ? `<span class="w">w ${s.w}</span> ` : '';
-  const fn = s.fn === 'norm' ? `<span class="fn">norm(${s.threshold} / ${s.zero}) ${esc(s.units)}</span> <span class="tag${s.hypothetical ? ' hyp' : ''}">${esc(s.source)}</span>` : `<span class="fn">power mean, p=${s.exponent}</span>`;
+  const fn = s.fn === 'norm' ? `<span class="fn">poäng 0 vid ${s.zero} → 1 vid ${s.threshold} ${esc(s.units)}</span> <span class="tag${s.hypothetical ? ' hyp' : ''}">${esc(s.source)}</span>` : `<span class="fn">${s.exponent === 1 ? 'viktat medel' : `power mean p=${s.exponent}`} av ${kids.length}</span>`;
   return `<div style="--d:${d}">${w}<b>${esc(s.name)}</b> ${fn}</div>` + kids.map(k => treeHtml(k, d + 1)).join('');
 }
 document.getElementById('tree').innerHTML = treeHtml('NVX', 0);
-document.getElementById('ptree').innerHTML = D.pressures.map(p => `<div style="--d:0"><span class="w">rank ${p.rank}</span> <b>${esc(p.name)}</b> <span class="tag">${esc(p.source)}</span></div>`).join('');
-document.getElementById('rtree').innerHTML = D.resilience.map(r => `<div style="--d:0"><span class="w">w ${r.w}</span> <b>${esc(r.name)}</b> <span class="tag${r.hypothetical ? ' hyp' : ''}">${esc(r.source)}</span></div>`).join('');
+document.getElementById('ptree').innerHTML = matrix(null, 'p');
+document.getElementById('rtree').innerHTML = matrix(null, 'r');
 
 drawMap(); panel(); table();
 </script>

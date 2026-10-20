@@ -69,21 +69,24 @@ for s in STRUCTURE:
     CHILDREN.setdefault(s['main'], []).append(s['branch'])
 INDICATORS = [s['branch'] for s in STRUCTURE if s['fn'] == 'norm']
 
-# Tryck (CalculatePressuresAll: intensitet = rank * värde, summa/3, tak 1). rank 1-3 som i OHI:s tryckmatris.
+# Tryckmatris (OHI pressures matrix, CalculatePressuresAll): rank 0-3 per kategori anger hur hårt ett tryck
+# slår mot just den kategorin. tryck_c = min(1, sum(rank_c * värde) / 3). 0 = trycket påverkar inte kategorin.
 PRESSURES = [
-    dict(layer='p_invasiva', name='Invasiva arter', rank=3, source='NVI'),
-    dict(layer='p_avverkning', name='Avverkning / plantering', rank=2, source='NVI'),
-    dict(layer='p_dikning', name='Dikning / körskador', rank=2, source='NVI'),
-    dict(layer='p_godsling', name='Gödselpåverkan', rank=2, source='NVI'),
-    dict(layer='p_igenvaxning', name='Igenväxning', rank=1, source='NVI'),
-    dict(layer='p_exploatering', name='Bebyggelse / väg', rank=3, source='NVI'),
+    dict(layer='p_invasiva', name='Invasiva arter', ranks=dict(BV=2, AV=3, LM=1), source='NVI'),
+    dict(layer='p_avverkning', name='Avverkning / plantering', ranks=dict(BV=3, AV=2, LM=2), source='NVI'),
+    dict(layer='p_dikning', name='Dikning / körskador', ranks=dict(BV=3, AV=2, LM=2), source='NVI'),
+    dict(layer='p_godsling', name='Gödselpåverkan', ranks=dict(BV=2, AV=3, LM=1), source='NVI'),
+    dict(layer='p_igenvaxning', name='Igenväxning', ranks=dict(BV=1, AV=2, LM=1), source='NVI'),
+    dict(layer='p_exploatering', name='Bebyggelse / väg', ranks=dict(BV=3, AV=3, LM=3), source='NVI'),
 ]
-# Resiliens (CalculateResilienceAll: viktade medelvärden).
+# Resiliensmatris (CalculateResilienceAll): vikt per kategori, resiliens_c = viktat medel. 0 = ej relevant.
 RESILIENCE = [
-    dict(layer='r_skotsel', name='Aktiv naturvårdsskötsel (BDU-området 2026–2031)', w=2, source='AVTAL'),
-    dict(layer='r_skydd', name='Nyckelbiotop / Natura-naturtyp', w=1, source='NVI'),
-    dict(layer='r_konnektivitet', name='Konnektivitet', w=1, source='SAT', hypothetical=True),
+    dict(layer='r_skotsel', name='Aktiv naturvårdsskötsel (BDU-området 2026–2031)', weights=dict(BV=2, AV=2, LM=1), source='AVTAL'),
+    dict(layer='r_skydd', name='Nyckelbiotop / Natura-naturtyp', weights=dict(BV=1, AV=1, LM=1), source='NVI'),
+    dict(layer='r_konnektivitet', name='Konnektivitet', weights=dict(BV=0, AV=1, LM=2), source='SAT', hypothetical=True),
 ]
+CATS = [s['branch'] for s in STRUCTURE if s['main'] == 'NVX']
+DIMS = ('status', 'pressure', 'resilience', 'trend', 'future', 'score')
 
 KLASS_NAMN = {1: 'Högsta', 2: 'Högt', 3: 'Påtagligt', 4: 'Visst', 5: 'Ej naturvärde'}
 
@@ -153,9 +156,17 @@ def load_zones():
     return zones
 
 
-def load_units():
-    """Bedömningsenheter på fyra nivåer ovanför biotopen (SpatialAssessmentUnits)."""
+def load_units(zones):
+    """Bedömningsenheter (SpatialAssessmentUnits): fyra rumsliga nivåer ovanför biotopen, plus två
+    grupperingar (naturtyp, expertklass) som också aggregeras areaviktat."""
     units = []
+    for key, level, name in (('naturtyp', 'naturtyp', lambda k: k), ('nvklass', 'klass', lambda k: f'Expertklass {k}' if k < 5 else 'Ej naturvärde')):
+        groups = {}
+        for z in zones:
+            k = z[key].split(',')[0].strip().capitalize() if key == 'naturtyp' else z[key]
+            groups.setdefault(k or 'Okänd', []).append(z['geom'])
+        for k, gs in sorted(groups.items(), key=lambda t: str(t[0])):
+            units.append(dict(id=f"{level}:{k}", level=level, name=name(k), geom=unary_union(gs)))
     for f in json.load(open(LAYERS / 'bdu_rutor_ustorp.geojson'))['features']:
         units.append(dict(id=f['properties']['bdu_id'], level='ruta', name=f['properties']['bdu_id'], geom=tm(f['geometry'])))
     area = tm(json.load(open(LAYERS / 'bdu_omrade_ustorp.geojson'))['features'][0]['geometry'])
@@ -298,21 +309,38 @@ def score_tree(ind, flags):
     return scores, fill, miss
 
 
-def pressure_score(pl):
-    """CalculatePressuresAll: sum(rank*värde)/3, tak 1. Saknade lager räknas som 0 (na.rm)."""
-    return clamp(sum(p['rank'] * (pl.get(p['layer']) or 0) for p in PRESSURES) / 3)
+def pressure_score(pl, cat):
+    """CalculatePressuresAll: sum(rank_c*värde)/3, tak 1. Saknade lager räknas som 0 (na.rm)."""
+    return clamp(sum(p['ranks'][cat] * (pl.get(p['layer']) or 0) for p in PRESSURES) / 3)
 
 
-def resilience_score(rl):
-    avail = [(rl[r['layer']], r['w']) for r in RESILIENCE if rl.get(r['layer']) is not None]
+def resilience_score(rl, cat):
+    avail = [(rl[r['layer']], r['weights'][cat]) for r in RESILIENCE if rl.get(r['layer']) is not None and r['weights'][cat]]
     return sum(v * w for v, w in avail) / sum(w for _, w in avail) if avail else 0
 
 
 def goal_index(status, trend, pressure, resilience):
-    """ohicore CalculateGoalIndex."""
+    """ohicore CalculateGoalIndex: trolig framtid och poäng för ett mål."""
     r = min(resilience, pressure)  # resiliens kan inte överstiga trycket
     xF = clamp(DISCOUNT * (1 + BETA * trend + (1 - BETA) * (r - pressure)) * status)
     return xF, (status + xF) / 2
+
+
+def all_dims(sc, v, trend):
+    """Dimensioner per kategori (mål) och för NVX som helhet. NVX-nivån är kategoriernas viktade medel,
+    som index = weighted.mean(goal score) i CalculateAll; status är dock power mean (p=0.5) som i trädet."""
+    cat = {}
+    for c in CATS:
+        st = sc[c]
+        if st is None:
+            continue
+        p, r = pressure_score(v, c), resilience_score(v, c)
+        xF, score = goal_index(st, trend, p, r)
+        cat[c] = dict(status=st, pressure=p, resilience=r, trend=trend, future=xF, score=score)
+    w = {c: BY[c]['w'] for c in cat}
+    top = {d: sum(cat[c][d] * w[c] for c in cat) / sum(w.values()) for d in DIMS}
+    top['status'] = sc['NVX']
+    return top, cat
 
 
 # ── 7. Rumslig aggregering (CalculateAll: weighted.mean(score, area) per mål och dimension) ──────────
@@ -331,18 +359,19 @@ def aggregate(unit, zone_rows, inter):
         id=unit['id'], level=unit['level'], name=unit['name'], area_ha=round(unit['geom'].area / 1e4, 2),
         coverage=round(tot / unit['geom'].area, 3),
         scores={b: wmean(lambda z: z['scores'][b]) for b in BY},
-        dims={d: wmean(lambda z: z['dims'][d]) for d in ('status', 'pressure', 'resilience', 'trend', 'future', 'score')},
+        dims={d: wmean(lambda z: z['dims'][d]) for d in DIMS},
+        cat_dims={c: {d: wmean(lambda z: z['cat_dims'].get(c, {}).get(d)) for d in DIMS} for c in CATS},
         layers={l: wmean(lambda z: z['layers'][l]) for l in layer_keys},
         expert_klass=wmean(lambda z: z['expert_klass']),
         fraction_filled=wmean(lambda z: z['fraction_filled']), fraction_missing=wmean(lambda z: z['fraction_missing']),
-        parts=sorted([dict(id=z['id'], fraction=round(r['area'] / tot, 4), fraction_of_zone=round(r['fraction_of_zone'], 3),
+        parts=sorted([dict(id=z['id'], area_ha=round(r['area'] / 1e4, 3), fraction=round(r['area'] / tot, 4), fraction_of_zone=round(r['fraction_of_zone'], 3),
                            status=z['dims']['status'], klass=z['nvx_klass']) for r, z in rows], key=lambda p: -p['fraction']),
         geom=mapping(unit['geom']))
 
 
 # ── 8. Kör ───────────────────────────────────────────────────────────────────────────────────────────
 zones = load_zones()
-units, area = load_units()
+units, area = load_units(zones)
 inter = intersections(zones, units)
 raw = {r['id']: r for r in json.load(open(HERE / 'data/biotopes_raw.json'))}
 hyp, points = hypothetical_layers(zones, area)
@@ -374,15 +403,13 @@ zone_rows = {}
 for z in zones:
     v = values[z['id']]
     sc, fill, miss = score_tree(v, flags.get(z['id'], {}))
-    status = sc['NVX']
-    pressure, resilience, trend = pressure_score(v), resilience_score(v), 0.0  # trend: ingen tidsserie ännu
-    xF, score = goal_index(status, trend, pressure, resilience)
+    top, cat = all_dims(sc, v, 0.0)  # trend 0: ingen tidsserie ännu
     zone_rows[z['id']] = dict(
         id=z['id'], level='biotop', name=z['id'], biotop=z['biotop'], naturtyp=z['naturtyp'], org=z['org'],
         area_ha=round(z['geom'].area / 1e4, 2), expert_klass=z['nvklass'],
         scores={k: (round(s * 100, 1) if s is not None else None) for k, s in sc.items()},
-        dims=dict(status=round(status * 100, 1), pressure=round(pressure * 100, 1), resilience=round(resilience * 100, 1),
-                  trend=trend, future=round(xF * 100, 1), score=round(score * 100, 1)),
+        dims={d: round(top[d] * 100, 1) for d in DIMS},
+        cat_dims={c: {d: round(cat[c][d] * 100, 1) for d in DIMS} for c in cat},
         layers=v, flags=flags.get(z['id'], {}),
         fraction_filled=round(fill['NVX'], 3), fraction_missing=round(miss['NVX'], 3), geom=mapping(z['geom']))
 
@@ -394,9 +421,11 @@ agg = [a for a in (aggregate(u, zone_rows, inter) for u in units) if a]
 for a in agg:
     a['nvx_klass'] = to_class(a['dims']['status'], cuts)
 
-LEVELS = [dict(id='biotop', name='Biotop'), dict(id='ruta', name='BDU-ruta'), dict(id='omrade', name='BDU-området'),
-          dict(id='skifte', name='Skifte'), dict(id='fastighet', name='Fastighet')]
-out = dict(year=YEAR, beta=BETA, structure=STRUCTURE, pressures=PRESSURES, resilience=RESILIENCE, class_cuts=cuts,
+LEVELS = [dict(id='biotop', name='Biotop', spatial=True), dict(id='ruta', name='BDU-ruta', spatial=True),
+          dict(id='omrade', name='BDU-området', spatial=True), dict(id='skifte', name='Skifte', spatial=True),
+          dict(id='fastighet', name='Fastighet', spatial=True),
+          dict(id='naturtyp', name='Naturtyp', spatial=False), dict(id='klass', name='Expertklass', spatial=False)]
+out = dict(year=YEAR, beta=BETA, discount=DISCOUNT, cats=CATS, structure=STRUCTURE, pressures=PRESSURES, resilience=RESILIENCE, class_cuts=cuts,
            levels=LEVELS, units=list(zone_rows.values()) + agg, points=points,
            intersections=[{k: (round(v, 4) if isinstance(v, float) else v) for k, v in r.items()} for r in inter])
 (HERE / 'data/index_scores.json').write_text(json.dumps(out, ensure_ascii=False))
@@ -407,7 +436,7 @@ agree = sum(1 for r in rows if r['expert_klass'] == r['nvx_klass'])
 print(f"klassgränser {cuts}; överensstämmelse {agree}/{len(rows)}; ±1: {sum(1 for r in rows if abs(r['expert_klass'] - r['nvx_klass']) <= 1)}/{len(rows)}\n")
 print(f"{'enhet':>10} {'ha':>6} {'täck':>5} {'exp':>4} {'status':>6} {'kl':>2} {'tryck':>5} {'resil':>5} {'framt':>5} {'poäng':>5}")
 for r in rows + agg:
-    if r['level'] == 'biotop' and r['id'].startswith('E'):
+    if (r['level'] == 'biotop' and r['id'].startswith('E')) or r['level'] in ('naturtyp', 'klass'):
         continue
     d = r['dims']
     print(f"{r['id']:>10} {r['area_ha']:>6} {r.get('coverage', 1):>5} {r['expert_klass']:>4.1f} {d['status']:>6} {r['nvx_klass']:>2} "
