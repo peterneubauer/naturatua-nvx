@@ -125,6 +125,13 @@ details summary { cursor: pointer; font: 600 12px var(--body); text-transform: u
     <div class="chips" id="chips"></div>
   </header>
 
+  <section class="card" style="display:grid;gap:10px">
+    <h2>The ambition</h2>
+    <p>NaturaTua is completing its first Biodiversity Unit (BDU) transaction at Ustorp, putting biodiversity on a balance sheet as an asset. An asset needs a measure that can be repeated. The Swedish standard nature value inventory (NVI, SS 199000) is the ground truth here: a surveyor walks the land and assigns each biotope a nature value class from 1 (highest) to 4 (some). It is thorough, but it is done by hand, a few times per decade.</p>
+    <p>At the same time the project gathers sensor data continuously: acoustic recorders, ground-level panoramas, drone imagery, soil samples, eDNA, and the indicators AI can now extract from them. This page is an experiment in joining the two. It takes the Ocean Health Index method, built to normalise and aggregate many indicators into one score for marine assessments, and applies it on land to the NVI biotopes. The target is set by the surveyors: find the normalisations, weights and aggregations that make the computed class, <b>NVX</b>, land on the expert's NVI class for the biotopes we already have. Once the index reproduces the ground truth, the sensor-derived indicators can carry the classification between inventories, show trends year by year, and extend the same arithmetic to places and data types the NVI does not cover.</p>
+    <p class="src">This is a two-hour test, not a finished method. The current agreement with the expert classes is shown in the chips above and the thresholds are recalibrated on every run. Since indicator extraction from raw data is now cheap, the same approach should work both on land and in the sea.</p>
+  </section>
+
   <section class="two">
     <div class="card">
       <div class="controls">
