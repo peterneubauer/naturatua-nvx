@@ -1,10 +1,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Ustorp Naturvärdesindex</title>
+<title>Ustorp Nature Value Index</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: nivåväljare + karta till vänster, vald enhet (dimensioner, blomma, lager) till höger, tabeller och metod under. */
+/* Layout: level selector + map on the left, selected unit (dimensions, flower plot, layers) on the right, tables and method below. */
 :root {
   --bg: #f7f6f1; --surface: #ffffff; --fg: #1d1f1a; --fg2: #5b5f55; --muted: #8b8f84; --line: #dcdbd3;
   --accent: #2f5d3a;
@@ -118,10 +118,10 @@ details summary { cursor: pointer; font: 600 12px var(--body); text-transform: u
 </style>
 
 <main>
-  <nav class="top"><a class="logo" href="https://naturatua.com/" title="NaturaTua – naturatua.com"><img src="naturatua.png" alt="NaturaTua" width="150" height="28"></a><span class="links"><a href="https://naturatua.com/">naturatua.com</a><a href="https://lab.naturatua.com/">Labbet: kartlager och basdata</a><a href="https://github.com/peterneubauer/naturatua-nvx">Kod på GitHub</a></span></nav>
+  <nav class="top"><a class="logo" href="https://naturatua.com/en/" title="NaturaTua – naturatua.com"><img src="naturatua.png" alt="NaturaTua" width="150" height="28"></a><span class="links"><a href="https://naturatua.com/en/">naturatua.com</a><a href="https://lab.naturatua.com/">Lab: map layers and baseline data</a><a href="https://github.com/peterneubauer/naturatua-nvx">Code on GitHub</a></span></nav>
   <header style="display:grid;gap:12px">
-    <h1>Ustorp Naturvärdesindex</h1>
-    <p class="lede">Ocean Health Index-metoden (ohicore, Blekinge Hälsoindex) tillämpad på naturvärdesbiotoperna i NVI 2024 och 2026. Status aggregeras från indikatorer till tre kategorier och vidare till NVX 0–100 och naturvärdesklass. Tryck och resiliens ger en trolig framtid. Allt aggregeras areaviktat från biotop till BDU-ruta, BDU-område, skifte och hela fastigheten.</p>
+    <h1>Ustorp Nature Value Index</h1>
+    <p class="lede">The Ocean Health Index method (ohicore, Baltic Health Index, Blekinge Health Index) applied on land, to the nature value biotopes mapped in the Swedish-standard inventories (NVI, SS 199000) of 2024 and 2026 at Eksjö Ustorp 1:6. Status is aggregated from indicators to three categories and on to NVX 0–100 and a nature value class. Pressures and resilience give a likely future state. Everything is aggregated area-weighted from biotope to BDU plot, BDU area, land parcel and the whole property.</p>
     <div class="chips" id="chips"></div>
   </header>
 
@@ -132,105 +132,107 @@ details summary { cursor: pointer; font: 600 12px var(--body); text-transform: u
       </div>
       <div class="controls">
         <span class="seg" id="mode">
-          <button data-m="klass" aria-pressed="true">NVX-klass</button>
-          <button data-m="expert" aria-pressed="false">Expertklass</button>
-          <button data-m="pressure" aria-pressed="false">Tryck</button>
-          <button data-m="resilience" aria-pressed="false">Resiliens</button>
-          <button data-m="future" aria-pressed="false">Trolig framtid</button>
-          <button data-m="missing" aria-pressed="false">Datatäckning</button>
+          <button data-m="klass" aria-pressed="true">NVX class</button>
+          <button data-m="expert" aria-pressed="false">Expert class</button>
+          <button data-m="pressure" aria-pressed="false">Pressure</button>
+          <button data-m="resilience" aria-pressed="false">Resilience</button>
+          <button data-m="future" aria-pressed="false">Likely future</button>
+          <button data-m="missing" aria-pressed="false">Data coverage</button>
         </span>
-        <span class="seg" id="extent"><button data-e="bdu" aria-pressed="true">BDU-området</button><button data-e="all" aria-pressed="false">Hela fastigheten</button></span>
-        <label><input type="checkbox" id="showPts" checked> Ljudpunkter</label>
+        <span class="seg" id="extent"><button data-e="bdu" aria-pressed="true">BDU area</button><button data-e="all" aria-pressed="false">Whole property</button></span>
+        <label><input type="checkbox" id="showPts" checked> Sensor footprints (recorders, drone blocks)</label>
       </div>
-      <svg id="map" viewBox="0 0 100 100" role="img" aria-label="Karta över bedömningsenheter"></svg>
+      <svg id="map" viewBox="0 0 100 100" role="img" aria-label="Map of assessment units"></svg>
       <div class="legend" id="legend"></div>
     </div>
     <div class="card" id="panel"></div>
   </section>
 
   <section class="card">
-    <h2>Alla enheter</h2>
+    <h2>All units</h2>
     <div class="tabs" id="tabs"></div>
     <div class="scroll"><table id="tunits"></table></div>
   </section>
 
   <section class="two">
     <div class="card">
-      <h2>Indexträd</h2>
-      <p class="src" style="margin-bottom:10px">Vikt inom gruppen, funktion och tröskel (värde som ger 1,0 / värde som ger 0). Streckad tagg = hypotetiskt testlager.</p>
+      <h2>Index tree</h2>
+      <p class="src" style="margin-bottom:10px">Weight within its group, function and reference points (value that scores 0 → value that scores 1). Dashed tag = hypothetical test layer.</p>
       <div class="tree" id="tree"></div>
-      <h3 style="margin-top:16px">Tryck</h3>
+      <h3 style="margin-top:16px">Pressures</h3>
       <div class="tree" id="ptree"></div>
-      <h3 style="margin-top:16px">Resiliens</h3>
+      <h3 style="margin-top:16px">Resilience</h3>
       <div class="tree" id="rtree"></div>
     </div>
     <div class="card" style="display:grid;gap:14px">
       <div>
-        <h2>Metod</h2>
-        <p><b>Status.</b> Indikatorerna normaliseras linjärt mot tröskel och nollpunkt (<code>normalize_data</code>). Delmål och kategorier är viktade aritmetiska medelvärden (<code>weighted_power_mean</code>, p=1). De tre kategorierna vägs till NVX med p=0,5, så att en svag kategori drar ned helheten, i linje med SIS-matrisen där art- och biotopvärde samverkar.</p>
+        <h2>Method in brief</h2>
+        <p><b>Status.</b> Indicators are rescaled linearly between a zero point and a reference point (<code>normalize_data</code>). Sub-goals and categories are weighted arithmetic means (<code>weighted_power_mean</code>, p = 1). The three categories are combined into NVX with p = 0.5, so a weak category pulls the whole down, in line with the SS 199000 matrix where species value and biotope value interact.</p>
       </div>
       <div>
-        <p><b>Dimensioner</b> (<code>ohicore::CalculateGoalIndex</code>). Tryck: <code>Σ(rank·värde)/3</code>, tak 1. Resiliens: viktat medel, aldrig högre än trycket. Trolig framtid: <code>xF = (1 + β·trend + (1−β)·(resiliens − tryck)) · status</code> med β = 0,67. Poäng = (status + xF)/2. Trenden är 0 tills det finns en tidsserie.</p>
+        <p><b>Dimensions</b> (<code>ohicore::CalculateGoalIndex</code>). Pressure: <code>Σ(rank·value)/3</code>, capped at 1. Resilience: weighted mean, never above pressure. Likely future: <code>xF = (1 + β·trend + (1−β)·(resilience − pressure)) · status</code> with β = 0.67. Score = (status + xF)/2. Trend is 0 until a time series exists.</p>
       </div>
       <div>
-        <p><b>Rumslig aggregering</b> (<code>ohicore::CalculateAll</code>, BHI <code>SpatialIntersections</code>). Varje enhet får <code>weighted.mean(score, area)</code> för varje gren och dimension över de biotoper den skär, med skärningsarean som vikt. Klassen för en enhet sätts från dess aggregerade status.</p>
+        <p><b>Spatial aggregation</b> (<code>ohicore::CalculateAll</code>, BHI <code>SpatialIntersections</code>). Every unit gets <code>weighted.mean(score, area)</code> for each branch and dimension over the biotopes it intersects, with the intersection area as weight. A unit's class follows from its aggregated status.</p>
       </div>
       <div>
-        <h3>Klassgränser</h3>
+        <h3>Class thresholds</h3>
         <p id="cuts"></p>
-        <p class="src">Gränserna väljs automatiskt så att överensstämmelsen med expertklasserna i NVI 2024/2026 blir störst. Det är ett test av metoden, inte en ersättning för inventerarens bedömning.</p>
+        <p class="src">The thresholds are chosen automatically to maximise agreement with the expert classes in NVI 2024/2026. This is a test of the method, not a replacement for the surveyor's judgement.</p>
       </div>
       <div>
         <h3>Gapfilling</h3>
-        <p>Rumslig gapfilling (<code>GF-S01</code>): saknad indikator ersätts med medianen för biotoper med samma expertklass. Objekt 27–30 saknar objektsblad i textexporten och är därför till stor del gapfyllda. eDNA saknas överallt (levereras våren 2027) och räknas som <em>saknad</em>, inte gapfylld.</p>
+        <p>Spatial gapfilling (<code>GF-S01</code>): a missing indicator is replaced by the median for biotopes of the same expert class. Objects 27–30 lack object sheets in the text export and are therefore largely gapfilled. eDNA is missing everywhere (delivery spring 2027) and counts as <em>missing</em>, not gapfilled.</p>
       </div>
-      <div class="note">Lagren <b>Strukturell variation</b> (drönare/3D), <b>Konnektivitet</b> (satellit), <b>Markkol</b> (jordprover) och <b>Akustisk artrikedom</b> (AudioMoth; punkternas lägen är verkliga, artantalen inte) är hypotetiska och slumpade med frö 2026, för att testa punkt-till-polygon-aggregering och gapfilling. Byt ut dem mot Conifer Visions leverans, Sentinel-2, jordproverna och ljudanalysen från 2025 när de finns.</div>
+      <div class="note">The layers <b>Structural variation</b> (drone/3D), <b>Connectivity</b> (satellite), <b>Soil carbon</b> (soil samples) and <b>Acoustic species richness</b> (AudioMoth; the point positions are real, the species counts are not) are hypothetical, seeded random values (seed 2026), there to exercise point-to-polygon aggregation and gapfilling. They will be replaced by Conifer Vision's delivery, Sentinel-2, the soil samples and the 2025 acoustic analysis when available.</div>
     </div>
   </section>
 
   <section class="card" style="display:grid;gap:16px">
     <div>
-      <h2>Så räknas indexet</h2>
-      <p class="lede" style="font-size:15px">Ocean Health Index (OHI) är ett ramverk för att väga samman många olika mätningar av ett ekosystem till ett jämförbart tal mellan 0 och 100. Det utvecklades för världshaven 2012 och har sedan anpassats till Östersjön (Baltic Health Index) och till Blekinge (Blekinge Hälsoindex). Här testas samma räknesätt på land, med naturvärdesinventeringens biotoper som minsta enhet.</p>
+      <h2>How the index is calculated</h2>
+      <p class="lede" style="font-size:15px">The Ocean Health Index (OHI) is a framework for combining many different measurements of an ecosystem into one comparable number between 0 and 100. It was developed for the world's oceans in 2012 and has since been adapted to the Baltic Sea (Baltic Health Index) and to the Blekinge archipelago (Blekinge Health Index). Here the same arithmetic is tested on land, with the nature value biotopes of a Swedish standard inventory as the smallest unit.</p>
     </div>
     <div class="two" style="gap:20px">
       <div style="display:grid;gap:12px">
-        <div><h3>1. Indikator → poäng</h3><p>Varje indikator har ett referensvärde (ger poäng 1,0) och en nollpunkt (ger 0). Mellan dem är poängen linjär; utanför klipps den. Död ved får t.ex. full poäng vid 20 m³/ha, vilket motsvarar en gammal naturskog, och 0 vid 0. Referensvärdena är ett första förslag och avsedda att diskuteras med inventerarna.</p></div>
-        <div><h3>2. Poäng → delmål → kategori</h3><p>Indikatorerna vägs ihop till delmål (t.ex. Tillstånd = naturlighet ×2, död ved ×1, naturvärdesträd ×1) och delmålen till tre kategorier: Biotopvärde och Artvärde följer SS 199000:s två bedömningsgrunder; Landskap &amp; mark samlar lager som NVI inte mäter men som fjärranalys, drönare och jordprover kan ge.</p></div>
-        <div><h3>3. Kategori → NVX → naturvärdesklass</h3><p>De tre kategorierna vägs ihop med ett potensmedelvärde (p = 0,5). Det straffar obalans: en biotop med högt artvärde men lågt biotopvärde får lägre NVX än det aritmetiska medelvärdet, på samma sätt som SIS-matrisen placerar bedömningen nära diagonalen. NVX översätts till naturvärdesklass 1–4 (eller 5, ej naturvärde) med gränser som kalibreras mot inventerarnas egna klasser.</p></div>
+        <div><h3>1. Indicator → score</h3><p>Each indicator has a reference point (scores 1.0) and a zero point (scores 0). Between them the score is linear; outside it is clipped. Dead wood, for example, gets full score at 20 m³/ha, which corresponds to an old natural forest, and 0 at 0. The reference points are a first proposal, meant to be discussed with the surveyors.</p></div>
+        <div><h3>2. Score → sub-goal → category</h3><p>Indicators are weighted into sub-goals (e.g. Condition = naturalness ×2, dead wood ×1, habitat trees ×1) and sub-goals into three categories: Biotope value and Species value follow the two assessment grounds of SS 199000; Landscape &amp; soil collects layers that the NVI does not measure but remote sensing, drones and soil sampling can provide.</p></div>
+        <div><h3>3. Category → NVX → nature value class</h3><p>The three categories are combined with a power mean (p = 0.5). That penalises imbalance: a biotope with high species value but low biotope value gets a lower NVX than the arithmetic mean would give, just as the SIS matrix places the assessment near its diagonal. NVX is translated into nature value class 1–4 (or 5, no nature value) with thresholds calibrated against the surveyors' own classes.</p></div>
       </div>
       <div style="display:grid;gap:12px">
-        <div><h3>4. Tryck, resiliens och trolig framtid</h3><p>OHI skiljer på hur det ser ut nu (status) och vart det är på väg. Tryck (avverkning, dikning, gödsling, invasiva arter, igenväxning, bebyggelse) rankas 0–3 per kategori i en tryckmatris; resiliens (aktiv skötsel, nyckelbiotop- eller Natura-status, konnektivitet) viktas per kategori. Trolig framtid = status × (1 + β·trend + (1−β)·(resiliens − tryck)), β = 0,67, och poängen är medelvärdet av status och trolig framtid. Skötselavtalet 2026–2031 räknas som resiliens inom BDU-området, så där håller framtiden uppe trots höga tryck från tidigare avverkning.</p></div>
-        <div><h3>5. Från biotop till fastighet</h3><p>Biotoperna är rapportzoner. Varje större enhet (BDU-ruta, BDU-område, skifte, fastighet, naturtyp, expertklass) får sitt värde som areaviktat medel av de biotoper den täcker, för varje gren och dimension. Punktdata (ljudinspelningar) kopplas till polygoner via en sökradie. Andelen av vikten som gapfyllts eller saknas följer med uppåt, så att osäkerheten syns på alla nivåer.</p></div>
-        <div><h3>6. Vad som inte ingår ännu</h3><p>Trender kräver minst två inventeringar; de är 0 här. Fyra lager är hypotetiska tills de verkliga leveranserna finns, och eDNA saknas helt. Modellen är gjord för att ta in nya indikatorer, inklusive AI-baserade, som en rad i indexträdet plus ett värde per polygon.</p></div>
+        <div><h3>4. Pressures, resilience and likely future</h3><p>OHI separates how things are now (status) from where they are heading. Pressures (felling, drainage, fertiliser, invasive species, overgrowth, buildings) are ranked 0–3 per category in a pressure matrix; resilience (active management, key-habitat or Natura 2000 status, connectivity) is weighted per category. Likely future = status × (1 + β·trend + (1−β)·(resilience − pressure)), β = 0.67, and the score is the mean of status and likely future. The 2026–2031 management agreement counts as resilience inside the BDU area, so the future holds up there despite high pressure from earlier felling.</p></div>
+        <div><h3>5. From biotope to property</h3><p>The biotopes are the reporting zones. Every larger unit (BDU plot, BDU area, parcel, property, habitat type, expert class) gets its value as the area-weighted mean of the biotopes it covers, for every branch and dimension. Sensor data that is reported on its own geometry (a recorder's 150 m footprint, a drone's 1 ha block) is attached to biotopes the way BHI's <code>SpatialIntersections</code> treats zones that do not line up with assessment units: a biotope's value is the mean over the footprints that cover it, weighted by intersection area, and the covered share is stored as a coverage figure. Aggregation upward uses biotope areas only, so a recording that covers three biotopes is never counted three times at BDU or property level. The share of the weight that was gapfilled or is missing is carried upward, so uncertainty is visible at every level.</p></div>
+        <div><h3>6. Not included yet</h3><p>Trends need at least two inventories; they are 0 here. Four layers are hypothetical until the real deliveries exist, and eDNA is missing entirely. The model is built to take in new indicators, including AI-derived ones, as one row in the index tree plus one value per polygon.</p></div>
       </div>
     </div>
   </section>
 
   <section class="card">
-    <h2>Referenser</h2>
+    <h2>References</h2>
     <div class="two" style="gap:20px">
       <div style="display:grid;gap:10px;font-size:14px">
-        <h3>Ocean Health Index och tillämpningar</h3>
-        <p>Halpern, B.S. m.fl. 2012. An index to assess the health and benefits of the global ocean. <i>Nature</i> 488: 615–620. <a href="https://doi.org/10.1038/nature11397">doi:10.1038/nature11397</a></p>
-        <p>Halpern, B.S. m.fl. 2017. Drivers and implications of change in global ocean health over the past five years. <i>PLOS ONE</i> 12(7): e0178267. <a href="https://doi.org/10.1371/journal.pone.0178267">doi:10.1371/journal.pone.0178267</a></p>
-        <p>Ocean Health Index. <a href="https://www.oceanhealthindex.org/">oceanhealthindex.org</a> · Metod och kod: <a href="https://ohi-science.org/">ohi-science.org</a> · R-paketet <a href="https://github.com/OHI-Science/ohicore">OHI-Science/ohicore</a> (<code>CalculateAll</code>, <code>CalculateGoalIndex</code>, <code>CalculatePressuresAll</code>, <code>CalculateResilienceAll</code>).</p>
-        <p>Baltic Health Index (BHI). Blenckner, T. m.fl. 2021. The Baltic Health Index (BHI): Assessing the social–ecological status of the Baltic Sea. <i>People and Nature</i> 3: 359–375. <a href="https://doi.org/10.1002/pan3.10178">doi:10.1002/pan3.10178</a> · <a href="https://baltic-ohi.shinyapps.io/dashboard/">Dashboard</a></p>
-        <p>Blekinge Hälsoindex. Lokal tillämpning av BHI för Blekinge skärgård. Kod: <a href="https://github.com/OHI-Baltic/bhi-blekinge">OHI-Baltic/bhi-blekinge</a> · Dokumentation: <a href="https://ohi-baltic.github.io/bhi-blekinge/">ohi-baltic.github.io/bhi-blekinge</a>. Härifrån kommer indexträdet (<code>IndexStructure</code>), <code>normalize_data</code>, <code>weighted_power_mean</code>, gapfilling-flaggorna och blomdiagrammet.</p>
+        <h3>Ocean Health Index and applications</h3>
+        <p>Halpern, B.S. et al. 2012. An index to assess the health and benefits of the global ocean. <i>Nature</i> 488: 615–620. <a href="https://doi.org/10.1038/nature11397">doi:10.1038/nature11397</a></p>
+        <p>Halpern, B.S. et al. 2017. Drivers and implications of change in global ocean health over the past five years. <i>PLOS ONE</i> 12(7): e0178267. <a href="https://doi.org/10.1371/journal.pone.0178267">doi:10.1371/journal.pone.0178267</a></p>
+        <p>Ocean Health Index. <a href="https://www.oceanhealthindex.org/">oceanhealthindex.org</a> · Method and code: <a href="https://ohi-science.org/">ohi-science.org</a> · R package <a href="https://github.com/OHI-Science/ohicore">OHI-Science/ohicore</a> (<code>CalculateAll</code>, <code>CalculateGoalIndex</code>, <code>CalculatePressuresAll</code>, <code>CalculateResilienceAll</code>).</p>
+        <p>Baltic Health Index (BHI). Blenckner, T. et al. 2021. The Baltic Health Index (BHI): Assessing the social–ecological status of the Baltic Sea. <i>People and Nature</i> 3: 359–375. <a href="https://doi.org/10.1002/pan3.10178">doi:10.1002/pan3.10178</a> · <a href="https://baltic-ohi.shinyapps.io/dashboard/">Dashboard</a></p>
+        <p>Blekinge Health Index (Blekinge Hälsoindex). Local application of the BHI to the Blekinge archipelago. Code: <a href="https://github.com/OHI-Baltic/bhi-blekinge">OHI-Baltic/bhi-blekinge</a> · Documentation: <a href="https://ohi-baltic.github.io/bhi-blekinge/">ohi-baltic.github.io/bhi-blekinge</a>. The index tree (<code>IndexStructure</code>), <code>normalize_data</code>, <code>weighted_power_mean</code>, the gapfilling flags and the flower plot come from here.</p>
       </div>
       <div style="display:grid;gap:10px;font-size:14px">
-        <h3>Naturvärdesinventering och naturtyper</h3>
-        <p>SIS. 2023. <i>SS 199000:2023 Naturvärdesinventering (NVI) – Genomförande, naturvärdesbedömning och redovisning</i>, samt <i>SIS-TS 199002:2023</i>. Svenska institutet för standarder. <a href="https://www.sis.se/">sis.se</a></p>
-        <p>Edlund, M. &amp; Anderberg, R. 2025. <i>Eksjö Ustorp 1:6, Naturvärdesinventering</i>. Ekologigruppen AB, slutversion 21 februari 2025. Fältinventering 7–8 maj 2024. På uppdrag av Insamlingsstiftelsen Framtidens Natur &amp; Kulturarv.</p>
-        <p>Salomon, L. 2026. <i>NVI av del av Eksjö Ustorp 1:6, Jönköpings län</i>. Salmonic AB, utkast 2026-08-16. Fältinventering 7 juli 2026. På uppdrag av Framtidens Natur &amp; Kulturarv.</p>
-        <p>Natura 2000. Rådets direktiv 92/43/EEG (art- och habitatdirektivet). Naturtyperna i NVI-objekten (9010 Taiga, 9160 Näringsrik ekskog) följer Naturvårdsverkets vägledningar för svenska naturtyper i habitatdirektivets bilaga 1. <a href="https://www.naturvardsverket.se/">naturvardsverket.se</a></p>
-        <p>Artskyddsförordningen (SFS 2007:845). SLU Artdatabanken. 2020. <i>Rödlistade arter i Sverige 2020</i>. <a href="https://www.artdatabanken.se/">artdatabanken.se</a></p>
-        <p>Kartlager och insamlad basdata: <a href="https://lab.naturatua.com/">lab.naturatua.com</a>. Kod för den här sidan: <a href="https://github.com/peterneubauer/naturatua-nvx">github.com/peterneubauer/naturatua-nvx</a>.</p>
+        <h3>Nature value inventory and habitat types</h3>
+        <p>SIS. 2023. <i>SS 199000:2023 Nature value inventory (NVI) – Procedure, assessment and reporting</i>, and <i>SIS-TS 199002:2023</i>. Swedish Institute for Standards. <a href="https://www.sis.se/">sis.se</a></p>
+        <p>Edlund, M. &amp; Anderberg, R. 2025. <i>Eksjö Ustorp 1:6, Naturvärdesinventering</i>. Ekologigruppen AB, final version 21 February 2025. Field work 7–8 May 2024. Commissioned by Insamlingsstiftelsen Framtidens Natur &amp; Kulturarv.</p>
+        <p>Salomon, L. 2026. <i>NVI av del av Eksjö Ustorp 1:6, Jönköpings län</i>. Salmonic AB, draft 2026-08-16. Field work 7 July 2026. Commissioned by Framtidens Natur &amp; Kulturarv.</p>
+        <p>Natura 2000. Council Directive 92/43/EEC (Habitats Directive). The habitat types in the NVI objects (9010 Western taiga, 9160 Sub-Atlantic and medio-European oak or oak-hornbeam forests) follow the Swedish EPA's guidance for Annex I habitat types. <a href="https://www.naturvardsverket.se/">naturvardsverket.se</a></p>
+        <p>Species Protection Ordinance (SFS 2007:845). SLU Swedish Species Information Centre. 2020. <i>The Swedish Red List 2020</i>. <a href="https://www.artdatabanken.se/">artdatabanken.se</a></p>
+        <h3 style="margin-top:6px">This implementation</h3>
+        <p>Neubauer, P. 2026. <i>naturatua-nvx</i>: a Python port of the OHI/BHI index logic (<code>normalize_data</code>, <code>weighted_power_mean</code>, <code>calculate_status</code>, <code>apply_spatial_aggregation</code>, <code>CalculateGoalIndex</code>, <code>CalculatePressuresAll</code>, <code>CalculateResilienceAll</code>) applied to SS 199000 nature value biotopes, with spatial rather than temporal gapfilling and footprint-weighted sensor layers. The R code is not executed; the formulas are re-implemented in <code>nvindex.py</code>. NaturaTua AB. <a href="https://github.com/peterneubauer/naturatua-nvx">github.com/peterneubauer/naturatua-nvx</a></p>
+        <p>Map layers and baseline data: <a href="https://lab.naturatua.com/">lab.naturatua.com</a>.</p>
       </div>
     </div>
   </section>
 
-  <footer class="foot"><a class="logo" href="https://naturatua.com/"><img src="naturatua.png" alt="NaturaTua" width="128" height="24"></a><span>Ett test av NaturaTua AB, Malmö. Projektet Ustorp drivs tillsammans med Insamlingsstiftelsen Framtidens Natur &amp; Kulturarv. <a href="https://naturatua.com/">naturatua.com</a> · <a href="https://lab.naturatua.com/">lab.naturatua.com</a> · <a href="mailto:info@naturatua.com">info@naturatua.com</a></span></footer>
+  <footer class="foot"><a class="logo" href="https://naturatua.com/en/"><img src="naturatua.png" alt="NaturaTua" width="128" height="24"></a><span>A test by NaturaTua AB, Malmö, Sweden. The Ustorp project is run together with Insamlingsstiftelsen Framtidens Natur &amp; Kulturarv. <a href="https://naturatua.com/en/">naturatua.com</a> · <a href="https://lab.naturatua.com/">lab.naturatua.com</a> · <a href="mailto:info@naturatua.com">info@naturatua.com</a></span></footer>
 </main>
 <div class="tip" id="tip" hidden></div>
 
@@ -240,30 +242,31 @@ const D = JSON.parse(document.getElementById('data').textContent);
 const BY = Object.fromEntries(D.structure.map(s => [s.branch, s]));
 const KIDS = {}; D.structure.forEach(s => (KIDS[s.main] ||= []).push(s.branch));
 const CATS = KIDS['NVX'];
-const KN = {1: 'Högsta', 2: 'Högt', 3: 'Påtagligt', 4: 'Visst', 5: 'Ej naturvärde'};
+const KN = {1: 'Highest', 2: 'High', 3: 'Considerable', 4: 'Some', 5: 'No nature value'};
 const U = Object.fromEntries(D.units.map(u => [u.id, u]));
 const kc = k => `var(--k${k})`;
 const cc = b => `var(--${b.toLowerCase()})`;
-const fmt = (v, d = 0) => v == null ? '–' : (+v).toLocaleString('sv-SE', {maximumFractionDigits: d, minimumFractionDigits: d});
+const fmt = (v, d = 0) => v == null ? '–' : (+v).toLocaleString('en-GB', {maximumFractionDigits: d, minimumFractionDigits: d});
 const topCat = b => { let s = BY[b]; while (s.main && s.main !== 'NVX') s = BY[s.main]; return s.branch; };
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const IND = D.structure.filter(s => s.fn === 'norm');
 const atLevel = l => D.units.filter(u => u.level === l);
 const biotopes = atLevel('biotop');
+const LV = Object.fromEntries(D.levels.map(l => [l.id, l]));
 
 // ── Chips ──
 const agree = biotopes.filter(b => b.expert_klass === b.nvx_klass).length;
 const prop = U['USTORP'], bdu = U['BDU'];
 document.getElementById('chips').innerHTML = [
-  `<b>${biotopes.length}</b> biotoper`, `<b>${D.units.length - biotopes.length}</b> aggregerade enheter`,
-  `<b>${IND.length}</b> indikatorer, <b>${IND.filter(s => s.hypothetical).length}</b> hypotetiska`,
-  `klass träffad <b>${agree}/${biotopes.length}</b>`,
-  `BDU-området NVX <b>${fmt(bdu.dims.status)}</b> · klass <b>${bdu.nvx_klass}</b>`,
-  `fastigheten NVX <b>${fmt(prop.dims.status)}</b> · klass <b>${prop.nvx_klass}</b>`,
+  `<b>${biotopes.length}</b> biotopes`, `<b>${D.units.length - biotopes.length}</b> aggregated units`,
+  `<b>${IND.length}</b> indicators, <b>${IND.filter(s => s.hypothetical).length}</b> hypothetical`,
+  `class matched <b>${agree}/${biotopes.length}</b>`,
+  `BDU area NVX <b>${fmt(bdu.dims.status)}</b> · class <b>${bdu.nvx_klass}</b>`,
+  `property NVX <b>${fmt(prop.dims.status)}</b> · class <b>${prop.nvx_klass}</b>`,
 ].map(c => `<span class="chip">${c}</span>`).join('');
 document.getElementById('cuts').innerHTML = D.class_cuts.map(([c, k]) => `<span class="kl" data-k="${k}">${k}</span> ≥ ${fmt(c, 1)}`).join(' &nbsp; ') + ` &nbsp; <span class="kl" data-k="5">5</span> &lt; ${fmt(D.class_cuts.at(-1)[0], 1)}`;
 
-// ── Karta (SWEREF 99 TM, meter; y uppåt) ──
+// ── Map (SWEREF 99 TM, metres; y up) ──
 const map = document.getElementById('map');
 const allCoords = g => g.type === 'Polygon' ? g.coordinates.flat() : g.coordinates.flat(2);
 let level = 'biotop', extent = 'bdu', mode = 'klass', sel = U['1'] ? '1' : biotopes[0].id;
@@ -300,17 +303,18 @@ function drawMap() {
   h += units.map(u => `<path class="poly${u.id === sel ? ' sel' : ''}" data-id="${u.id}" d="${path(u.geom)}" fill="${fillFor(u)}"><title>${esc(u.name)}</title></path>`).join('');
   if (level !== 'biotop') h += biotopes.map(b => `<path class="ctx" d="${path(b.geom)}"/>`).join('');
   if (LV[level].spatial) h += units.filter(u => level !== 'biotop' ? true : (u.area_ha > 0.6 && !u.id.startsWith('E'))).map(u => { const [cx, cy] = centroid(u.geom); const lbl = level === 'ruta' ? u.id.slice(-2) : level === 'biotop' ? u.id : u.name; return `<text class="lbl" x="${(cx - x0).toFixed(1)}" y="${(y1 - cy + fs / 3).toFixed(1)}">${esc(lbl)}</text>`; }).join('');
-  else h += `<text class="lbl" x="${(W / 2).toFixed(1)}" y="${(fs * 1.5).toFixed(1)}" style="font-size:${fs * 1.4}px">${esc(U[sel].name)}: ${U[sel].parts.length} biotoper, ${fmt(U[sel].area_ha, 1)} ha</text>`;
+  else h += `<text class="lbl" x="${(W / 2).toFixed(1)}" y="${(fs * 1.5).toFixed(1)}" style="font-size:${fs * 1.4}px">${esc(U[sel].name)}: ${U[sel].parts.length} biotopes, ${fmt(U[sel].area_ha, 1)} ha</text>`;
   h += `<path class="ctx" style="stroke:var(--fg);opacity:1" d="${path(U['BDU'].geom)}"/>`;
-  if (pts) h += D.points.map(p => `<g class="pt"><circle class="r" cx="${(p.x - x0).toFixed(1)}" cy="${(y1 - p.y).toFixed(1)}" r="${p.radius}"/><circle class="${p.value == null ? 'na' : ''}" cx="${(p.x - x0).toFixed(1)}" cy="${(y1 - p.y).toFixed(1)}" r="${fs * 0.7}"/><text x="${(p.x - x0 + fs).toFixed(1)}" y="${(y1 - p.y + fs / 3).toFixed(1)}">${p.id}${p.value == null ? ' (trasig)' : ''}</text></g>`).join('');
+  if (pts) h += D.footprints.map(f => `<path class="fp" d="${path(f.geom)}" fill="none" stroke="var(--lm)" stroke-width="${sw * 1.5}" stroke-dasharray="${sw * 4} ${sw * 2}"><title>Drone block ${esc(f.id)}, 1 ha</title></path>`).join('');
+  if (pts) h += D.points.map(p => `<g class="pt"><circle class="r" cx="${(p.x - x0).toFixed(1)}" cy="${(y1 - p.y).toFixed(1)}" r="${p.radius}"/><circle class="${p.value == null ? 'na' : ''}" cx="${(p.x - x0).toFixed(1)}" cy="${(y1 - p.y).toFixed(1)}" r="${fs * 0.7}"/><text x="${(p.x - x0 + fs).toFixed(1)}" y="${(y1 - p.y + fs / 3).toFixed(1)}">${p.id}${p.value == null ? ' (device failed)' : ''}</text></g>`).join('');
   map.innerHTML = h;
   const L = document.getElementById('legend');
-  const base = `<span><i class="sw" style="border:1.5px solid var(--fg);background:none"></i>BDU-området</span><span><i class="sw" style="border-radius:50%;background:var(--av)"></i>AudioMoth-punkt juli 2025 (sökradie 150 m)</span>`;
+  const base = `<span><i class="sw" style="border:1.5px solid var(--fg);background:none"></i>BDU area</span><span><i class="sw" style="border-radius:50%;background:var(--av)"></i>AudioMoth point, July 2025 (150 m footprint)</span><span><i class="sw" style="border:1.5px dashed var(--lm);background:none"></i>Drone block, 1 ha</span>`;
   const ramp = (col, lbl) => `<span><i class="sw" style="background:${seqFill(0, col)}"></i>0</span><span><i class="sw" style="background:${seqFill(50, col)}"></i>50</span><span><i class="sw" style="background:${seqFill(100, col)}"></i>100 ${lbl}</span>`;
   if (mode === 'klass' || mode === 'expert' || mode === 'future') L.innerHTML = [1, 2, 3, 4, 5].map(k => `<span><i class="sw" style="background:${kc(k)}"></i>${k} ${KN[k]}</span>`).join('') + base;
-  else if (mode === 'pressure') L.innerHTML = ramp('var(--press)', 'tryck') + base;
-  else if (mode === 'resilience') L.innerHTML = ramp('var(--res)', 'resiliens') + base;
-  else L.innerHTML = `<span><i class="sw" style="background:var(--k5)"></i>fullständig data</span><span><i class="sw" style="background:var(--av)"></i>hög andel gapfyllt/saknat</span>` + base;
+  else if (mode === 'pressure') L.innerHTML = ramp('var(--press)', 'pressure') + base;
+  else if (mode === 'resilience') L.innerHTML = ramp('var(--res)', 'resilience') + base;
+  else L.innerHTML = `<span><i class="sw" style="background:var(--k5)"></i>complete data</span><span><i class="sw" style="background:var(--av)"></i>high share gapfilled/missing</span>` + base;
 }
 map.addEventListener('click', e => { const p = e.target.closest('[data-id]'); if (p) select(p.dataset.id); });
 const tip = document.getElementById('tip');
@@ -318,7 +322,7 @@ map.addEventListener('mousemove', e => {
   const p = e.target.closest('[data-id]');
   if (!p) { tip.hidden = true; return; }
   const u = U[p.dataset.id];
-  tip.innerHTML = `<b>${esc(u.name)}</b> ${esc(u.biotop || '')}<br>${fmt(u.area_ha, 2)} ha · status ${fmt(u.dims.status)} → klass ${u.nvx_klass} · tryck ${fmt(u.dims.pressure)} · resiliens ${fmt(u.dims.resilience)} · framtid ${fmt(u.dims.future)}`;
+  tip.innerHTML = `<b>${esc(u.name)}</b> ${esc(u.biotop || '')}<br>${fmt(u.area_ha, 2)} ha · status ${fmt(u.dims.status)} → class ${u.nvx_klass} · pressure ${fmt(u.dims.pressure)} · resilience ${fmt(u.dims.resilience)} · future ${fmt(u.dims.future)}`;
   tip.hidden = false; tip.style.left = (e.clientX + 14) + 'px'; tip.style.top = (e.clientY + 14) + 'px';
 });
 map.addEventListener('mouseleave', () => tip.hidden = true);
@@ -327,7 +331,6 @@ const segs = (id, key, cb) => document.getElementById(id).addEventListener('clic
 segs('mode', 'm', m => { mode = m; drawMap(); });
 segs('extent', 'e', e => { extent = e; drawMap(); });
 document.getElementById('level').innerHTML = D.levels.map((l, i) => `<button data-l="${l.id}" aria-pressed="${i === 0}">${esc(l.name)}</button>`).join('');
-const LV = Object.fromEntries(D.levels.map(l => [l.id, l]));
 function setLevel(l) {
   level = l; press('level', l, 'l');
   if (U[sel].level !== l) sel = atLevel(l)[0].id;
@@ -337,7 +340,7 @@ function setLevel(l) {
 segs('level', 'l', setLevel);
 document.getElementById('showPts').addEventListener('change', drawMap);
 
-// ── Blomma (flowerplot som i BHI: ett kronblad per indikator, längd = poäng, färg = kategori, inre ring = kategorier) ──
+// ── Flower plot (as in BHI: one petal per indicator, length = score, colour = category, inner ring = categories) ──
 function flower(u) {
   const R = 140, r0 = 50, cx = 270, cy = 200, n = IND.length, gap = 0.035;
   const arc = (a0, a1, ri, ro) => { const p = (a, r) => [cx + r * Math.sin(a), cy - r * Math.cos(a)]; const [ax, ay] = p(a0, ro), [bx, by] = p(a1, ro), [cx2, cy2] = p(a1, ri), [dx, dy] = p(a0, ri); return `M${ax},${ay}A${ro},${ro},0,0,1,${bx},${by}L${cx2},${cy2}A${ri},${ri},0,0,0,${dx},${dy}Z`; };
@@ -357,77 +360,78 @@ function flower(u) {
   let i0 = 0;
   CATS.forEach(c => { const nI = IND.filter(s => topCat(s.branch) === c).length; const a0 = (i0 / n) * 2 * Math.PI + 0.02, a1 = ((i0 + nI) / n) * 2 * Math.PI - 0.02; const v = u.scores[c]; h += `<path d="${arc(a0, a1, 33, 46)}" fill="${cc(c)}" opacity="${v == null ? .2 : .3 + .7 * v / 100}"><title>${esc(BY[c].name)} ${fmt(v)}</title></path>`; i0 += nI; });
   h += `<text class="hub" x="${cx}" y="${cy + 8}">${fmt(u.dims.status)}</text><text class="hubl" x="${cx}" y="${cy + 22}">NVX</text>`;
-  return `<svg class="flower" viewBox="0 0 540 400" role="img" aria-label="Blomdiagram för ${esc(u.name)}">${h}</svg>`;
+  return `<svg class="flower" viewBox="0 0 540 400" role="img" aria-label="Flower plot for ${esc(u.name)}">${h}</svg>`;
 }
 
-// ── Matris: tryck/resiliens × kategori, med den valda enhetens lagervärden (u=null: bara matrisen) ──
+// ── Matrix: pressure/resilience × category, with the selected unit's layer values (u = null: matrix only) ──
 function matrix(u, kind) {
   const list = kind === 'p' ? D.pressures : D.resilience, key = kind === 'p' ? 'ranks' : 'weights', cls = kind === 'p' ? 'r' : 'w';
   const rows = list.map(l => `<tr><td>${esc(l.name)} <span class="tag${l.hypothetical ? ' hyp' : ''}">${esc(l.source)}</span></td>${u ? `<td class="n">${u.layers[l.layer] == null ? '–' : fmt(u.layers[l.layer] * 100)}</td>` : ''}${CATS.map(c => { const r = l[key][c]; return `<td class="c ${cls}${r}">${r || '·'}</td>`; }).join('')}</tr>`).join('');
-  const sum = u ? `<tr class="sum"><td>${kind === 'p' ? 'Tryck = min(1, Σ rank·värde / 3)' : 'Resiliens = Σ vikt·värde / Σ vikt'}</td><td></td>${CATS.map(c => `<td class="c">${fmt(u.cat_dims[c]?.[kind === 'p' ? 'pressure' : 'resilience'])}</td>`).join('')}</tr>` : '';
-  return `<div class="scroll"><table class="mx"><tr><th>${kind === 'p' ? 'Tryck' : 'Resiliens'}${u ? '' : (kind === 'p' ? ' (rank 0–3 per kategori)' : ' (vikt per kategori)')}</th>${u ? '<th class="n">Värde</th>' : ''}${CATS.map(c => `<th style="text-align:center;color:${cc(c)}">${esc(BY[c].short)}</th>`).join('')}</tr>${rows}${sum}</table></div>`;
+  const sum = u ? `<tr class="sum"><td>${kind === 'p' ? 'Pressure = min(1, Σ rank·value / 3)' : 'Resilience = Σ weight·value / Σ weight'}</td><td></td>${CATS.map(c => `<td class="c">${fmt(u.cat_dims[c]?.[kind === 'p' ? 'pressure' : 'resilience'])}</td>`).join('')}</tr>` : '';
+  return `<div class="scroll"><table class="mx"><tr><th>${kind === 'p' ? 'Pressure' : 'Resilience'}${u ? '' : (kind === 'p' ? ' (rank 0–3 per category)' : ' (weight per category)')}</th>${u ? '<th class="n">Value</th>' : ''}${CATS.map(c => `<th style="text-align:center;color:${cc(c)}">${esc(BY[c].short)}</th>`).join('')}</tr>${rows}${sum}</table></div>`;
 }
 
-// ── Beräkningskedja: indikator → delmål → kategori → NVX, med vikter och bidrag ──
+// ── Calculation chain: indicator → sub-goal → category → NVX, with weights and shares ──
 function calcTable(u) {
   const agg = u.level !== 'biotop';
-  let h = `<div class="scroll"><table class="calc"><tr><th>Gren</th><th class="n">Värde${agg ? ' (areaviktat)' : ''}</th><th>0 → 1 vid</th><th class="n">Poäng</th><th class="n">Vikt</th><th class="n">Andel av vikten</th></tr>`;
+  let h = `<div class="scroll"><table class="calc"><tr><th>Branch</th><th class="n">Value${agg ? ' (area-weighted)' : ''}</th><th>0 → 1 at</th><th class="n">Score</th><th class="n">Weight</th><th class="n">Share of weight</th></tr>`;
   const row = (lvl, name, val, norm, score, w, contrib, col) => h += `<tr class="lvl${lvl}"><td>${col ? `<span class="sw" style="display:inline-block;vertical-align:-2px;margin-right:6px;background:${col}"></span>` : ''}${name}</td><td class="n">${val}</td><td class="f">${norm}</td><td class="n">${fmt(score)}</td><td class="n">${w ?? ''}</td><td class="n">${contrib}</td></tr>`;
   const catW = CATS.reduce((a, c) => a + BY[c].w, 0);
   CATS.forEach(c => {
     const kids = KIDS[c], kw = kids.reduce((a, k) => a + BY[k].w, 0);
-    row(0, esc(BY[c].name), '', `medel av ${kids.length}`, u.scores[c], BY[c].w, u.scores[c] == null ? '–' : `${fmt(BY[c].w / catW * 100)} %`, cc(c));
+    row(0, esc(BY[c].name), '', `mean of ${kids.length}`, u.scores[c], BY[c].w, u.scores[c] == null ? '–' : `${fmt(BY[c].w / catW * 100)} %`, cc(c));
     kids.forEach(k => {
       const ind = KIDS[k], iw = ind.reduce((a, i) => a + BY[i].w, 0);
-      row(1, esc(BY[k].name), '', `medel av ${ind.length}`, u.scores[k], BY[k].w, u.scores[k] == null ? '–' : `${fmt(BY[k].w / kw * 100)} %`);
+      row(1, esc(BY[k].name), '', `mean of ${ind.length}`, u.scores[k], BY[k].w, u.scores[k] == null ? '–' : `${fmt(BY[k].w / kw * 100)} %`);
       ind.forEach(i => {
         const s = BY[i], v = u.layers[i], sc = u.scores[i], f = (u.flags || {})[i];
-        const tags = `${s.hypothetical ? ' <span class="tag hyp">hyp</span>' : ''}${f === 'gapfilled' ? ' <span class="tag gf">gapfyllt</span>' : ''}${v == null ? ' <span class="tag miss">saknas</span>' : ''}`;
+        const cov = s.footprint && u.layers['cov_' + i] != null ? ` <span class="tag" title="share of the area under a sensor footprint">footprint ${fmt(u.layers['cov_' + i] * 100)} %</span>` : '';
+        const tags = `${s.hypothetical ? ' <span class="tag hyp">hyp</span>' : ''}${cov}${f === 'gapfilled' ? ' <span class="tag gf">gapfilled</span>' : ''}${v == null ? ' <span class="tag miss">missing</span>' : ''}`;
         row(2, esc(s.name) + tags, v == null ? '–' : `${fmt(v, Number.isInteger(v) ? 0 : (v < 10 ? 2 : 1))} <span class="src">${esc(s.units)}</span>`, `${s.zero} → ${s.threshold}`, sc, s.w, sc == null ? '–' : `${fmt(s.w / iw * 100)} %`);
       });
     });
   });
-  h += `<tr class="lvl0 sum"><td><b>NVX</b></td><td></td><td class="f">(Σ w·kategori^0,5 / Σ w)² · 100</td><td class="n"><b>${fmt(u.dims.status)}</b></td><td></td><td class="n">klass ${u.nvx_klass}</td></tr></table></div>`;
+  h += `<tr class="lvl0 sum"><td><b>NVX</b></td><td></td><td class="f">(Σ w·category^0.5 / Σ w)² · 100</td><td class="n"><b>${fmt(u.dims.status)}</b></td><td></td><td class="n">class ${u.nvx_klass}</td></tr></table></div>`;
   return h;
 }
 
-// ── Panel: vald enhet ──
+// ── Panel: selected unit ──
 const dimBox = (label, v, col, main) => `<div class="dim${main ? ' main' : ''}"><span>${label}</span><b>${fmt(v)}</b><div class="b"><i style="width:${v ?? 0}%;background:${col}"></i></div></div>`;
 function panel() {
   const u = U[sel], P = document.getElementById('panel'), isBio = u.level === 'biotop';
   const head = isBio
     ? `<div class="sel-head"><span><span class="id">${esc(u.id)}</span> <span class="kl" data-k="${u.nvx_klass}">${u.nvx_klass}</span> <span class="sub">expert <span class="kl" data-k="${u.expert_klass}">${u.expert_klass}</span></span></span><span class="sub">${fmt(u.area_ha, 2)} ha · ${esc(u.org || '')}</span></div><p class="src" style="margin:4px 0 0">${esc(u.naturtyp)}${u.biotop ? ' · ' + esc(u.biotop) : ''}</p>`
-    : `<div class="sel-head"><span><span class="id">${esc(u.name)}</span> <span class="kl" data-k="${u.nvx_klass}">${u.nvx_klass}</span> <span class="sub">expert ø ${fmt(u.expert_klass, 1)}</span></span><span class="sub">${fmt(u.area_ha, 2)} ha · täckning ${fmt(u.coverage * 100)} % · ${u.parts.length} biotoper</span></div>`;
-  const dims = `<div class="dims">${dimBox('Status', u.dims.status, 'var(--accent)', true)}${dimBox('Tryck', u.dims.pressure, 'var(--press)')}${dimBox('Resiliens', u.dims.resilience, 'var(--res)')}${dimBox('Trolig framtid', u.dims.future, 'var(--accent)')}${dimBox('Poäng', u.dims.score, 'var(--accent)')}</div>`;
-  const catTable = `<div class="scroll"><table><tr><th>Kategori</th><th class="n">Vikt</th><th class="n">Status</th><th class="n">Tryck</th><th class="n">Resiliens</th><th class="n">Trolig framtid</th><th class="n">Poäng</th></tr>${CATS.map(c => { const d = u.cat_dims[c] || {}; return `<tr><td><span class="sw" style="display:inline-block;vertical-align:-2px;margin-right:6px;background:${cc(c)}"></span>${esc(BY[c].name)}</td><td class="n">${BY[c].w}</td><td class="n">${fmt(d.status)}</td><td class="n">${fmt(d.pressure)}</td><td class="n">${fmt(d.resilience)}</td><td class="n">${fmt(d.future)}</td><td class="n">${fmt(d.score)}</td></tr>`; }).join('')}<tr class="sum" style="font-weight:600"><td>NVX</td><td class="n"></td><td class="n">${fmt(u.dims.status)}</td><td class="n">${fmt(u.dims.pressure)}</td><td class="n">${fmt(u.dims.resilience)}</td><td class="n">${fmt(u.dims.future)}</td><td class="n">${fmt(u.dims.score)}</td></tr></table></div><p class="src" style="margin-top:6px">Per kategori: framtid = (1 + (1−β)·(min(resiliens, tryck) − tryck)) · status, β = ${D.beta}. Poäng = (status + framtid)/2. NVX-raden är kategoriernas viktade medel (status: power mean p=0,5).</p>`;
-  const comp = isBio ? '' : `<h3 style="margin-top:12px">Sammansättning: status = Σ area·status / Σ area</h3><div class="comp" style="margin-bottom:8px">${u.parts.map(p => `<i style="width:${(p.fraction * 100).toFixed(2)}%;background:${kc(p.klass)}" title="${esc(p.id)} ${fmt(p.fraction * 100)} %"></i>`).join('')}</div>
-    <div class="scroll"><table><tr><th>Biotop</th><th class="n">Area i enheten</th><th class="n">Vikt (andel)</th><th class="n">Andel av biotopen</th><th class="n">Status</th><th class="n">Bidrag</th><th class="n">Klass</th></tr>${u.parts.filter(p => p.fraction >= 0.002).map(p => { const b = U[p.id]; return `<tr class="clk" data-go="${p.id}"><td>${esc(p.id)} <span class="src">${esc((b.biotop || '').slice(0, 30))}</span></td><td class="n">${fmt(p.area_ha, 2)} ha</td><td class="n">${fmt(p.fraction * 100, 1)} %</td><td class="n">${fmt(p.fraction_of_zone * 100)} %</td><td class="n">${fmt(p.status)}</td><td class="n">${fmt(p.fraction * p.status, 1)}</td><td class="n"><span class="kl" data-k="${p.klass}">${p.klass}</span></td></tr>`; }).join('')}<tr class="sum" style="font-weight:600"><td>Σ</td><td class="n">${fmt(u.parts.reduce((a, p) => a + p.area_ha, 0), 2)} ha</td><td class="n">100 %</td><td></td><td></td><td class="n">${fmt(u.dims.status)}</td><td></td></tr></table></div>`;
+    : `<div class="sel-head"><span><span class="id">${esc(u.name)}</span> <span class="kl" data-k="${u.nvx_klass}">${u.nvx_klass}</span> <span class="sub">expert ø ${fmt(u.expert_klass, 1)}</span></span><span class="sub">${fmt(u.area_ha, 2)} ha · coverage ${fmt(u.coverage * 100)} % · ${u.parts.length} biotopes</span></div>`;
+  const dims = `<div class="dims">${dimBox('Status', u.dims.status, 'var(--accent)', true)}${dimBox('Pressure', u.dims.pressure, 'var(--press)')}${dimBox('Resilience', u.dims.resilience, 'var(--res)')}${dimBox('Likely future', u.dims.future, 'var(--accent)')}${dimBox('Score', u.dims.score, 'var(--accent)')}</div>`;
+  const catTable = `<div class="scroll"><table><tr><th>Category</th><th class="n">Weight</th><th class="n">Status</th><th class="n">Pressure</th><th class="n">Resilience</th><th class="n">Likely future</th><th class="n">Score</th></tr>${CATS.map(c => { const d = u.cat_dims[c] || {}; return `<tr><td><span class="sw" style="display:inline-block;vertical-align:-2px;margin-right:6px;background:${cc(c)}"></span>${esc(BY[c].name)}</td><td class="n">${BY[c].w}</td><td class="n">${fmt(d.status)}</td><td class="n">${fmt(d.pressure)}</td><td class="n">${fmt(d.resilience)}</td><td class="n">${fmt(d.future)}</td><td class="n">${fmt(d.score)}</td></tr>`; }).join('')}<tr class="sum" style="font-weight:600"><td>NVX</td><td class="n"></td><td class="n">${fmt(u.dims.status)}</td><td class="n">${fmt(u.dims.pressure)}</td><td class="n">${fmt(u.dims.resilience)}</td><td class="n">${fmt(u.dims.future)}</td><td class="n">${fmt(u.dims.score)}</td></tr></table></div><p class="src" style="margin-top:6px">Per category: future = (1 + (1−β)·(min(resilience, pressure) − pressure)) · status, β = ${D.beta}. Score = (status + future)/2. The NVX row is the weighted mean of the categories (status: power mean, p = 0.5).</p>`;
+  const comp = isBio ? '' : `<h3 style="margin-top:12px">Composition: status = Σ area·status / Σ area</h3><div class="comp" style="margin-bottom:8px">${u.parts.map(p => `<i style="width:${(p.fraction * 100).toFixed(2)}%;background:${kc(p.klass)}" title="${esc(p.id)} ${fmt(p.fraction * 100)} %"></i>`).join('')}</div>
+    <div class="scroll"><table><tr><th>Biotope</th><th class="n">Area in unit</th><th class="n">Weight (share)</th><th class="n">Share of biotope</th><th class="n">Status</th><th class="n">Contribution</th><th class="n">Class</th></tr>${u.parts.filter(p => p.fraction >= 0.002).map(p => { const b = U[p.id]; return `<tr class="clk" data-go="${p.id}"><td>${esc(p.id)} <span class="src">${esc((b.biotop || '').slice(0, 30))}</span></td><td class="n">${fmt(p.area_ha, 2)} ha</td><td class="n">${fmt(p.fraction * 100, 1)} %</td><td class="n">${fmt(p.fraction_of_zone * 100)} %</td><td class="n">${fmt(p.status)}</td><td class="n">${fmt(p.fraction * p.status, 1)}</td><td class="n"><span class="kl" data-k="${p.klass}">${p.klass}</span></td></tr>`; }).join('')}<tr class="sum" style="font-weight:600"><td>Σ</td><td class="n">${fmt(u.parts.reduce((a, p) => a + p.area_ha, 0), 2)} ha</td><td class="n">100 %</td><td></td><td></td><td class="n">${fmt(u.dims.status)}</td><td></td></tr></table></div>`;
   P.innerHTML = head + dims + flower(u) +
-    `<div class="legend" style="margin:0 0 10px;justify-content:center">${CATS.map(c => `<span><i class="sw" style="background:${cc(c)}"></i>${esc(BY[c].name)} ${fmt(u.scores[c])}</span>`).join('')}<span><i class="sw" style="background:repeating-linear-gradient(45deg,var(--hyp) 0 2px,transparent 2px 5px)"></i>hypotetiskt</span><span><i class="sw" style="border:1.5px dashed var(--av);background:none"></i>gapfyllt</span></div>` +
-    `<h3>Dimensioner per kategori</h3>` + catTable +
+    `<div class="legend" style="margin:0 0 10px;justify-content:center">${CATS.map(c => `<span><i class="sw" style="background:${cc(c)}"></i>${esc(BY[c].name)} ${fmt(u.scores[c])}</span>`).join('')}<span><i class="sw" style="background:repeating-linear-gradient(45deg,var(--hyp) 0 2px,transparent 2px 5px)"></i>hypothetical</span><span><i class="sw" style="border:1.5px dashed var(--av);background:none"></i>gapfilled</span></div>` +
+    `<h3>Dimensions per category</h3>` + catTable +
     comp +
-    `<details open><summary>Beräkning av status: indikator → delmål → kategori → NVX</summary>${calcTable(u)}</details>` +
-    `<details open><summary>Tryckmatris</summary>${matrix(u, 'p')}</details>` +
-    `<details open><summary>Resiliensmatris</summary>${matrix(u, 'r')}</details>`;
+    `<details open><summary>Status calculation: indicator → sub-goal → category → NVX</summary>${calcTable(u)}</details>` +
+    `<details open><summary>Pressure matrix</summary>${matrix(u, 'p')}</details>` +
+    `<details open><summary>Resilience matrix</summary>${matrix(u, 'r')}</details>`;
 }
 document.addEventListener('click', e => { const r = e.target.closest('[data-go]'); if (r) { const id = r.dataset.go; if (U[id].level !== level) { sel = id; setLevel(U[id].level); } else select(id); } });
 function select(id) { sel = id; drawMap(); panel(); document.querySelectorAll('tr.sel').forEach(x => x.classList.remove('sel')); document.querySelectorAll(`tr[data-go="${id}"]`).forEach(x => x.classList.add('sel')); }
 
-// ── Tabell över alla enheter på vald nivå ──
+// ── Table of all units at the selected level ──
 const bar = (v, c) => `<div class="bar"><i style="width:${v ?? 0}%;background:${c}"></i></div>`;
 function table() {
   document.getElementById('tabs').innerHTML = D.levels.map(l => `<button data-t="${l.id}" aria-pressed="${l.id === level}">${esc(l.name)} (${atLevel(l.id).length})</button>`).join('');
   const us = [...atLevel(level)].sort((a, b) => b.dims.status - a.dims.status);
-  document.getElementById('tunits').innerHTML = `<tr><th>Enhet</th><th>${level === 'biotop' ? 'Biotop' : 'Sammansättning'}</th><th class="n">ha</th><th class="n">Expert</th><th class="n">Status</th><th class="n">Klass</th>${CATS.map(c => `<th>${esc(BY[c].short || BY[c].name)}</th>`).join('')}<th class="n">Tryck</th><th class="n">Resil.</th><th class="n">Framtid</th><th class="n">Fyllt</th><th class="n">Saknas</th></tr>` +
+  document.getElementById('tunits').innerHTML = `<tr><th>Unit</th><th>${level === 'biotop' ? 'Biotope (Swedish, from the NVI)' : 'Composition'}</th><th class="n">ha</th><th class="n">Expert</th><th class="n">Status</th><th class="n">Class</th>${CATS.map(c => `<th>${esc(BY[c].short || BY[c].name)}</th>`).join('')}<th class="n">Pressure</th><th class="n">Resil.</th><th class="n">Future</th><th class="n">Filled</th><th class="n">Missing</th></tr>` +
     us.map(u => `<tr class="clk${u.id === sel ? ' sel' : ''}" data-go="${u.id}"><td><b>${esc(u.name)}</b></td><td>${level === 'biotop' ? `${esc(u.biotop.slice(0, 44))}<br><span class="src">${esc(u.naturtyp)}</span>` : `<div class="comp">${u.parts.map(p => `<i style="width:${(p.fraction * 100).toFixed(2)}%;background:${kc(p.klass)}"></i>`).join('')}</div><span class="src">${u.parts.filter(p => p.fraction >= 0.03).slice(0, 6).map(p => `${esc(p.id)} ${fmt(p.fraction * 100)} %`).join(' · ')}</span>`}</td><td class="n">${fmt(u.area_ha, 2)}</td><td class="n"><span class="kl" data-k="${Math.round(u.expert_klass)}">${fmt(u.expert_klass, level === 'biotop' ? 0 : 1)}</span></td><td class="n">${fmt(u.dims.status)}</td><td class="n"><span class="kl" data-k="${u.nvx_klass}">${u.nvx_klass}</span></td>${CATS.map(c => `<td>${bar(u.scores[c], cc(c))}</td>`).join('')}<td class="n">${fmt(u.dims.pressure)}</td><td class="n">${fmt(u.dims.resilience)}</td><td class="n">${fmt(u.dims.future)}</td><td class="n">${fmt(u.fraction_filled * 100)} %</td><td class="n">${fmt(u.fraction_missing * 100)} %</td></tr>`).join('');
 }
 document.getElementById('tabs').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setLevel(b.dataset.t); });
 
-// ── Indexträd ──
+// ── Index tree ──
 function treeHtml(b, d) {
   const s = BY[b], kids = KIDS[b] || [];
   const w = s.main ? `<span class="w">w ${s.w}</span> ` : '';
-  const fn = s.fn === 'norm' ? `<span class="fn">poäng 0 vid ${s.zero} → 1 vid ${s.threshold} ${esc(s.units)}</span> <span class="tag${s.hypothetical ? ' hyp' : ''}">${esc(s.source)}</span>` : `<span class="fn">${s.exponent === 1 ? 'viktat medel' : `power mean p=${s.exponent}`} av ${kids.length}</span>`;
+  const fn = s.fn === 'norm' ? `<span class="fn">score 0 at ${s.zero} → 1 at ${s.threshold} ${esc(s.units)}</span> <span class="tag${s.hypothetical ? ' hyp' : ''}">${esc(s.source)}</span>` : `<span class="fn">${s.exponent === 1 ? 'weighted mean' : `power mean p=${s.exponent}`} of ${kids.length}</span>`;
   return `<div style="--d:${d}">${w}<b>${esc(s.name)}</b> ${fn}</div>` + kids.map(k => treeHtml(k, d + 1)).join('');
 }
 document.getElementById('tree').innerHTML = treeHtml('NVX', 0);

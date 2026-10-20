@@ -32,36 +32,36 @@ def tm(geom):
 # ── 1. Indexstruktur (IndexStructure.csv i BHI) ─────────────────────────────────────────────────────
 # fn='norm': threshold = värde som ger 1.0, zero = värde som ger 0.0. fn='mean': power mean med exponent.
 STRUCTURE = [
-    dict(branch='NVX', main=None, w=1, fn='mean', exponent=0.5, name='Naturvärdesindex'),
-    dict(branch='BV', main='NVX', w=1, fn='mean', exponent=1, name='Biotopvärde', short='Biotop'),
-    dict(branch='AV', main='NVX', w=1, fn='mean', exponent=1, name='Artvärde', short='Arter'),
-    dict(branch='LM', main='NVX', w=1, fn='mean', exponent=1, name='Landskap & mark', short='Landskap'),
-    dict(branch='BV_TILL', main='BV', w=1, fn='mean', exponent=1, name='Tillstånd'),
-    dict(branch='BV_SALL', main='BV', w=1, fn='mean', exponent=1, name='Sällsynthet'),
-    dict(branch='BV_FUNK', main='BV', w=1, fn='mean', exponent=1, name='Ekologisk funktion'),
-    dict(branch='AV_VARD', main='AV', w=1, fn='mean', exponent=1, name='Värdearter'),
-    dict(branch='AV_HOT', main='AV', w=1, fn='mean', exponent=1, name='Hotade & skyddade'),
-    dict(branch='AV_SENS', main='AV', w=1, fn='mean', exponent=1, name='Sensordata'),
-    dict(branch='LM_STRUK', main='LM', w=1, fn='mean', exponent=1, name='Struktur & form'),
-    dict(branch='LM_FUNK', main='LM', w=1, fn='mean', exponent=1, name='Landskapsfunktion'),
+    dict(branch='NVX', main=None, w=1, fn='mean', exponent=0.5, name='Nature Value Index'),
+    dict(branch='BV', main='NVX', w=1, fn='mean', exponent=1, name='Biotope value', short='Biotope'),
+    dict(branch='AV', main='NVX', w=1, fn='mean', exponent=1, name='Species value', short='Species'),
+    dict(branch='LM', main='NVX', w=1, fn='mean', exponent=1, name='Landscape & soil', short='Landscape'),
+    dict(branch='BV_TILL', main='BV', w=1, fn='mean', exponent=1, name='Condition'),
+    dict(branch='BV_SALL', main='BV', w=1, fn='mean', exponent=1, name='Rarity'),
+    dict(branch='BV_FUNK', main='BV', w=1, fn='mean', exponent=1, name='Ecological function'),
+    dict(branch='AV_VARD', main='AV', w=1, fn='mean', exponent=1, name='Indicator species'),
+    dict(branch='AV_HOT', main='AV', w=1, fn='mean', exponent=1, name='Threatened & protected'),
+    dict(branch='AV_SENS', main='AV', w=1, fn='mean', exponent=1, name='Sensor data'),
+    dict(branch='LM_STRUK', main='LM', w=1, fn='mean', exponent=1, name='Structure & shape'),
+    dict(branch='LM_FUNK', main='LM', w=1, fn='mean', exponent=1, name='Landscape function'),
     # indikatorer. source NVI/GEO/AVTAL = verkliga, DRONE/SAT/SOIL/AUDIO/EDNA = hypotetiska testlager
-    dict(branch='naturlighet', main='BV_TILL', w=2, fn='norm', threshold=3, zero=0, units='SIS-klass 0-3', source='NVI', name='Naturlighet och påverkan'),
-    dict(branch='dodved', main='BV_TILL', w=1, fn='norm', threshold=20, zero=0, units='m³/ha', source='NVI', name='Död ved'),
-    dict(branch='naturvardestrad', main='BV_TILL', w=1, fn='norm', threshold=3, zero=0, units='antal/ha', source='NVI', name='Naturvärdesträd'),
-    dict(branch='sallsynthet', main='BV_SALL', w=2, fn='norm', threshold=3, zero=0, units='SIS-klass 0-3', source='NVI', name='Biotopens sällsynthet'),
-    dict(branch='natura', main='BV_SALL', w=1, fn='norm', threshold=1, zero=0, units='0/1', source='NVI', name='Natura 2000-naturtyp'),
-    dict(branch='betydelse', main='BV_FUNK', w=2, fn='norm', threshold=3, zero=0, units='SIS-klass 0-3', source='NVI', name='Betydelse för populationer'),
-    dict(branch='nyckelbiotop', main='BV_FUNK', w=1, fn='norm', threshold=1, zero=0, units='0/1', source='NVI', name='Nyckelbiotopskvalitet'),
-    dict(branch='signalsumma', main='AV_VARD', w=2, fn='norm', threshold=20, zero=0, units='viktad summa', source='NVI', name='Signalvärde, summa'),
-    dict(branch='artantal', main='AV_VARD', w=1, fn='norm', threshold=15, zero=0, units='antal naturvårdsarter', source='NVI', name='Antal naturvårdsarter'),
-    dict(branch='rodlistade', main='AV_HOT', w=1, fn='norm', threshold=3, zero=0, units='antal', source='NVI', name='Rödlistade arter'),
-    dict(branch='skyddade', main='AV_HOT', w=1, fn='norm', threshold=3, zero=0, units='antal', source='NVI', name='Skyddade arter (ASF)'),
-    dict(branch='akustik', main='AV_SENS', w=1, fn='norm', threshold=25, zero=5, units='fågelarter/punkt', source='AUDIO', name='Akustisk artrikedom', hypothetical=True),
-    dict(branch='edna', main='AV_SENS', w=1, fn='norm', threshold=400, zero=50, units='OTU/prov', source='EDNA', name='eDNA-rikedom', hypothetical=True),
-    dict(branch='struktur', main='LM_STRUK', w=1, fn='norm', threshold=8, zero=0, units='m (std krontakshöjd)', source='DRONE', name='Strukturell variation', hypothetical=True),
-    dict(branch='kanteffekt', main='LM_STRUK', w=1, fn='norm', threshold=0.3, zero=1, units='andel inom 30 m från kant', source='GEO', name='Kärnarea (inverterad kanteffekt)'),
-    dict(branch='konnektivitet', main='LM_FUNK', w=1, fn='norm', threshold=80, zero=20, units='% naturmark 500 m', source='SAT', name='Konnektivitet', hypothetical=True),
-    dict(branch='markkol', main='LM_FUNK', w=1, fn='norm', threshold=8, zero=1, units='% SOC 0-20 cm', source='SOIL', name='Markkol', hypothetical=True),
+    dict(branch='naturlighet', main='BV_TILL', w=2, fn='norm', threshold=3, zero=0, units='SIS level 0–3', source='NVI', name='Naturalness and impact'),
+    dict(branch='dodved', main='BV_TILL', w=1, fn='norm', threshold=20, zero=0, units='m³/ha', source='NVI', name='Dead wood'),
+    dict(branch='naturvardestrad', main='BV_TILL', w=1, fn='norm', threshold=3, zero=0, units='trees/ha', source='NVI', name='Habitat trees'),
+    dict(branch='sallsynthet', main='BV_SALL', w=2, fn='norm', threshold=3, zero=0, units='SIS level 0–3', source='NVI', name='Biotope rarity'),
+    dict(branch='natura', main='BV_SALL', w=1, fn='norm', threshold=1, zero=0, units='0/1', source='NVI', name='Natura 2000 habitat type'),
+    dict(branch='betydelse', main='BV_FUNK', w=2, fn='norm', threshold=3, zero=0, units='SIS level 0–3', source='NVI', name='Importance for populations'),
+    dict(branch='nyckelbiotop', main='BV_FUNK', w=1, fn='norm', threshold=1, zero=0, units='0/1', source='NVI', name='Woodland key habitat quality'),
+    dict(branch='signalsumma', main='AV_VARD', w=2, fn='norm', threshold=20, zero=0, units='weighted sum', source='NVI', name='Indicator value, sum'),
+    dict(branch='artantal', main='AV_VARD', w=1, fn='norm', threshold=15, zero=0, units='species', source='NVI', name='Conservation species count'),
+    dict(branch='rodlistade', main='AV_HOT', w=1, fn='norm', threshold=3, zero=0, units='species', source='NVI', name='Red-listed species'),
+    dict(branch='skyddade', main='AV_HOT', w=1, fn='norm', threshold=3, zero=0, units='species', source='NVI', name='Protected species (ASF)'),
+    dict(branch='akustik', main='AV_SENS', w=1, fn='norm', threshold=25, zero=5, units='bird species/point', source='AUDIO', name='Acoustic species richness', hypothetical=True, footprint=True),
+    dict(branch='edna', main='AV_SENS', w=1, fn='norm', threshold=400, zero=50, units='OTUs/sample', source='EDNA', name='eDNA richness', hypothetical=True),
+    dict(branch='struktur', main='LM_STRUK', w=1, fn='norm', threshold=8, zero=0, units='m (SD canopy height)', source='DRONE', name='Structural variation', hypothetical=True, footprint=True),
+    dict(branch='kanteffekt', main='LM_STRUK', w=1, fn='norm', threshold=0.3, zero=1, units='share within 30 m of edge', source='GEO', name='Core area (inverted edge effect)'),
+    dict(branch='konnektivitet', main='LM_FUNK', w=1, fn='norm', threshold=80, zero=20, units='% natural land within 500 m', source='SAT', name='Connectivity', hypothetical=True),
+    dict(branch='markkol', main='LM_FUNK', w=1, fn='norm', threshold=8, zero=1, units='% SOC 0–20 cm', source='SOIL', name='Soil carbon', hypothetical=True),
 ]
 BY = {s['branch']: s for s in STRUCTURE}
 CHILDREN = {}
@@ -72,23 +72,23 @@ INDICATORS = [s['branch'] for s in STRUCTURE if s['fn'] == 'norm']
 # Tryckmatris (OHI pressures matrix, CalculatePressuresAll): rank 0-3 per kategori anger hur hårt ett tryck
 # slår mot just den kategorin. tryck_c = min(1, sum(rank_c * värde) / 3). 0 = trycket påverkar inte kategorin.
 PRESSURES = [
-    dict(layer='p_invasiva', name='Invasiva arter', ranks=dict(BV=2, AV=3, LM=1), source='NVI'),
-    dict(layer='p_avverkning', name='Avverkning / plantering', ranks=dict(BV=3, AV=2, LM=2), source='NVI'),
-    dict(layer='p_dikning', name='Dikning / körskador', ranks=dict(BV=3, AV=2, LM=2), source='NVI'),
-    dict(layer='p_godsling', name='Gödselpåverkan', ranks=dict(BV=2, AV=3, LM=1), source='NVI'),
-    dict(layer='p_igenvaxning', name='Igenväxning', ranks=dict(BV=1, AV=2, LM=1), source='NVI'),
-    dict(layer='p_exploatering', name='Bebyggelse / väg', ranks=dict(BV=3, AV=3, LM=3), source='NVI'),
+    dict(layer='p_invasiva', name='Invasive species', ranks=dict(BV=2, AV=3, LM=1), source='NVI'),
+    dict(layer='p_avverkning', name='Felling / planting', ranks=dict(BV=3, AV=2, LM=2), source='NVI'),
+    dict(layer='p_dikning', name='Drainage / machine damage', ranks=dict(BV=3, AV=2, LM=2), source='NVI'),
+    dict(layer='p_godsling', name='Fertiliser impact', ranks=dict(BV=2, AV=3, LM=1), source='NVI'),
+    dict(layer='p_igenvaxning', name='Overgrowth', ranks=dict(BV=1, AV=2, LM=1), source='NVI'),
+    dict(layer='p_exploatering', name='Buildings / roads', ranks=dict(BV=3, AV=3, LM=3), source='NVI'),
 ]
 # Resiliensmatris (CalculateResilienceAll): vikt per kategori, resiliens_c = viktat medel. 0 = ej relevant.
 RESILIENCE = [
-    dict(layer='r_skotsel', name='Aktiv naturvårdsskötsel (BDU-området 2026–2031)', weights=dict(BV=2, AV=2, LM=1), source='AVTAL'),
-    dict(layer='r_skydd', name='Nyckelbiotop / Natura-naturtyp', weights=dict(BV=1, AV=1, LM=1), source='NVI'),
-    dict(layer='r_konnektivitet', name='Konnektivitet', weights=dict(BV=0, AV=1, LM=2), source='SAT', hypothetical=True),
+    dict(layer='r_skotsel', name='Active conservation management (BDU area 2026–2031)', weights=dict(BV=2, AV=2, LM=1), source='CONTRACT'),
+    dict(layer='r_skydd', name='Key habitat / Natura 2000 status', weights=dict(BV=1, AV=1, LM=1), source='NVI'),
+    dict(layer='r_konnektivitet', name='Connectivity', weights=dict(BV=0, AV=1, LM=2), source='SAT', hypothetical=True),
 ]
 CATS = [s['branch'] for s in STRUCTURE if s['main'] == 'NVX']
 DIMS = ('status', 'pressure', 'resilience', 'trend', 'future', 'score')
 
-KLASS_NAMN = {1: 'Högsta', 2: 'Högt', 3: 'Påtagligt', 4: 'Visst', 5: 'Ej naturvärde'}
+KLASS_NAMN = {1: 'Highest', 2: 'High', 3: 'Considerable', 4: 'Some', 5: 'No nature value'}
 
 
 # ── 2. Branch-funktioner (BranchFunctions.R) ────────────────────────────────────────────────────────
@@ -160,23 +160,23 @@ def load_units(zones):
     """Bedömningsenheter (SpatialAssessmentUnits): fyra rumsliga nivåer ovanför biotopen, plus två
     grupperingar (naturtyp, expertklass) som också aggregeras areaviktat."""
     units = []
-    for key, level, name in (('naturtyp', 'naturtyp', lambda k: k), ('nvklass', 'klass', lambda k: f'Expertklass {k}' if k < 5 else 'Ej naturvärde')):
+    for key, level, name in (('naturtyp', 'naturtyp', lambda k: k), ('nvklass', 'klass', lambda k: f'Expert class {k}' if k < 5 else 'No nature value')):
         groups = {}
         for z in zones:
             k = z[key].split(',')[0].strip().capitalize() if key == 'naturtyp' else z[key]
-            groups.setdefault(k or 'Okänd', []).append(z['geom'])
+            groups.setdefault(k or 'Unknown', []).append(z['geom'])
         for k, gs in sorted(groups.items(), key=lambda t: str(t[0])):
             units.append(dict(id=f"{level}:{k}", level=level, name=name(k), geom=unary_union(gs)))
     for f in json.load(open(LAYERS / 'bdu_rutor_ustorp.geojson'))['features']:
         units.append(dict(id=f['properties']['bdu_id'], level='ruta', name=f['properties']['bdu_id'], geom=tm(f['geometry'])))
     area = tm(json.load(open(LAYERS / 'bdu_omrade_ustorp.geojson'))['features'][0]['geometry'])
-    units.append(dict(id='BDU', level='omrade', name='BDU-området', geom=area))
+    units.append(dict(id='BDU', level='omrade', name='BDU area', geom=area))
     skiften = []
     for f in json.load(open(LAYERS / 'ustorp_property_borders.json'))['features']:
         g = tm(f['geometry'])
         skiften.append(g)
-        units.append(dict(id=f['properties']['name'].replace(' ', '_'), level='skifte', name=f['properties']['name'].title(), geom=g))
-    units.append(dict(id='USTORP', level='fastighet', name='Eksjö Ustorp 1:6', geom=unary_union(skiften)))
+        units.append(dict(id=f['properties']['name'].replace(' ', '_'), level='skifte', name=f['properties']['name'].title().replace('Skifte', 'Parcel'), geom=g))
+    units.append(dict(id='USTORP', level='fastighet', name='Property Eksjö Ustorp 1:6', geom=unary_union(skiften)))
     return units, area
 
 
@@ -238,7 +238,6 @@ def hypothetical_layers(zones):
         k = z['nvklass']
         base = {1: 7, 2: 6, 3: 4, 4: 2.5, 5: 1.5}[k]
         hyp[z['id']] = dict(
-            struktur=round(max(0, rnd.gauss(base if forest(z) else base * 0.4, 1.2)), 1),
             konnektivitet=round(min(100, max(0, rnd.gauss(70 if k <= 3 else 50, 12)))),
             markkol=round(max(0.5, rnd.gauss(12 if wet(z) else (4 if forest(z) else 3), 1.0) * (1.1 if k <= 2 else 1)), 1))
     # Ljudpunkter: sex AudioMoth-punkter från fältarbetet i juli 2025. Lägena är VERKLIGA: medelpunkt av de
@@ -248,17 +247,47 @@ def hypothetical_layers(zones):
     for name, lat, lon, val in [('DN9', 57.54182, 15.18240, 22), ('JRE', 57.54295, 15.17790, 17), ('PSU', 57.53997, 15.17640, None),
                                 ('UE8', 57.53888, 15.18045, 31), ('NMN', 57.53508, 15.17803, 28), ('N88', 57.53259, 15.18528, None)]:
         x, y = to_tm(lon, lat)
-        pts.append(dict(id=name, layer='akustik', value=val, x=x, y=y, lat=lat, lon=lon, radius=150))
-    return hyp, pts
+        pts.append(dict(id=name, layer='akustik', value=val, x=x, y=y, lat=lat, lon=lon, radius=150,
+                        geom=Point(x, y).buffer(150)))
+    footprints = pts + drone_footprints(rnd)
+    return hyp, footprints
 
 
-def point_to_polygon(points, zones, layer):
-    """PointObservations -> zon: medel av punkter vars sökradie skär polygonen."""
-    out = {}
+def footprints_to_zones(footprints, zones, layer):
+    """Fotavtryck (punkt med sökradie, drönarblock) -> zon. Motsvarar BHI:s SpatialIntersections för lager som
+    rapporteras på en annan geometri än zonerna: värdet är medel över fotavtrycken, viktat med skärningsarean
+    (= fraction_of_assess_unit * zonarea). Ett fotavtryck som täcker flera zoner informerar var och en i
+    proportion till hur mycket av zonen det täcker. Aggregering uppåt sker sedan bara på zonareor, så samma
+    mätning räknas aldrig dubbelt på BDU- eller fastighetsnivå. Täckningen (andel av zonen under något
+    fotavtryck) sparas som cov_<lager>."""
+    vals, cov = {}, {}
     for z in zones:
-        vals = [q['value'] for q in points if q['layer'] == layer and q['value'] is not None
-                and Point(q['x'], q['y']).buffer(q['radius']).intersects(z['geom'])]
-        out[z['id']] = round(sum(vals) / len(vals), 1) if vals else None
+        parts = [(f['value'], f['geom'].intersection(z['geom']).area) for f in footprints if f['layer'] == layer]
+        parts = [(v, a) for v, a in parts if a > 1]
+        covered = unary_union([f['geom'] for f in footprints if f['layer'] == layer]).intersection(z['geom']).area
+        cov[z['id']] = round(covered / z['geom'].area, 3)
+        with_val = [(v, a) for v, a in parts if v is not None]
+        vals[z['id']] = round(sum(v * a for v, a in with_val) / sum(a for _, a in with_val), 1) if with_val else None
+    return vals, cov
+
+
+# Drönarblock (1 ha) från fältarbetet i juli 2025, hörn ur KML-filerna i Drive. VERKLIGA lägen; värdet
+# (strukturell variation) är HYPOTETISKT tills Conifer Visions analys finns. NMN saknar drönarblock.
+DRONE_BLOCKS = {
+    'DN9': [(15.1832289, 57.5422703), (15.1832244, 57.5413720), (15.1815539, 57.5413744), (15.1815584, 57.5422727)],
+    'JRE': [(15.1788084, 57.5434023), (15.1788040, 57.5425041), (15.1771335, 57.5425064), (15.1771378, 57.5434047)],
+    'N88': [(15.1863314, 57.5331697), (15.1863268, 57.5322715), (15.1846568, 57.5322739), (15.1846613, 57.5331722)],
+    'PSU': [(15.1774898, 57.5403165), (15.1774854, 57.5394183), (15.1758151, 57.5394206), (15.1758194, 57.5403189)],
+    'UE8': [(15.1811928, 57.5391383), (15.1811884, 57.5382400), (15.1795180, 57.5382424), (15.1795224, 57.5391407)],
+}
+
+
+def drone_footprints(rnd):
+    from shapely.geometry import Polygon
+    out = []
+    for name, ring in DRONE_BLOCKS.items():
+        g = Polygon([to_tm(lon, lat) for lon, lat in ring])
+        out.append(dict(id=name, layer='struktur', value=round(max(0, rnd.gauss(4.5, 2.0)), 1), geom=g))
     return out
 
 
@@ -352,7 +381,7 @@ def aggregate(unit, zone_rows, inter):
         vals = [(get(z), r['area']) for r, z in rows if get(z) is not None]
         return round(sum(v * a for v, a in vals) / sum(a for _, a in vals), 2) if vals else None
 
-    layer_keys = INDICATORS + [p['layer'] for p in PRESSURES] + [r['layer'] for r in RESILIENCE]
+    layer_keys = INDICATORS + [p['layer'] for p in PRESSURES] + [r['layer'] for r in RESILIENCE] + ['cov_akustik', 'cov_struktur']
     return dict(
         id=unit['id'], level=unit['level'], name=unit['name'], area_ha=round(unit['geom'].area / 1e4, 2),
         coverage=round(tot / unit['geom'].area, 3),
@@ -372,8 +401,10 @@ zones = load_zones()
 units, area = load_units(zones)
 inter = intersections(zones, units)
 raw = {r['id']: r for r in json.load(open(HERE / 'data/biotopes_raw.json'))}
-hyp, points = hypothetical_layers(zones)
-akustik = point_to_polygon(points, zones, 'akustik')
+hyp, footprints = hypothetical_layers(zones)
+points = [f for f in footprints if f['layer'] == 'akustik']
+akustik, cov_akustik = footprints_to_zones(footprints, zones, 'akustik')
+struktur, cov_struktur = footprints_to_zones(footprints, zones, 'struktur')
 in_bdu = {r['zone_id']: r['fraction_of_zone'] for r in inter if r['assess_unit_id'] == 'BDU'}
 
 values = {}
@@ -387,6 +418,8 @@ for z in zones:
         v = field_indicators(r, z, ha)
     v |= hyp[z['id']]
     v['akustik'] = akustik[z['id']]
+    v['struktur'] = struktur[z['id']]
+    v['cov_akustik'], v['cov_struktur'] = cov_akustik[z['id']], cov_struktur[z['id']]
     v['edna'] = None  # levereras våren 2027
     v['kanteffekt'] = round(1 - z['geom'].buffer(-30).area / z['geom'].area, 2)  # ur geometrin
     v |= pressure_layers(r, z)
@@ -419,12 +452,14 @@ agg = [a for a in (aggregate(u, zone_rows, inter) for u in units) if a]
 for a in agg:
     a['nvx_klass'] = to_class(a['dims']['status'], cuts)
 
-LEVELS = [dict(id='biotop', name='Biotop', spatial=True), dict(id='ruta', name='BDU-ruta', spatial=True),
-          dict(id='omrade', name='BDU-området', spatial=True), dict(id='skifte', name='Skifte', spatial=True),
-          dict(id='fastighet', name='Fastighet', spatial=True),
-          dict(id='naturtyp', name='Naturtyp', spatial=False), dict(id='klass', name='Expertklass', spatial=False)]
+LEVELS = [dict(id='biotop', name='Biotope', spatial=True), dict(id='ruta', name='BDU plot', spatial=True),
+          dict(id='omrade', name='BDU area', spatial=True), dict(id='skifte', name='Parcel', spatial=True),
+          dict(id='fastighet', name='Property', spatial=True),
+          dict(id='naturtyp', name='Habitat type', spatial=False), dict(id='klass', name='Expert class', spatial=False)]
 out = dict(year=YEAR, beta=BETA, discount=DISCOUNT, cats=CATS, structure=STRUCTURE, pressures=PRESSURES, resilience=RESILIENCE, class_cuts=cuts,
-           levels=LEVELS, units=list(zone_rows.values()) + agg, points=points,
+           levels=LEVELS, units=list(zone_rows.values()) + agg,
+           points=[{k: v for k, v in q.items() if k != 'geom'} for q in points],
+           footprints=[dict(id=f['id'], layer=f['layer'], value=f['value'], geom=mapping(f['geom'])) for f in footprints if f['layer'] == 'struktur'],
            intersections=[{k: (round(v, 4) if isinstance(v, float) else v) for k, v in r.items()} for r in inter])
 (HERE / 'data/index_scores.json').write_text(json.dumps(out, ensure_ascii=False))
 
