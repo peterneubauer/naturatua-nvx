@@ -1,0 +1,1827 @@
+[
+ {
+  "id": "1",
+  "title": "Genomsilad lövsumpskog",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 2,
+  "expert_av": "högt",
+  "expert_bv": "högt",
+  "bv_naturlighet": 1,
+  "bv_sallsynthet": 3,
+  "bv_betydelse": 3,
+  "av_motiv": "Betydelsefull förekomst av värdearter med påtagligt signalvärde. Betydelsefull förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 9.5,
+  "old_trees": 1,
+  "species": {
+   "Gullpudra": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Trubbfjädermossa": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Kärrfibbla": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Stjärtmes": {
+    "signal": 2,
+    "redlist": null,
+    "protected": true
+   },
+   "Gröngöling": {
+    "signal": 2,
+    "redlist": null,
+    "protected": true
+   },
+   "Hasselmossa": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Kärrviol": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Ekbräken": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Ormbär": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Ask": {
+    "signal": 1,
+    "redlist": "EN",
+    "protected": false
+   },
+   "Lundbräken": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Stor tujamossa": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Svartvit flugsnappare": {
+    "signal": 1,
+    "redlist": "NT",
+    "protected": true
+   },
+   "Gulsparv": {
+    "signal": 1,
+    "redlist": "NT",
+    "protected": true
+   },
+   "Liljekonvalj": {
+    "signal": 0.25,
+    "redlist": null,
+    "protected": true
+   },
+   "Olvon": {
+    "signal": 0,
+    "redlist": null,
+    "protected": false
+   }
+  },
+  "invasive": false,
+  "wet": true,
+  "paverkan": [
+   "Första generationen skog",
+   "Igenväxning med träd"
+  ],
+  "nyckelbiotop": true
+ },
+ {
+  "id": "2",
+  "title": "Gårdsmiljö",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 3,
+  "expert_av": null,
+  "expert_bv": null,
+  "bv_naturlighet": 0,
+  "bv_sallsynthet": 0,
+  "bv_betydelse": 1,
+  "av_motiv": "Förekomst av organismsamhällen med låg artdiversitet som domineras av vanligt förekommande arter. Sparsam förekomst av värdearter med högt signalvärde. Måttlig förekomst av värdearter med påtagligt signalvärde. Måttlig förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 0.0,
+  "old_trees": 0,
+  "species": {
+   "Svinrot": {
+    "signal": 4,
+    "redlist": "NT",
+    "protected": false
+   },
+   "Backsmörblomma": {
+    "signal": 4,
+    "redlist": "NT",
+    "protected": false
+   },
+   "Vårstarr": {
+    "signal": 4,
+    "redlist": "NT",
+    "protected": false
+   },
+   "Sotlav": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Knölsmörblomma": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Sälgsandbi": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Entita": {
+    "signal": 2,
+    "redlist": "NT",
+    "protected": true
+   },
+   "Spillkråka": {
+    "signal": 2,
+    "redlist": "NT",
+    "protected": true
+   },
+   "Knippfryle": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Mandelblomma": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Sydvårbrodd": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Lungrot": {
+    "signal": 1,
+    "redlist": "VU",
+    "protected": false
+   },
+   "Svavelticka": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Vårarv": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Bockrot": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Gulsparv": {
+    "signal": 1,
+    "redlist": "NT",
+    "protected": true
+   },
+   "Gullviva": {
+    "signal": 1,
+    "redlist": null,
+    "protected": true
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "3",
+  "title": "Trädesåker",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 4,
+  "expert_av": "visst",
+  "expert_bv": "obetydligt",
+  "bv_naturlighet": 0,
+  "bv_sallsynthet": 0,
+  "bv_betydelse": 1,
+  "av_motiv": "Sparsam förekomst av värdearter med påtagligt signalvärde.",
+  "deadwood_m3ha": 0.0,
+  "old_trees": 0,
+  "species": {
+   "Bräsmabärfis": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Mandelblomma": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [
+   "Tydlig gödselpåverkan/övergödning"
+  ],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "4",
+  "title": "Öppen gräsmark",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 3,
+  "expert_av": "påtagligt",
+  "expert_bv": "visst",
+  "bv_naturlighet": 1,
+  "bv_sallsynthet": 1,
+  "bv_betydelse": 1,
+  "av_motiv": "Förekomst av organismsamhällen med måttligt hög artdiversitet, i ett lokalt perspektiv eller viss artdiversitet i ett regionalt eller nationellt perspektiv. Förekomst av organismsamhällen med andra kännetecken, som är typiska för biotoper med särskild betydelse för biologisk mångfald. Måttlig förekomst av värdearter med påtagligt signalvärde. Betydelsefull förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 0.0,
+  "old_trees": 0,
+  "species": {
+   "Nattviol": {
+    "signal": 1,
+    "redlist": null,
+    "protected": true
+   },
+   "Knippfryle": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Ängsviol": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Åkervädd": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Sydvårbrodd": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Mandelblomma": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Jungfrulin": {
+    "signal": 1,
+    "redlist": null,
+    "protected": true
+   },
+   "Mindre vattensalamander": {
+    "signal": 0,
+    "redlist": null,
+    "protected": true
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [
+   "Svag gödselpåverkan/övergödning"
+  ],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "5",
+  "title": "Stenrösen/åkerholme",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 4,
+  "expert_av": "visst",
+  "expert_bv": "visst",
+  "bv_naturlighet": 1,
+  "bv_sallsynthet": 1,
+  "bv_betydelse": 1,
+  "av_motiv": "Måttlig förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 0.0,
+  "old_trees": 0,
+  "species": {
+   "Gulmåra": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Åkervädd": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Tjärblomster": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Gullviva": {
+    "signal": 0.25,
+    "redlist": null,
+    "protected": true
+   },
+   "Stenbräken": {
+    "signal": 0,
+    "redlist": null,
+    "protected": false
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "6",
+  "title": "Igenväxande hagmark",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 3,
+  "expert_av": "påtagligt",
+  "expert_bv": "visst",
+  "bv_naturlighet": 1,
+  "bv_sallsynthet": 1,
+  "bv_betydelse": 1,
+  "av_motiv": "Sparsam förekomst av värdearter med högt signalvärde. Betydelsefull förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 3.0,
+  "old_trees": 3,
+  "species": {
+   "Vårstarr": {
+    "signal": 4,
+    "redlist": "NT",
+    "protected": false
+   },
+   "Åkervädd": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Kantarellmussling": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Sammetsdaggkåpa": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Gulmåra": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Sydvårbrodd": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Alticka": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Ärtsångare": {
+    "signal": 1,
+    "redlist": "NT",
+    "protected": true
+   },
+   "Svartvit flugsnappare": {
+    "signal": 1,
+    "redlist": "NT",
+    "protected": true
+   },
+   "Kuddticka": {
+    "signal": 0.25,
+    "redlist": null,
+    "protected": false
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [
+   "Igenväxning med träd",
+   "Igenväxning med buskar",
+   "Svag gödselpåverkan/övergödning"
+  ],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "7",
+  "title": "Ung lövskog",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 3,
+  "expert_av": null,
+  "expert_bv": null,
+  "bv_naturlighet": 0,
+  "bv_sallsynthet": 0,
+  "bv_betydelse": 1,
+  "av_motiv": "Förekomst av organismsamhällen med andra kännetecken, som är typiska för biotoper med särskild betydelse för biologisk mångfald. Normalt finns inga förekomster av värdearter eller så är de för få eller för glest förekommande för att indikera att biotopen har någon särskild betydelse för biologisk mångfald. Betydelsefull förekomst av värdearter med påtagligt signalvärde. Måttlig förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 10.0,
+  "old_trees": 1,
+  "species": {
+   "Fällmossa": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Stenporella": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Vätteros": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Blåsippa": {
+    "signal": 2,
+    "redlist": null,
+    "protected": true
+   },
+   "Långfliksmossa": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Stubbspretmossa": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Björksplintborre": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Timmerticka": {
+    "signal": 0.25,
+    "redlist": null,
+    "protected": false
+   },
+   "Liljekonvalj": {
+    "signal": 0.25,
+    "redlist": null,
+    "protected": true
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [
+   "Första generationen skog",
+   "Kalavverkat",
+   "Igenväxning med träd"
+  ],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "8",
+  "title": "Igenväxande åkermark",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 3,
+  "expert_av": "påtagligt",
+  "expert_bv": "visst",
+  "bv_naturlighet": 1,
+  "bv_sallsynthet": 0,
+  "bv_betydelse": 1,
+  "av_motiv": "Sparsam förekomst av värdearter med högt signalvärde. Måttlig förekomst av värdearter med påtagligt signalvärde. Betydelsefull förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 0.0,
+  "old_trees": 0,
+  "species": {
+   "Backsmörblomma": {
+    "signal": 4,
+    "redlist": "NT",
+    "protected": false
+   },
+   "Vårstarr": {
+    "signal": 4,
+    "redlist": "NT",
+    "protected": false
+   },
+   "Svinrot": {
+    "signal": 4,
+    "redlist": "NT",
+    "protected": false
+   },
+   "Blåsuga": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Hasselticka": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Vitmåra": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Knippfryle": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Prästkrage": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Åkervädd": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Mandelblomma": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Gulmåra": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Alticka": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Svartvit flugsnappare": {
+    "signal": 1,
+    "redlist": "NT",
+    "protected": true
+   },
+   "Kuddticka": {
+    "signal": 0.25,
+    "redlist": null,
+    "protected": false
+   },
+   "Liljekonvalj": {
+    "signal": 0.25,
+    "redlist": null,
+    "protected": true
+   }
+  },
+  "invasive": true,
+  "wet": false,
+  "paverkan": [
+   "Igenväxning med träd",
+   "Första generationen skog"
+  ],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "9",
+  "title": "Ung blandskog",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 4,
+  "expert_av": null,
+  "expert_bv": null,
+  "bv_naturlighet": 0,
+  "bv_sallsynthet": 0,
+  "bv_betydelse": 0,
+  "av_motiv": "Sparsam förekomst av värdearter med högt signalvärde. Måttlig förekomst av värdearter med påtagligt signalvärde. Måttlig förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 6.0,
+  "old_trees": 0,
+  "species": {
+   "Vårstarr": {
+    "signal": 4,
+    "redlist": "NT",
+    "protected": false
+   },
+   "Brudborste": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Blåsuga": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Spillkråka": {
+    "signal": 2,
+    "redlist": "NT",
+    "protected": true
+   },
+   "Grön sköldmossa": {
+    "signal": 2,
+    "redlist": null,
+    "protected": true
+   },
+   "Åkervädd": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Vitmåra": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Stubbspretmossa": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Bockrot": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [
+   "Planterat",
+   "Första generationen skog"
+  ],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "10",
+  "title": "Blandsumpskog/kärr",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 2,
+  "expert_av": "högt",
+  "expert_bv": "högt",
+  "bv_naturlighet": 2,
+  "bv_sallsynthet": 2,
+  "bv_betydelse": 2,
+  "av_motiv": "Förekomst av organismsamhällen med måttligt hög artdiversitet i ett regionalt eller nationellt perspektiv. Betydelsefull förekomst av värdearter med påtagligt signalvärde. Måttlig förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 12.0,
+  "old_trees": 2,
+  "species": {
+   "Jättesvampmal": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Gullgröppa": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Kattfotslav": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Långfliksmossa": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Björksplintborre": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Gammelgranslav": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "11",
+  "title": "Gles lövskog",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 3,
+  "expert_av": "påtagligt",
+  "expert_bv": "visst",
+  "bv_naturlighet": 1,
+  "bv_sallsynthet": 1,
+  "bv_betydelse": 1,
+  "av_motiv": "Måttlig förekomst av värdearter med påtagligt signalvärde. Måttlig förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 12.0,
+  "old_trees": 0,
+  "species": {
+   "Blåsuga": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Stjärtmes": {
+    "signal": 2,
+    "redlist": null,
+    "protected": true
+   },
+   "Åkervädd": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Sydvårbrodd": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Ängsviol": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Liljekonvalj": {
+    "signal": 0.25,
+    "redlist": null,
+    "protected": true
+   }
+  },
+  "invasive": true,
+  "wet": false,
+  "paverkan": [
+   "Plockhugget"
+  ],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "12",
+  "title": "Vallåker",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 4,
+  "expert_av": "påtagligt",
+  "expert_bv": "visst",
+  "bv_naturlighet": 1,
+  "bv_sallsynthet": 1,
+  "bv_betydelse": 1,
+  "av_motiv": "Förekomst av organismsamhällen med måttligt hög artdiversitet i ett regionalt eller nationellt perspektiv. Måttlig förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 0.0,
+  "old_trees": 0,
+  "species": {
+   "Ängsviol": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Vitmåra": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Prästkrage": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Mandelblomma": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Åkervädd": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Bockrot": {
+    "signal": 0,
+    "redlist": null,
+    "protected": false
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "13",
+  "title": "Glänta med viltmatning",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 3,
+  "expert_av": "högt",
+  "expert_bv": "visst",
+  "bv_naturlighet": 1,
+  "bv_sallsynthet": 1,
+  "bv_betydelse": 1,
+  "av_motiv": "Förekomst av organismsamhällen med hög artdiversitet i ett regionalt eller nationellt perspektiv. Förekomst mångfald. av organismsamhällen med andra kännetecken, som är typiska för biotoper med särskild betydelse för biologisk Sparsam förekomst av värdearter med högt signalvärde. Sparsam förekomst av värdearter med påtagligt signalvärde. Betydelsefull förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 0.0,
+  "old_trees": 0,
+  "species": {
+   "Vårstarr": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Brudborste": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Åkervädd": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Stor blåklocka": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Vanlig tallört": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Liten blåklocka": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Bockrot": {
+    "signal": 0.25,
+    "redlist": null,
+    "protected": true
+   },
+   "Liljekonvalj": {
+    "signal": 0,
+    "redlist": null,
+    "protected": true
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "14",
+  "title": "Björkkärr",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 4,
+  "expert_av": "påtagligt",
+  "expert_bv": "visst",
+  "bv_naturlighet": 1,
+  "bv_sallsynthet": 1,
+  "bv_betydelse": 1,
+  "av_motiv": "Förekomst nationellt perspektiv. av organismsamhällen med måttligt hög artdiversitet, i ett lokalt perspektiv eller viss artdiversitet i ett regionalt eller Förekomst mångfald. av organismsamhällen med andra kännetecken, som är typiska för biotoper med särskild betydelse för biologisk Betydelsefull förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 16.0,
+  "old_trees": 0,
+  "species": {
+   "Praktvitmossor": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Ängsull": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Tuvull": {
+    "signal": 0.25,
+    "redlist": null,
+    "protected": false
+   },
+   "Brokvitmossa": {
+    "signal": 0,
+    "redlist": null,
+    "protected": false
+   },
+   "Sumpvitmossa": {
+    "signal": 0,
+    "redlist": null,
+    "protected": false
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [
+   "Dikat",
+   "Kalavverkat"
+  ],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "15",
+  "title": "Ung lövskog",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 3,
+  "expert_av": null,
+  "expert_bv": null,
+  "bv_naturlighet": 0,
+  "bv_sallsynthet": 0,
+  "bv_betydelse": 0,
+  "av_motiv": "Förekomst av organismsamhällen med måttligt hög artdiversitet, i ett lokalt perspektiv eller viss artdiversitet i ett regionalt eller nationellt perspektiv. Måttlig förekomst av värdearter med påtagligt signalvärde. Måttlig förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 10.5,
+  "old_trees": 0,
+  "species": {
+   "Brudborste": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Grön sköldmossa": {
+    "signal": 2,
+    "redlist": null,
+    "protected": true
+   },
+   "Stubbspretmossa": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Långfliksmossa": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Åkervädd": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Kärrviol": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Ekbräken": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Hultbräken": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Bockrot": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Tornseglare": {
+    "signal": 1,
+    "redlist": "EN",
+    "protected": true
+   },
+   "Vanlig groda": {
+    "signal": 1,
+    "redlist": null,
+    "protected": true
+   },
+   "Gullviva": {
+    "signal": 1,
+    "redlist": null,
+    "protected": true
+   },
+   "Liljekonvalj": {
+    "signal": 0.25,
+    "redlist": null,
+    "protected": true
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [
+   "Igenväxning med träd"
+  ],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "16",
+  "title": "Öppen betesmark/gräsmark",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 3,
+  "expert_av": "högt",
+  "expert_bv": "visst",
+  "bv_naturlighet": 1,
+  "bv_sallsynthet": 1,
+  "bv_betydelse": 1,
+  "av_motiv": "Förekomst av organismsamhällen med måttligt hög artdiversitet i ett regionalt eller nationellt perspektiv. Förekomst mångfald. av organismsamhällen med andra kännetecken, som är typiska för biotoper med särskild betydelse för biologisk Förekomst av många värdearter, som är fördelade inom värdepyramidens allra flesta nivåer. Måttlig förekomst av värdearter med högt signalvärde. Betydelsefull förekomst av värdearter med påtagligt signalvärde. Betydelsefull förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 0.0,
+  "old_trees": 0,
+  "species": {
+   "Vårstarr": {
+    "signal": 4,
+    "redlist": "NT",
+    "protected": false
+   },
+   "Solvända": {
+    "signal": 4,
+    "redlist": "NT",
+    "protected": false
+   },
+   "Sommarfibbla": {
+    "signal": 4,
+    "redlist": "NT",
+    "protected": false
+   },
+   "Väddklint": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Blåsuga": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Nattviol": {
+    "signal": 2,
+    "redlist": null,
+    "protected": true
+   },
+   "Blåsippa": {
+    "signal": 2,
+    "redlist": null,
+    "protected": true
+   },
+   "Åkervädd": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Mandelblomma": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Sydvårbrodd": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Gulmåra": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Knippfryle": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Ängsviol": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Jungfrulin": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Bockrot": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Käringtand": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Tornseglare": {
+    "signal": 1,
+    "redlist": "EN",
+    "protected": true
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [
+   "Svag gödselpåverkan/övergödning"
+  ],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "17",
+  "title": "Åkerträda med stenmurar",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 4,
+  "expert_av": "påtagligt",
+  "expert_bv": "visst",
+  "bv_naturlighet": 1,
+  "bv_sallsynthet": 1,
+  "bv_betydelse": 1,
+  "av_motiv": "Betydelsefull förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 0.0,
+  "old_trees": 0,
+  "species": {
+   "Ekbräken": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Åkervädd": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Rödklint": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Vitmåra": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Mandelblomma": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Gulmåra": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Liten blåklocka": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Bockrot": {
+    "signal": 1,
+    "redlist": null,
+    "protected": true
+   },
+   "Skogsödla": {
+    "signal": 1,
+    "redlist": null,
+    "protected": true
+   },
+   "Gullviva": {
+    "signal": 0.25,
+    "redlist": null,
+    "protected": true
+   },
+   "Liljekonvalj": {
+    "signal": 0,
+    "redlist": null,
+    "protected": true
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "18",
+  "title": "Trädklädd holme",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 3,
+  "expert_av": "påtagligt",
+  "expert_bv": "påtagligt",
+  "bv_naturlighet": 1,
+  "bv_sallsynthet": 1,
+  "bv_betydelse": 2,
+  "av_motiv": "Sparsam förekomst av värdearter med högt signalvärde. Sparsam förekomst av värdearter med påtagligt signalvärde. Måttlig förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 6.0,
+  "old_trees": 0,
+  "species": {
+   "Vårstarr": {
+    "signal": 4,
+    "redlist": "NT",
+    "protected": false
+   },
+   "Solvända": {
+    "signal": 4,
+    "redlist": "NT",
+    "protected": false
+   },
+   "Hasselticka": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Lundtrav": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Knippfryle": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Mandelblomma": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Gulmåra": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Gullviva": {
+    "signal": 1,
+    "redlist": null,
+    "protected": true
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "19",
+  "title": "Ädellövslänt",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 2,
+  "expert_av": "högt",
+  "expert_bv": "mycket högt",
+  "bv_naturlighet": 2,
+  "bv_sallsynthet": 3,
+  "bv_betydelse": 2,
+  "av_motiv": "Förekomst av organismsamhällen med hög artdiversitet i ett regionalt eller nationellt perspektiv. Förekomst biologisk mångfald. av organismsamhällen med andra kännetecken, som är typiska för biotoper med stor särskild betydelse för Måttlig förekomst av värdearter med högt signalvärde. Betydelsefull förekomst av värdearter med påtagligt signalvärde. Betydelsefull förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 12.5,
+  "old_trees": 5,
+  "species": {
+   "Grynig filtlav": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Lönnlav": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Liten punktlav": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Guldlockmossa": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Svart trolldruva": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Stenporella": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Fällmossa": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Trädporella": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Rostfläck": {
+    "signal": 2,
+    "redlist": null,
+    "protected": true
+   },
+   "Blåsippa": {
+    "signal": 1,
+    "redlist": "EN",
+    "protected": true
+   },
+   "Ask": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Ängsviol": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Ormbär": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Svartvit flugsnappare": {
+    "signal": 1,
+    "redlist": "NT",
+    "protected": true
+   },
+   "Gullviva": {
+    "signal": 1,
+    "redlist": null,
+    "protected": true
+   },
+   "Backtujamossa": {
+    "signal": 0,
+    "redlist": null,
+    "protected": false
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "20",
+  "title": "Barrblandskog, granskog",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 4,
+  "expert_av": "visst",
+  "expert_bv": "obetydligt",
+  "bv_naturlighet": 0,
+  "bv_sallsynthet": 0,
+  "bv_betydelse": 0,
+  "av_motiv": "Sparsam förekomst av värdearter med påtagligt signalvärde. Måttlig förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 6.0,
+  "old_trees": 0,
+  "species": {
+   "Grön sköldmossa": {
+    "signal": 2,
+    "redlist": null,
+    "protected": true
+   },
+   "Stor tujamossa": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Ekbräken": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Hultbräken": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "21",
+  "title": "Trädklädd holme",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 3,
+  "expert_av": "påtagligt",
+  "expert_bv": "visst",
+  "bv_naturlighet": 1,
+  "bv_sallsynthet": 1,
+  "bv_betydelse": 1,
+  "av_motiv": "Sparsam förekomst av värdearter med högt signalvärde. Måttlig förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 6.0,
+  "old_trees": 0,
+  "species": {
+   "Vårstarr": {
+    "signal": 4,
+    "redlist": "NT",
+    "protected": false
+   },
+   "Knippfryle": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Ängsviol": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Åkervädd": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Gulmåra": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Bockrot": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Gullviva": {
+    "signal": 1,
+    "redlist": null,
+    "protected": true
+   },
+   "Liljekonvalj": {
+    "signal": 0.25,
+    "redlist": null,
+    "protected": true
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "22",
+  "title": "Hygge",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 4,
+  "expert_av": "visst",
+  "expert_bv": "obetydligt",
+  "bv_naturlighet": 0,
+  "bv_sallsynthet": 0,
+  "bv_betydelse": 0,
+  "av_motiv": "Sparsam förekomst av värdearter med påtagligt signalvärde. Måttlig förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 0.0,
+  "old_trees": 0,
+  "species": {
+   "Blåsuga": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Mandelblomma": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Ängsviol": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Stor blåklocka": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Pillerstarr": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Åkervädd": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Ekbräken": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Bockrot": {
+    "signal": 0,
+    "redlist": null,
+    "protected": false
+   },
+   "Olvon": {
+    "signal": 0,
+    "redlist": null,
+    "protected": false
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [
+   "Kalavverkat",
+   "Dränerande körskador",
+   "Död ved bortrensad"
+  ],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "23",
+  "title": "Ung produktionsskog",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 4,
+  "expert_av": "visst",
+  "expert_bv": "obetydligt",
+  "bv_naturlighet": 0,
+  "bv_sallsynthet": 0,
+  "bv_betydelse": 1,
+  "av_motiv": "Sparsam förekomst av värdearter med påtagligt signalvärde. Måttlig förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 3.5,
+  "old_trees": 0,
+  "species": {
+   "Grön sköldmossa": {
+    "signal": 2,
+    "redlist": null,
+    "protected": true
+   },
+   "Långfliksmossa": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Stubbspretmossa": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Åkervädd": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Ormbär": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [
+   "Första generationen skog",
+   "Planterat",
+   "Kalavverkat",
+   "Igenväxning med träd"
+  ],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "24",
+  "title": "Granbrant",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 3,
+  "expert_av": "påtagligt",
+  "expert_bv": "visst",
+  "bv_naturlighet": 1,
+  "bv_sallsynthet": 1,
+  "bv_betydelse": 1,
+  "av_motiv": "Förekomst av organismsamhällen med låg artdiversitet som domineras av vanligt förekommande arter. Normalt finns inga förekomster av värdearter eller så är de för få eller för glest förekommande för att indikera att biotopen har någon särskild betydelse för biologisk mångfald. Måttlig förekomst av värdearter med påtagligt signalvärde. Måttlig förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 38.0,
+  "old_trees": 2,
+  "species": {
+   "Spillkråka": {
+    "signal": 2,
+    "redlist": "NT",
+    "protected": true
+   },
+   "Blåsippa": {
+    "signal": 2,
+    "redlist": null,
+    "protected": true
+   },
+   "Ekbräken": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Björksplintborre": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [
+   "Tvåskiktat"
+  ],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "25",
+  "title": "Gransumpskog",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 3,
+  "expert_av": "påtagligt",
+  "expert_bv": "påtagligt",
+  "bv_naturlighet": 1,
+  "bv_sallsynthet": 2,
+  "bv_betydelse": 2,
+  "av_motiv": "Förekomst av organismsamhällen med andra kännetecken, som är typiska för biotoper med särskild betydelse för biologisk mångfald. Måttlig förekomst av värdearter med påtagligt signalvärde. Betydelsefull förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 3.0,
+  "old_trees": 1,
+  "species": {
+   "Grön sköldmossa": {
+    "signal": 2,
+    "redlist": null,
+    "protected": true
+   },
+   "Bäckrundmossa": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Stor tujamossa": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Kärrviol": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Glansfläck": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Gammelgranslav": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Hultbräken": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [
+   "Plockhugget",
+   "Röjt",
+   "Tvåskiktat"
+  ],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "26",
+  "title": "Ung planteringsskog",
+  "source": "NVI 2024 Ekologigruppen",
+  "nvklass": 4,
+  "expert_av": "visst",
+  "expert_bv": "obetydligt",
+  "bv_naturlighet": 1,
+  "bv_sallsynthet": 0,
+  "bv_betydelse": 0,
+  "av_motiv": "Måttlig förekomst av värdearter med visst signalvärde.",
+  "deadwood_m3ha": 13.0,
+  "old_trees": 2,
+  "species": {
+   "Blåsippa": {
+    "signal": 2,
+    "redlist": null,
+    "protected": true
+   },
+   "Svartvit flugsnappare": {
+    "signal": 1,
+    "redlist": "NT",
+    "protected": true
+   }
+  },
+  "invasive": false,
+  "wet": false,
+  "paverkan": [],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "LS01",
+  "title": "Mosaikartad, delvis örtrik igenväxningsskog",
+  "source": "NVI 2026 Salmonic (utkast)",
+  "nvklass": 4,
+  "expert_av": "visst",
+  "expert_bv": "visst",
+  "bv_naturlighet": 1,
+  "bv_sallsynthet": 0,
+  "bv_betydelse": 1,
+  "av_motiv": "Måttliga förekomster av arter med visst signalvärde och sparsamma förekomster av arter med påtagligt signalvärde.",
+  "deadwood_m3ha": 3,
+  "old_trees": 2,
+  "species": {
+   "Spillkråka": {
+    "signal": 1,
+    "redlist": null,
+    "protected": true
+   },
+   "Vanlig padda": {
+    "signal": 0.25,
+    "redlist": null,
+    "protected": true
+   },
+   "Blodrot": {
+    "signal": 0.5,
+    "redlist": null,
+    "protected": false
+   },
+   "Blåsippa": {
+    "signal": 1,
+    "redlist": null,
+    "protected": true
+   },
+   "Blåsuga": {
+    "signal": 1.5,
+    "redlist": null,
+    "protected": false
+   },
+   "Ekbräken": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Gökärt": {
+    "signal": 0.5,
+    "redlist": null,
+    "protected": false
+   },
+   "Hultbräken": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Kärrviol": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Liljekonvalj": {
+    "signal": 1,
+    "redlist": null,
+    "protected": true
+   },
+   "Ormbär": {
+    "signal": 2,
+    "redlist": null,
+    "protected": false
+   },
+   "Stjärnstarr": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Stor blåklocka": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Kransmossa": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Långfliksmossa": {
+    "signal": 0.5,
+    "redlist": null,
+    "protected": false
+   },
+   "Skuggsprötmossa": {
+    "signal": 1,
+    "redlist": null,
+    "protected": false
+   },
+   "Stor tujamossa": {
+    "signal": 0.5,
+    "redlist": null,
+    "protected": false
+   }
+  },
+  "invasive": false,
+  "wet": true,
+  "paverkan": [
+   "Kalavverkat",
+   "Igenväxning med träd"
+  ],
+  "nyckelbiotop": false
+ },
+ {
+  "id": "LS02",
+  "title": "Tät igenväxningsskog",
+  "source": "NVI 2026 Salmonic (utkast)",
+  "nvklass": 0,
+  "expert_av": "obetydligt",
+  "expert_bv": "obetydligt",
+  "bv_naturlighet": 0,
+  "bv_sallsynthet": 0,
+  "bv_betydelse": 0,
+  "av_motiv": "Enstaka värdearter.",
+  "deadwood_m3ha": 0,
+  "old_trees": 0,
+  "species": {},
+  "invasive": false,
+  "wet": false,
+  "paverkan": [
+   "Kalavverkat",
+   "Igenväxning med träd"
+  ],
+  "nyckelbiotop": false
+ }
+]

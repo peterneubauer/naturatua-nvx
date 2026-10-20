@@ -1,0 +1,344 @@
+<title>Ustorp Naturvärdesindex</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: nivåväljare + karta till vänster, vald enhet (dimensioner, blomma, lager) till höger, tabeller och metod under. */
+:root {
+  --bg: #f7f6f1; --surface: #ffffff; --fg: #1d1f1a; --fg2: #5b5f55; --muted: #8b8f84; --line: #dcdbd3;
+  --accent: #2f5d3a;
+  --k1: #16452a; --k2: #27753f; --k3: #5fae6e; --k4: #b7dcb7; --k5: #dedcd4;
+  --bv: #2a78d6; --av: #eb6834; --lm: #8a6bd1; --hyp: #8b8f84; --press: #b8432e; --res: #1b8f6a;
+  --display: 'Fraunces', Georgia, serif; --body: 'IBM Plex Sans', system-ui, sans-serif; --mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #15171a; --surface: #1d2024; --fg: #ecebe4; --fg2: #b8b9ae; --muted: #80837a; --line: #30343a; --accent: #8fcf9c;
+  --k1: #8fe3a6; --k2: #4fb56a; --k3: #2f7f46; --k4: #22532f; --k5: #2c2f33; --bv: #3987e5; --av: #d95926; --lm: #a08fe0; --hyp: #80837a; --press: #e0634c; --res: #35b88c; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #15171a; --surface: #1d2024; --fg: #ecebe4; --fg2: #b8b9ae; --muted: #80837a; --line: #30343a; --accent: #8fcf9c;
+  --k1: #8fe3a6; --k2: #4fb56a; --k3: #2f7f46; --k4: #22532f; --k5: #2c2f33; --bv: #3987e5; --av: #d95926; --lm: #a08fe0; --hyp: #80837a; --press: #e0634c; --res: #35b88c; color-scheme: dark; }
+body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--body); margin: 0;
+  padding-block: 28px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+main { max-width: 1240px; margin: 0 auto; display: grid; gap: 28px; }
+h1 { font: 500 clamp(28px, 4vw, 40px)/1.1 var(--display); margin: 0; letter-spacing: -0.01em; text-wrap: balance; }
+h2 { font: 600 20px/1.2 var(--display); margin: 0 0 12px; }
+h3 { font: 600 12px/1.3 var(--body); text-transform: uppercase; letter-spacing: .06em; color: var(--fg2); margin: 0 0 8px; }
+p { max-width: 68ch; margin: 0; }
+.lede { color: var(--fg2); font-size: 16px; max-width: 76ch; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font: 500 12px/1 var(--mono); padding: 7px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--fg2); background: var(--surface); }
+.chip b { color: var(--fg); font-weight: 500; }
+.two { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+@media (max-width: 860px) { .two { grid-template-columns: 1fr; } }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; min-width: 0; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; font-size: 13px; color: var(--fg2); margin-bottom: 10px; }
+.controls label { display: inline-flex; gap: 5px; align-items: center; cursor: pointer; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.seg button { font: 500 12px var(--body); padding: 5px 9px; border: 0; background: transparent; color: var(--fg2); cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--bg); }
+.seg.big button { font-size: 13px; padding: 7px 12px; }
+button:focus-visible, input:focus-visible { outline: 2px solid var(--bv); outline-offset: 2px; }
+#map { width: 100%; height: auto; display: block; background: var(--bg); border-radius: 6px; font-family: var(--mono); }
+#map .poly { stroke: var(--surface); cursor: pointer; transition: opacity .15s; }
+#map .poly:hover { opacity: .8; }
+#map .poly.sel { stroke: var(--fg); }
+#map .ctx { fill: none; stroke: var(--muted); pointer-events: none; opacity: .7; }
+#map .lbl { fill: var(--fg); pointer-events: none; text-anchor: middle; }
+#map .border { fill: none; stroke: var(--muted); stroke-dasharray: 2 3; }
+#map .pt circle { fill: var(--av); stroke: var(--surface); }
+#map .pt circle.na { fill: var(--surface); stroke: var(--av); }
+#map .pt .r { fill: none; stroke: var(--av); stroke-dasharray: 2 2; opacity: .6; }
+#map .pt text { fill: var(--fg); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12px; color: var(--fg2); margin-top: 10px; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.sw { width: 14px; height: 14px; border-radius: 3px; border: 1px solid var(--line); flex: none; }
+.sel-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.sel-head .id { font: 600 24px/1 var(--display); }
+.sel-head .sub { color: var(--fg2); font-size: 13px; }
+.dims { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; margin: 14px 0 4px; }
+@media (max-width: 480px) { .dims { grid-template-columns: repeat(3, 1fr); } }
+.dim { border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; min-width: 0; }
+.dim b { display: block; font: 600 22px/1.1 var(--display); font-variant-numeric: tabular-nums; }
+.dim span { font-size: 11px; color: var(--fg2); text-transform: uppercase; letter-spacing: .05em; }
+.dim.main { border-color: var(--accent); }
+.dim .b { height: 4px; border-radius: 2px; background: var(--k5); margin-top: 6px; }
+.dim .b i { display: block; height: 100%; border-radius: 2px; }
+.flower { width: 100%; max-width: 540px; height: auto; display: block; margin: 8px auto; }
+.flower text { font-family: var(--mono); fill: var(--fg); }
+.flower .hub { font: 600 30px var(--display); text-anchor: middle; }
+.flower .hubl { font-size: 10px; text-anchor: middle; fill: var(--fg2); }
+.flower .petal-bg { fill: var(--k5); opacity: .5; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
+th { text-align: left; font-weight: 600; color: var(--fg2); font-size: 11.5px; text-transform: uppercase; letter-spacing: .05em; padding: 6px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+td { padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+td.n, th.n { text-align: right; white-space: nowrap; }
+tr.clk { cursor: pointer; } tr.clk:hover td { background: color-mix(in oklab, var(--accent) 8%, transparent); }
+tr.sel td { background: color-mix(in oklab, var(--accent) 14%, transparent); }
+tr.grp td { font-weight: 600; color: var(--fg2); font-size: 11.5px; text-transform: uppercase; letter-spacing: .05em; padding-top: 12px; border-bottom: 0; }
+.scroll { overflow-x: auto; }
+.bar { height: 8px; border-radius: 4px; background: var(--k5); position: relative; min-width: 70px; }
+.bar i { position: absolute; inset: 0 auto 0 0; border-radius: 4px; }
+.kl { display: inline-block; min-width: 22px; text-align: center; font: 500 11px/18px var(--mono); border-radius: 4px; color: var(--fg); }
+.kl[data-k="1"] { background: var(--k1); color: var(--bg); } .kl[data-k="2"] { background: var(--k2); color: var(--bg); }
+.kl[data-k="3"] { background: var(--k3); color: var(--bg); } .kl[data-k="4"] { background: var(--k4); } .kl[data-k="5"] { background: var(--k5); }
+.tag { font: 500 10px/1 var(--mono); padding: 3px 5px; border-radius: 3px; border: 1px solid var(--line); color: var(--fg2); white-space: nowrap; }
+.tag.hyp { border-style: dashed; } .tag.gf { background: color-mix(in oklab, var(--av) 18%, transparent); border-color: transparent; }
+.tag.miss { background: color-mix(in oklab, var(--muted) 25%, transparent); border-color: transparent; }
+.comp { display: flex; height: 10px; border-radius: 5px; overflow: hidden; gap: 2px; min-width: 120px; }
+.comp i { display: block; }
+.tree { font: 13px/1.6 var(--mono); }
+.tree div { padding-left: calc(var(--d) * 18px); }
+.tree .w { color: var(--muted); } .tree .fn { color: var(--fg2); }
+.note { border-left: 3px solid var(--av); padding: 6px 12px; color: var(--fg2); font-size: 13.5px; max-width: 72ch; }
+.src { color: var(--muted); font-size: 12px; }
+code { font: 12.5px var(--mono); background: color-mix(in oklab, var(--fg) 6%, transparent); padding: 1px 4px; border-radius: 3px; }
+.tip { position: fixed; pointer-events: none; background: var(--surface); color: var(--fg); border: 1px solid var(--line); border-radius: 6px; padding: 6px 9px; font: 12px/1.4 var(--body); box-shadow: 0 4px 16px rgba(0,0,0,.12); max-width: 280px; z-index: 5; }
+.tip[hidden] { display: none; }
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin: 12px 0 8px; flex-wrap: wrap; }
+.tabs button { font: 500 13px var(--body); padding: 6px 10px; border: 0; background: none; color: var(--fg2); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+.tabs button[aria-pressed="true"] { color: var(--fg); border-bottom-color: var(--accent); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<main>
+  <header style="display:grid;gap:12px">
+    <h1>Ustorp Naturvärdesindex</h1>
+    <p class="lede">Ocean Health Index-metoden (ohicore, Blekinge Hälsoindex) tillämpad på naturvärdesbiotoperna i NVI 2024 och 2026. Status aggregeras från indikatorer till tre kategorier och vidare till NVX 0–100 och naturvärdesklass. Tryck och resiliens ger en trolig framtid. Allt aggregeras areaviktat från biotop till BDU-ruta, BDU-område, skifte och hela fastigheten.</p>
+    <div class="chips" id="chips"></div>
+  </header>
+
+  <section class="two">
+    <div class="card">
+      <div class="controls">
+        <span class="seg big" id="level"></span>
+      </div>
+      <div class="controls">
+        <span class="seg" id="mode">
+          <button data-m="klass" aria-pressed="true">NVX-klass</button>
+          <button data-m="expert" aria-pressed="false">Expertklass</button>
+          <button data-m="pressure" aria-pressed="false">Tryck</button>
+          <button data-m="resilience" aria-pressed="false">Resiliens</button>
+          <button data-m="future" aria-pressed="false">Trolig framtid</button>
+          <button data-m="missing" aria-pressed="false">Datatäckning</button>
+        </span>
+        <span class="seg" id="extent"><button data-e="bdu" aria-pressed="true">BDU-området</button><button data-e="all" aria-pressed="false">Hela fastigheten</button></span>
+        <label><input type="checkbox" id="showPts" checked> Ljudpunkter</label>
+      </div>
+      <svg id="map" viewBox="0 0 100 100" role="img" aria-label="Karta över bedömningsenheter"></svg>
+      <div class="legend" id="legend"></div>
+    </div>
+    <div class="card" id="panel"></div>
+  </section>
+
+  <section class="card">
+    <h2>Alla enheter</h2>
+    <div class="tabs" id="tabs"></div>
+    <div class="scroll"><table id="tunits"></table></div>
+  </section>
+
+  <section class="two">
+    <div class="card">
+      <h2>Indexträd</h2>
+      <p class="src" style="margin-bottom:10px">Vikt inom gruppen, funktion och tröskel (värde som ger 1,0 / värde som ger 0). Streckad tagg = hypotetiskt testlager.</p>
+      <div class="tree" id="tree"></div>
+      <h3 style="margin-top:16px">Tryck</h3>
+      <div class="tree" id="ptree"></div>
+      <h3 style="margin-top:16px">Resiliens</h3>
+      <div class="tree" id="rtree"></div>
+    </div>
+    <div class="card" style="display:grid;gap:14px">
+      <div>
+        <h2>Metod</h2>
+        <p><b>Status.</b> Indikatorerna normaliseras linjärt mot tröskel och nollpunkt (<code>normalize_data</code>). Delmål och kategorier är viktade aritmetiska medelvärden (<code>weighted_power_mean</code>, p=1). De tre kategorierna vägs till NVX med p=0,5, så att en svag kategori drar ned helheten, i linje med SIS-matrisen där art- och biotopvärde samverkar.</p>
+      </div>
+      <div>
+        <p><b>Dimensioner</b> (<code>ohicore::CalculateGoalIndex</code>). Tryck: <code>Σ(rank·värde)/3</code>, tak 1. Resiliens: viktat medel, aldrig högre än trycket. Trolig framtid: <code>xF = (1 + β·trend + (1−β)·(resiliens − tryck)) · status</code> med β = 0,67. Poäng = (status + xF)/2. Trenden är 0 tills det finns en tidsserie.</p>
+      </div>
+      <div>
+        <p><b>Rumslig aggregering</b> (<code>ohicore::CalculateAll</code>, BHI <code>SpatialIntersections</code>). Varje enhet får <code>weighted.mean(score, area)</code> för varje gren och dimension över de biotoper den skär, med skärningsarean som vikt. Klassen för en enhet sätts från dess aggregerade status.</p>
+      </div>
+      <div>
+        <h3>Klassgränser</h3>
+        <p id="cuts"></p>
+        <p class="src">Gränserna väljs automatiskt så att överensstämmelsen med expertklasserna i NVI 2024/2026 blir störst. Det är ett test av metoden, inte en ersättning för inventerarens bedömning.</p>
+      </div>
+      <div>
+        <h3>Gapfilling</h3>
+        <p>Rumslig gapfilling (<code>GF-S01</code>): saknad indikator ersätts med medianen för biotoper med samma expertklass. Objekt 27–30 saknar objektsblad i textexporten och är därför till stor del gapfyllda. eDNA saknas överallt (levereras våren 2027) och räknas som <em>saknad</em>, inte gapfylld.</p>
+      </div>
+      <div class="note">Lagren <b>Strukturell variation</b> (drönare/3D), <b>Konnektivitet</b> (satellit), <b>Markkol</b> (jordprover) och <b>Akustisk artrikedom</b> (AudioMoth) är hypotetiska och slumpade med frö 2026, för att testa punkt-till-polygon-aggregering och gapfilling. Byt ut dem mot Conifer Visions leverans, Sentinel-2, jordproverna och ljudanalysen från 2025 när de finns.</div>
+    </div>
+  </section>
+</main>
+<div class="tip" id="tip" hidden></div>
+
+<script id="data" type="application/json">/*DATA*/</script>
+<script>
+const D = JSON.parse(document.getElementById('data').textContent);
+const BY = Object.fromEntries(D.structure.map(s => [s.branch, s]));
+const KIDS = {}; D.structure.forEach(s => (KIDS[s.main] ||= []).push(s.branch));
+const CATS = KIDS['NVX'];
+const KN = {1: 'Högsta', 2: 'Högt', 3: 'Påtagligt', 4: 'Visst', 5: 'Ej naturvärde'};
+const U = Object.fromEntries(D.units.map(u => [u.id, u]));
+const kc = k => `var(--k${k})`;
+const cc = b => `var(--${b.toLowerCase()})`;
+const fmt = (v, d = 0) => v == null ? '–' : (+v).toLocaleString('sv-SE', {maximumFractionDigits: d, minimumFractionDigits: d});
+const topCat = b => { let s = BY[b]; while (s.main && s.main !== 'NVX') s = BY[s.main]; return s.branch; };
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const IND = D.structure.filter(s => s.fn === 'norm');
+const atLevel = l => D.units.filter(u => u.level === l);
+const biotopes = atLevel('biotop');
+
+// ── Chips ──
+const agree = biotopes.filter(b => b.expert_klass === b.nvx_klass).length;
+const prop = U['USTORP'], bdu = U['BDU'];
+document.getElementById('chips').innerHTML = [
+  `<b>${biotopes.length}</b> biotoper`, `<b>${D.units.length - biotopes.length}</b> aggregerade enheter`,
+  `<b>${IND.length}</b> indikatorer, <b>${IND.filter(s => s.hypothetical).length}</b> hypotetiska`,
+  `klass träffad <b>${agree}/${biotopes.length}</b>`,
+  `BDU-området NVX <b>${fmt(bdu.dims.status)}</b> · klass <b>${bdu.nvx_klass}</b>`,
+  `fastigheten NVX <b>${fmt(prop.dims.status)}</b> · klass <b>${prop.nvx_klass}</b>`,
+].map(c => `<span class="chip">${c}</span>`).join('');
+document.getElementById('cuts').innerHTML = D.class_cuts.map(([c, k]) => `<span class="kl" data-k="${k}">${k}</span> ≥ ${fmt(c, 1)}`).join(' &nbsp; ') + ` &nbsp; <span class="kl" data-k="5">5</span> &lt; ${fmt(D.class_cuts.at(-1)[0], 1)}`;
+
+// ── Karta (SWEREF 99 TM, meter; y uppåt) ──
+const map = document.getElementById('map');
+const allCoords = g => g.type === 'Polygon' ? g.coordinates.flat() : g.coordinates.flat(2);
+let level = 'biotop', extent = 'bdu', mode = 'klass', sel = U['1'] ? '1' : biotopes[0].id;
+let x0, x1, y0, y1, W, H, fs;
+function setExtent() {
+  let xs = [], ys = [];
+  const src = extent === 'bdu' ? [U['BDU'].geom] : [U['USTORP'].geom];
+  src.forEach(g => allCoords(g).forEach(([x, y]) => { xs.push(x); ys.push(y); }));
+  const m = extent === 'bdu' ? 25 : 40;
+  x0 = Math.min(...xs) - m; x1 = Math.max(...xs) + m; y0 = Math.min(...ys) - m; y1 = Math.max(...ys) + m;
+  W = x1 - x0; H = y1 - y0; fs = +(W / 60).toFixed(1);
+  map.setAttribute('viewBox', `0 0 ${W} ${H}`);
+}
+const px = ([x, y]) => `${(x - x0).toFixed(1)},${(y1 - y).toFixed(1)}`;
+const path = g => (g.type === 'Polygon' ? [g.coordinates] : g.coordinates).map(poly => poly.map(ring => 'M' + ring.map(px).join('L') + 'Z').join('')).join('');
+const centroid = g => { const c = allCoords(g); return [c.reduce((a, p) => a + p[0], 0) / c.length, c.reduce((a, p) => a + p[1], 0) / c.length]; };
+const seqFill = (v, col) => `color-mix(in oklab, ${col} ${Math.round(15 + 85 * (v ?? 0) / 100)}%, var(--k5))`;
+const toClass = s => { for (const [c, k] of D.class_cuts) if (s >= c) return k; return 5; };
+const fillFor = u => {
+  if (mode === 'klass') return kc(u.nvx_klass);
+  if (mode === 'expert') return kc(Math.round(u.expert_klass));
+  if (mode === 'pressure') return seqFill(u.dims.pressure, 'var(--press)');
+  if (mode === 'resilience') return seqFill(u.dims.resilience, 'var(--res)');
+  if (mode === 'future') return kc(toClass(u.dims.future));
+  return seqFill((u.fraction_missing + u.fraction_filled) * 100, 'var(--av)');
+};
+function drawMap() {
+  setExtent();
+  const pts = document.getElementById('showPts').checked;
+  const sw = +(W / 900).toFixed(2);
+  let h = `<style>#map text{font-size:${fs}px}#map .poly{stroke-width:${sw}}#map .poly.sel{stroke-width:${sw * 3}}#map .ctx{stroke-width:${sw}}#map .border{stroke-width:${sw}}#map .pt circle{stroke-width:${sw}}</style>`;
+  h += ['SKIFTE_1', 'SKIFTE_3', 'SKIFTE_4'].map(id => `<path class="border" d="${path(U[id].geom)}"/>`).join('');
+  const units = atLevel(level);
+  h += units.map(u => `<path class="poly${u.id === sel ? ' sel' : ''}" data-id="${u.id}" d="${path(u.geom)}" fill="${fillFor(u)}"><title>${esc(u.name)}</title></path>`).join('');
+  if (level !== 'biotop') h += biotopes.map(b => `<path class="ctx" d="${path(b.geom)}"/>`).join('');
+  h += units.filter(u => level !== 'biotop' ? true : (u.area_ha > 0.6 && !u.id.startsWith('E'))).map(u => { const [cx, cy] = centroid(u.geom); const lbl = level === 'ruta' ? u.id.slice(-2) : level === 'biotop' ? u.id : u.name; return `<text class="lbl" x="${(cx - x0).toFixed(1)}" y="${(y1 - cy + fs / 3).toFixed(1)}">${esc(lbl)}</text>`; }).join('');
+  h += `<path class="ctx" style="stroke:var(--fg);opacity:1" d="${path(U['BDU'].geom)}"/>`;
+  if (pts) h += D.points.map(p => `<g class="pt"><circle class="r" cx="${(p.x - x0).toFixed(1)}" cy="${(y1 - p.y).toFixed(1)}" r="${p.radius}"/><circle class="${p.value == null ? 'na' : ''}" cx="${(p.x - x0).toFixed(1)}" cy="${(y1 - p.y).toFixed(1)}" r="${fs * 0.7}"/><text x="${(p.x - x0 + fs).toFixed(1)}" y="${(y1 - p.y + fs / 3).toFixed(1)}">${p.id}${p.value == null ? ' (trasig)' : ''}</text></g>`).join('');
+  map.innerHTML = h;
+  const L = document.getElementById('legend');
+  const base = `<span><i class="sw" style="border:1.5px solid var(--fg);background:none"></i>BDU-området</span><span><i class="sw" style="border-radius:50%;background:var(--av)"></i>AudioMoth (hypotetiskt läge)</span>`;
+  const ramp = (col, lbl) => `<span><i class="sw" style="background:${seqFill(0, col)}"></i>0</span><span><i class="sw" style="background:${seqFill(50, col)}"></i>50</span><span><i class="sw" style="background:${seqFill(100, col)}"></i>100 ${lbl}</span>`;
+  if (mode === 'klass' || mode === 'expert' || mode === 'future') L.innerHTML = [1, 2, 3, 4, 5].map(k => `<span><i class="sw" style="background:${kc(k)}"></i>${k} ${KN[k]}</span>`).join('') + base;
+  else if (mode === 'pressure') L.innerHTML = ramp('var(--press)', 'tryck') + base;
+  else if (mode === 'resilience') L.innerHTML = ramp('var(--res)', 'resiliens') + base;
+  else L.innerHTML = `<span><i class="sw" style="background:var(--k5)"></i>fullständig data</span><span><i class="sw" style="background:var(--av)"></i>hög andel gapfyllt/saknat</span>` + base;
+}
+map.addEventListener('click', e => { const p = e.target.closest('[data-id]'); if (p) select(p.dataset.id); });
+const tip = document.getElementById('tip');
+map.addEventListener('mousemove', e => {
+  const p = e.target.closest('[data-id]');
+  if (!p) { tip.hidden = true; return; }
+  const u = U[p.dataset.id];
+  tip.innerHTML = `<b>${esc(u.name)}</b> ${esc(u.biotop || '')}<br>${fmt(u.area_ha, 2)} ha · status ${fmt(u.dims.status)} → klass ${u.nvx_klass} · tryck ${fmt(u.dims.pressure)} · resiliens ${fmt(u.dims.resilience)} · framtid ${fmt(u.dims.future)}`;
+  tip.hidden = false; tip.style.left = (e.clientX + 14) + 'px'; tip.style.top = (e.clientY + 14) + 'px';
+});
+map.addEventListener('mouseleave', () => tip.hidden = true);
+const press = (id, val, key) => [...document.getElementById(id).children].forEach(x => x.setAttribute('aria-pressed', x.dataset[key] === val));
+const segs = (id, key, cb) => document.getElementById(id).addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; press(id, b.dataset[key], key); cb(b.dataset[key]); });
+segs('mode', 'm', m => { mode = m; drawMap(); });
+segs('extent', 'e', e => { extent = e; drawMap(); });
+document.getElementById('level').innerHTML = D.levels.map((l, i) => `<button data-l="${l.id}" aria-pressed="${i === 0}">${esc(l.name)}</button>`).join('');
+function setLevel(l) {
+  level = l; press('level', l, 'l');
+  if (U[sel].level !== l) sel = atLevel(l)[0].id;
+  if (l === 'skifte' || l === 'fastighet') { extent = 'all'; press('extent', 'all', 'e'); }
+  drawMap(); panel(); table();
+}
+segs('level', 'l', setLevel);
+document.getElementById('showPts').addEventListener('change', drawMap);
+
+// ── Blomma (flowerplot som i BHI: ett kronblad per indikator, längd = poäng, färg = kategori, inre ring = kategorier) ──
+function flower(u) {
+  const R = 140, r0 = 50, cx = 270, cy = 200, n = IND.length, gap = 0.035;
+  const arc = (a0, a1, ri, ro) => { const p = (a, r) => [cx + r * Math.sin(a), cy - r * Math.cos(a)]; const [ax, ay] = p(a0, ro), [bx, by] = p(a1, ro), [cx2, cy2] = p(a1, ri), [dx, dy] = p(a0, ri); return `M${ax},${ay}A${ro},${ro},0,0,1,${bx},${by}L${cx2},${cy2}A${ri},${ri},0,0,0,${dx},${dy}Z`; };
+  let h = `<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="var(--surface)"/><line x1="0" y1="0" x2="0" y2="6" stroke="var(--hyp)" stroke-width="2"/></pattern></defs>`;
+  IND.forEach((s, i) => {
+    const a0 = (i / n) * 2 * Math.PI + gap, a1 = ((i + 1) / n) * 2 * Math.PI - gap;
+    const v = u.scores[s.branch], g = topCat(s.branch), flag = (u.flags || {})[s.branch];
+    h += `<path class="petal-bg" d="${arc(a0, a1, r0, R)}"/>`;
+    if (v != null) {
+      const ro = r0 + (R - r0) * v / 100;
+      h += `<path d="${arc(a0, a1, r0, ro)}" fill="${s.hypothetical ? 'url(#hatch)' : cc(g)}" stroke="${cc(g)}" stroke-width="${flag === 'gapfilled' ? 1.5 : s.hypothetical ? 0.8 : 0}" stroke-dasharray="${flag === 'gapfilled' ? '3 2' : ''}"><title>${esc(s.name)}: ${fmt(v)}</title></path>`;
+    }
+    const am = (a0 + a1) / 2, lx = cx + (R + 14) * Math.sin(am), ly = cy - (R + 14) * Math.cos(am);
+    const anchor = Math.sin(am) > 0.1 ? 'start' : Math.sin(am) < -0.1 ? 'end' : 'middle';
+    h += `<text x="${lx.toFixed(1)}" y="${(ly + 3).toFixed(1)}" font-size="9.5" text-anchor="${anchor}" fill="${v == null ? 'var(--muted)' : 'var(--fg)'}">${esc(s.name.split(',')[0].split(' (')[0])}</text>`;
+  });
+  let i0 = 0;
+  CATS.forEach(c => { const nI = IND.filter(s => topCat(s.branch) === c).length; const a0 = (i0 / n) * 2 * Math.PI + 0.02, a1 = ((i0 + nI) / n) * 2 * Math.PI - 0.02; const v = u.scores[c]; h += `<path d="${arc(a0, a1, 33, 46)}" fill="${cc(c)}" opacity="${v == null ? .2 : .3 + .7 * v / 100}"><title>${esc(BY[c].name)} ${fmt(v)}</title></path>`; i0 += nI; });
+  h += `<text class="hub" x="${cx}" y="${cy + 8}">${fmt(u.dims.status)}</text><text class="hubl" x="${cx}" y="${cy + 22}">NVX</text>`;
+  return `<svg class="flower" viewBox="0 0 540 400" role="img" aria-label="Blomdiagram för ${esc(u.name)}">${h}</svg>`;
+}
+
+// ── Panel: vald enhet ──
+const dimBox = (label, v, col, main) => `<div class="dim${main ? ' main' : ''}"><span>${label}</span><b>${fmt(v)}</b><div class="b"><i style="width:${v ?? 0}%;background:${col}"></i></div></div>`;
+function panel() {
+  const u = U[sel], P = document.getElementById('panel'), isBio = u.level === 'biotop';
+  const layerRows = list => list.map(s => {
+    const key = s.branch || s.layer, v = u.layers[key], sc = s.branch ? u.scores[key] : (v == null ? null : v * 100), f = (u.flags || {})[key];
+    const tags = `${s.hypothetical ? ' <span class="tag hyp">hyp</span>' : ''}${f === 'gapfilled' ? ' <span class="tag gf">gapfyllt</span>' : ''}${v == null ? ' <span class="tag miss">saknas</span>' : ''}`;
+    const col = s.branch ? cc(topCat(key)) : s.rank ? 'var(--press)' : 'var(--res)';
+    return `<tr><td><span class="sw" style="display:inline-block;vertical-align:-2px;margin-right:6px;background:${col}"></span>${esc(s.name)}${tags}</td><td class="n">${v == null ? '–' : fmt(v, Number.isInteger(v) ? 0 : (v < 10 ? 2 : 1))} <span class="src">${esc(s.units || (s.rank ? 'rank ' + s.rank : 'vikt ' + s.w))}</span></td><td class="n">${sc == null ? '–' : fmt(sc)}</td></tr>`;
+  }).join('');
+  const head = isBio
+    ? `<div class="sel-head"><span><span class="id">${esc(u.id)}</span> <span class="kl" data-k="${u.nvx_klass}">${u.nvx_klass}</span> <span class="sub">expert <span class="kl" data-k="${u.expert_klass}">${u.expert_klass}</span></span></span><span class="sub">${fmt(u.area_ha, 2)} ha · ${esc(u.org || '')}</span></div><p class="src" style="margin:4px 0 0">${esc(u.naturtyp)}${u.biotop ? ' · ' + esc(u.biotop) : ''}</p>`
+    : `<div class="sel-head"><span><span class="id">${esc(u.name)}</span> <span class="kl" data-k="${u.nvx_klass}">${u.nvx_klass}</span> <span class="sub">expert ø ${fmt(u.expert_klass, 1)}</span></span><span class="sub">${fmt(u.area_ha, 2)} ha · täckning ${fmt(u.coverage * 100)} % · ${u.parts.length} biotoper</span></div>`;
+  const dims = `<div class="dims">${dimBox('Status', u.dims.status, 'var(--accent)', true)}${dimBox('Tryck', u.dims.pressure, 'var(--press)')}${dimBox('Resiliens', u.dims.resilience, 'var(--res)')}${dimBox('Trolig framtid', u.dims.future, 'var(--accent)')}${dimBox('Poäng', u.dims.score, 'var(--accent)')}</div>`;
+  const comp = isBio ? '' : `<h3 style="margin-top:12px">Sammansättning</h3><div class="comp" style="margin-bottom:8px">${u.parts.map(p => `<i style="width:${(p.fraction * 100).toFixed(2)}%;background:${kc(p.klass)}" title="${esc(p.id)} ${fmt(p.fraction * 100)} %"></i>`).join('')}</div>
+    <div class="scroll"><table><tr><th>Biotop</th><th class="n">Andel av enheten</th><th class="n">Andel av biotopen</th><th class="n">Status</th><th class="n">Klass</th></tr>${u.parts.filter(p => p.fraction >= 0.002).map(p => { const b = U[p.id]; return `<tr class="clk" data-go="${p.id}"><td>${esc(p.id)} <span class="src">${esc((b.biotop || '').slice(0, 36))}</span></td><td class="n">${fmt(p.fraction * 100, 1)} %</td><td class="n">${fmt(p.fraction_of_zone * 100)} %</td><td class="n">${fmt(p.status)}</td><td class="n"><span class="kl" data-k="${p.klass}">${p.klass}</span></td></tr>`; }).join('')}</table></div>`;
+  P.innerHTML = head + dims + flower(u) +
+    `<div class="legend" style="margin:0 0 10px;justify-content:center">${CATS.map(c => `<span><i class="sw" style="background:${cc(c)}"></i>${esc(BY[c].name)} ${fmt(u.scores[c])}</span>`).join('')}<span><i class="sw" style="background:repeating-linear-gradient(45deg,var(--hyp) 0 2px,transparent 2px 5px)"></i>hypotetiskt</span><span><i class="sw" style="border:1.5px dashed var(--av);background:none"></i>gapfyllt</span></div>` +
+    comp +
+    `<h3 style="margin-top:12px">Indikatorer${isBio ? '' : ' (areaviktade)'}</h3><div class="scroll"><table><tr><th>Indikator</th><th class="n">Värde</th><th class="n">Poäng</th></tr>${layerRows(IND)}<tr class="grp"><td colspan="3">Tryck</td></tr>${layerRows(D.pressures)}<tr class="grp"><td colspan="3">Resiliens</td></tr>${layerRows(D.resilience)}</table></div>`;
+}
+document.addEventListener('click', e => { const r = e.target.closest('[data-go]'); if (r) { const id = r.dataset.go; if (U[id].level !== level) { sel = id; setLevel(U[id].level); } else select(id); } });
+function select(id) { sel = id; drawMap(); panel(); document.querySelectorAll('tr.sel').forEach(x => x.classList.remove('sel')); document.querySelectorAll(`tr[data-go="${id}"]`).forEach(x => x.classList.add('sel')); }
+
+// ── Tabell över alla enheter på vald nivå ──
+const bar = (v, c) => `<div class="bar"><i style="width:${v ?? 0}%;background:${c}"></i></div>`;
+function table() {
+  document.getElementById('tabs').innerHTML = D.levels.map(l => `<button data-t="${l.id}" aria-pressed="${l.id === level}">${esc(l.name)} (${atLevel(l.id).length})</button>`).join('');
+  const us = [...atLevel(level)].sort((a, b) => b.dims.status - a.dims.status);
+  document.getElementById('tunits').innerHTML = `<tr><th>Enhet</th><th>${level === 'biotop' ? 'Biotop' : 'Sammansättning'}</th><th class="n">ha</th><th class="n">Expert</th><th class="n">Status</th><th class="n">Klass</th>${CATS.map(c => `<th>${esc(BY[c].short || BY[c].name)}</th>`).join('')}<th class="n">Tryck</th><th class="n">Resil.</th><th class="n">Framtid</th><th class="n">Fyllt</th><th class="n">Saknas</th></tr>` +
+    us.map(u => `<tr class="clk${u.id === sel ? ' sel' : ''}" data-go="${u.id}"><td><b>${esc(u.name)}</b></td><td>${level === 'biotop' ? `${esc(u.biotop.slice(0, 44))}<br><span class="src">${esc(u.naturtyp)}</span>` : `<div class="comp">${u.parts.map(p => `<i style="width:${(p.fraction * 100).toFixed(2)}%;background:${kc(p.klass)}"></i>`).join('')}</div><span class="src">${u.parts.filter(p => p.fraction >= 0.03).slice(0, 6).map(p => `${esc(p.id)} ${fmt(p.fraction * 100)} %`).join(' · ')}</span>`}</td><td class="n">${fmt(u.area_ha, 2)}</td><td class="n"><span class="kl" data-k="${Math.round(u.expert_klass)}">${fmt(u.expert_klass, level === 'biotop' ? 0 : 1)}</span></td><td class="n">${fmt(u.dims.status)}</td><td class="n"><span class="kl" data-k="${u.nvx_klass}">${u.nvx_klass}</span></td>${CATS.map(c => `<td>${bar(u.scores[c], cc(c))}</td>`).join('')}<td class="n">${fmt(u.dims.pressure)}</td><td class="n">${fmt(u.dims.resilience)}</td><td class="n">${fmt(u.dims.future)}</td><td class="n">${fmt(u.fraction_filled * 100)} %</td><td class="n">${fmt(u.fraction_missing * 100)} %</td></tr>`).join('');
+}
+document.getElementById('tabs').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setLevel(b.dataset.t); });
+
+// ── Indexträd ──
+function treeHtml(b, d) {
+  const s = BY[b], kids = KIDS[b] || [];
+  const w = s.main ? `<span class="w">w ${s.w}</span> ` : '';
+  const fn = s.fn === 'norm' ? `<span class="fn">norm(${s.threshold} / ${s.zero}) ${esc(s.units)}</span> <span class="tag${s.hypothetical ? ' hyp' : ''}">${esc(s.source)}</span>` : `<span class="fn">power mean, p=${s.exponent}</span>`;
+  return `<div style="--d:${d}">${w}<b>${esc(s.name)}</b> ${fn}</div>` + kids.map(k => treeHtml(k, d + 1)).join('');
+}
+document.getElementById('tree').innerHTML = treeHtml('NVX', 0);
+document.getElementById('ptree').innerHTML = D.pressures.map(p => `<div style="--d:0"><span class="w">rank ${p.rank}</span> <b>${esc(p.name)}</b> <span class="tag">${esc(p.source)}</span></div>`).join('');
+document.getElementById('rtree').innerHTML = D.resilience.map(r => `<div style="--d:0"><span class="w">w ${r.w}</span> <b>${esc(r.name)}</b> <span class="tag${r.hypothetical ? ' hyp' : ''}">${esc(r.source)}</span></div>`).join('');
+
+drawMap(); panel(); table();
+</script>
