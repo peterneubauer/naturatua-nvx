@@ -92,6 +92,7 @@ tr.grp td { font-weight: 600; color: var(--fg2); font-size: 11.5px; text-transfo
 .tree .w { color: var(--muted); } .tree .fn { color: var(--fg2); }
 .note { border-left: 3px solid var(--av); padding: 6px 12px; color: var(--fg2); font-size: 13.5px; max-width: 72ch; }
 .src { color: var(--muted); font-size: 12px; }
+a { color: var(--accent); text-underline-offset: 2px; }
 code { font: 12.5px var(--mono); background: color-mix(in oklab, var(--fg) 6%, transparent); padding: 1px 4px; border-radius: 3px; }
 .tip { position: fixed; pointer-events: none; background: var(--surface); color: var(--fg); border: 1px solid var(--line); border-radius: 6px; padding: 6px 9px; font: 12px/1.4 var(--body); box-shadow: 0 4px 16px rgba(0,0,0,.12); max-width: 280px; z-index: 5; }
 .tip[hidden] { display: none; }
@@ -175,6 +176,48 @@ details summary { cursor: pointer; font: 600 12px var(--body); text-transform: u
         <p>Rumslig gapfilling (<code>GF-S01</code>): saknad indikator ersätts med medianen för biotoper med samma expertklass. Objekt 27–30 saknar objektsblad i textexporten och är därför till stor del gapfyllda. eDNA saknas överallt (levereras våren 2027) och räknas som <em>saknad</em>, inte gapfylld.</p>
       </div>
       <div class="note">Lagren <b>Strukturell variation</b> (drönare/3D), <b>Konnektivitet</b> (satellit), <b>Markkol</b> (jordprover) och <b>Akustisk artrikedom</b> (AudioMoth) är hypotetiska och slumpade med frö 2026, för att testa punkt-till-polygon-aggregering och gapfilling. Byt ut dem mot Conifer Visions leverans, Sentinel-2, jordproverna och ljudanalysen från 2025 när de finns.</div>
+    </div>
+  </section>
+
+  <section class="card" style="display:grid;gap:16px">
+    <div>
+      <h2>Så räknas indexet</h2>
+      <p class="lede" style="font-size:15px">Ocean Health Index (OHI) är ett ramverk för att väga samman många olika mätningar av ett ekosystem till ett jämförbart tal mellan 0 och 100. Det utvecklades för världshaven 2012 och har sedan anpassats till Östersjön (Baltic Health Index) och till Blekinge (Blekinge Hälsoindex). Här testas samma räknesätt på land, med naturvärdesinventeringens biotoper som minsta enhet.</p>
+    </div>
+    <div class="two" style="gap:20px">
+      <div style="display:grid;gap:12px">
+        <div><h3>1. Indikator → poäng</h3><p>Varje indikator har ett referensvärde (ger poäng 1,0) och en nollpunkt (ger 0). Mellan dem är poängen linjär; utanför klipps den. Död ved får t.ex. full poäng vid 20 m³/ha, vilket motsvarar en gammal naturskog, och 0 vid 0. Referensvärdena är ett första förslag och avsedda att diskuteras med inventerarna.</p></div>
+        <div><h3>2. Poäng → delmål → kategori</h3><p>Indikatorerna vägs ihop till delmål (t.ex. Tillstånd = naturlighet ×2, död ved ×1, naturvärdesträd ×1) och delmålen till tre kategorier: Biotopvärde och Artvärde följer SS 199000:s två bedömningsgrunder; Landskap &amp; mark samlar lager som NVI inte mäter men som fjärranalys, drönare och jordprover kan ge.</p></div>
+        <div><h3>3. Kategori → NVX → naturvärdesklass</h3><p>De tre kategorierna vägs ihop med ett potensmedelvärde (p = 0,5). Det straffar obalans: en biotop med högt artvärde men lågt biotopvärde får lägre NVX än det aritmetiska medelvärdet, på samma sätt som SIS-matrisen placerar bedömningen nära diagonalen. NVX översätts till naturvärdesklass 1–4 (eller 5, ej naturvärde) med gränser som kalibreras mot inventerarnas egna klasser.</p></div>
+      </div>
+      <div style="display:grid;gap:12px">
+        <div><h3>4. Tryck, resiliens och trolig framtid</h3><p>OHI skiljer på hur det ser ut nu (status) och vart det är på väg. Tryck (avverkning, dikning, gödsling, invasiva arter, igenväxning, bebyggelse) rankas 0–3 per kategori i en tryckmatris; resiliens (aktiv skötsel, nyckelbiotop- eller Natura-status, konnektivitet) viktas per kategori. Trolig framtid = status × (1 + β·trend + (1−β)·(resiliens − tryck)), β = 0,67, och poängen är medelvärdet av status och trolig framtid. Skötselavtalet 2026–2031 räknas som resiliens inom BDU-området, så där håller framtiden uppe trots höga tryck från tidigare avverkning.</p></div>
+        <div><h3>5. Från biotop till fastighet</h3><p>Biotoperna är rapportzoner. Varje större enhet (BDU-ruta, BDU-område, skifte, fastighet, naturtyp, expertklass) får sitt värde som areaviktat medel av de biotoper den täcker, för varje gren och dimension. Punktdata (ljudinspelningar) kopplas till polygoner via en sökradie. Andelen av vikten som gapfyllts eller saknas följer med uppåt, så att osäkerheten syns på alla nivåer.</p></div>
+        <div><h3>6. Vad som inte ingår ännu</h3><p>Trender kräver minst två inventeringar; de är 0 här. Fyra lager är hypotetiska tills de verkliga leveranserna finns, och eDNA saknas helt. Modellen är gjord för att ta in nya indikatorer, inklusive AI-baserade, som en rad i indexträdet plus ett värde per polygon.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Referenser</h2>
+    <div class="two" style="gap:20px">
+      <div style="display:grid;gap:10px;font-size:14px">
+        <h3>Ocean Health Index och tillämpningar</h3>
+        <p>Halpern, B.S. m.fl. 2012. An index to assess the health and benefits of the global ocean. <i>Nature</i> 488: 615–620. <a href="https://doi.org/10.1038/nature11397">doi:10.1038/nature11397</a></p>
+        <p>Halpern, B.S. m.fl. 2017. Drivers and implications of change in global ocean health over the past five years. <i>PLOS ONE</i> 12(7): e0178267. <a href="https://doi.org/10.1371/journal.pone.0178267">doi:10.1371/journal.pone.0178267</a></p>
+        <p>Ocean Health Index. <a href="https://www.oceanhealthindex.org/">oceanhealthindex.org</a> · Metod och kod: <a href="https://ohi-science.org/">ohi-science.org</a> · R-paketet <a href="https://github.com/OHI-Science/ohicore">OHI-Science/ohicore</a> (<code>CalculateAll</code>, <code>CalculateGoalIndex</code>, <code>CalculatePressuresAll</code>, <code>CalculateResilienceAll</code>).</p>
+        <p>Baltic Health Index (BHI). Blenckner, T. m.fl. 2021. The Baltic Health Index (BHI): Assessing the social–ecological status of the Baltic Sea. <i>People and Nature</i> 3: 359–375. <a href="https://doi.org/10.1002/pan3.10178">doi:10.1002/pan3.10178</a> · <a href="https://baltic-ohi.shinyapps.io/dashboard/">Dashboard</a></p>
+        <p>Blekinge Hälsoindex. Lokal tillämpning av BHI för Blekinge skärgård. Kod: <a href="https://github.com/OHI-Baltic/bhi-blekinge">OHI-Baltic/bhi-blekinge</a> · Dokumentation: <a href="https://ohi-baltic.github.io/bhi-blekinge/">ohi-baltic.github.io/bhi-blekinge</a>. Härifrån kommer indexträdet (<code>IndexStructure</code>), <code>normalize_data</code>, <code>weighted_power_mean</code>, gapfilling-flaggorna och blomdiagrammet.</p>
+      </div>
+      <div style="display:grid;gap:10px;font-size:14px">
+        <h3>Naturvärdesinventering och naturtyper</h3>
+        <p>SIS. 2023. <i>SS 199000:2023 Naturvärdesinventering (NVI) – Genomförande, naturvärdesbedömning och redovisning</i>, samt <i>SIS-TS 199002:2023</i>. Svenska institutet för standarder. <a href="https://www.sis.se/">sis.se</a></p>
+        <p>Edlund, M. &amp; Anderberg, R. 2025. <i>Eksjö Ustorp 1:6, Naturvärdesinventering</i>. Ekologigruppen AB, slutversion 21 februari 2025. Fältinventering 7–8 maj 2024. På uppdrag av Insamlingsstiftelsen Framtidens Natur &amp; Kulturarv.</p>
+        <p>Salomon, L. 2026. <i>NVI av del av Eksjö Ustorp 1:6, Jönköpings län</i>. Salmonic AB, utkast 2026-08-16. Fältinventering 7 juli 2026. På uppdrag av Framtidens Natur &amp; Kulturarv.</p>
+        <p>Natura 2000. Rådets direktiv 92/43/EEG (art- och habitatdirektivet). Naturtyperna i NVI-objekten (9010 Taiga, 9160 Näringsrik ekskog) följer Naturvårdsverkets vägledningar för svenska naturtyper i habitatdirektivets bilaga 1. <a href="https://www.naturvardsverket.se/">naturvardsverket.se</a></p>
+        <p>Artskyddsförordningen (SFS 2007:845). SLU Artdatabanken. 2020. <i>Rödlistade arter i Sverige 2020</i>. <a href="https://www.artdatabanken.se/">artdatabanken.se</a></p>
+        <p>Kartlager och insamlad basdata: <a href="https://lab.naturatua.com/">lab.naturatua.com</a>. Kod för den här sidan: <a href="https://github.com/peterneubauer/naturatua-nvx">github.com/peterneubauer/naturatua-nvx</a>.</p>
+      </div>
     </div>
   </section>
 </main>
