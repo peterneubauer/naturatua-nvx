@@ -21,6 +21,14 @@
 body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--body); margin: 0;
   padding-block: 28px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
 main { max-width: 1240px; margin: 0 auto; display: grid; gap: 28px; }
+.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: -8px; }
+.top .links { display: flex; gap: 18px; flex-wrap: wrap; font-size: 13.5px; }
+.top .links a, .foot a { color: var(--fg2); text-decoration: none; border-bottom: 1px solid var(--line); }
+.top .links a:hover, .foot a:hover { color: var(--fg); border-bottom-color: var(--accent); }
+.logo { display: inline-flex; align-items: center; padding: 6px 10px; border-radius: 8px; background: #fff; line-height: 0; }
+.logo img { height: 28px; width: auto; }
+.foot { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; border-top: 1px solid var(--line); padding-top: 20px; font-size: 13.5px; color: var(--fg2); }
+.foot .logo img { height: 24px; }
 h1 { font: 500 clamp(28px, 4vw, 40px)/1.1 var(--display); margin: 0; letter-spacing: -0.01em; text-wrap: balance; }
 h2 { font: 600 20px/1.2 var(--display); margin: 0 0 12px; }
 h3 { font: 600 12px/1.3 var(--body); text-transform: uppercase; letter-spacing: .06em; color: var(--fg2); margin: 0 0 8px; }
@@ -110,6 +118,7 @@ details summary { cursor: pointer; font: 600 12px var(--body); text-transform: u
 </style>
 
 <main>
+  <nav class="top"><a class="logo" href="https://naturatua.com/" title="NaturaTua – naturatua.com"><img src="naturatua.png" alt="NaturaTua" width="150" height="28"></a><span class="links"><a href="https://naturatua.com/">naturatua.com</a><a href="https://lab.naturatua.com/">Labbet: kartlager och basdata</a><a href="https://github.com/peterneubauer/naturatua-nvx">Kod på GitHub</a></span></nav>
   <header style="display:grid;gap:12px">
     <h1>Ustorp Naturvärdesindex</h1>
     <p class="lede">Ocean Health Index-metoden (ohicore, Blekinge Hälsoindex) tillämpad på naturvärdesbiotoperna i NVI 2024 och 2026. Status aggregeras från indikatorer till tre kategorier och vidare till NVX 0–100 och naturvärdesklass. Tryck och resiliens ger en trolig framtid. Allt aggregeras areaviktat från biotop till BDU-ruta, BDU-område, skifte och hela fastigheten.</p>
@@ -220,6 +229,8 @@ details summary { cursor: pointer; font: 600 12px var(--body); text-transform: u
       </div>
     </div>
   </section>
+
+  <footer class="foot"><a class="logo" href="https://naturatua.com/"><img src="naturatua.png" alt="NaturaTua" width="128" height="24"></a><span>Ett test av NaturaTua AB, Malmö. Projektet Ustorp drivs tillsammans med Insamlingsstiftelsen Framtidens Natur &amp; Kulturarv. <a href="https://naturatua.com/">naturatua.com</a> · <a href="https://lab.naturatua.com/">lab.naturatua.com</a> · <a href="mailto:info@naturatua.com">info@naturatua.com</a></span></footer>
 </main>
 <div class="tip" id="tip" hidden></div>
 
