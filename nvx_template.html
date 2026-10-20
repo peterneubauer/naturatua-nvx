@@ -426,7 +426,9 @@ function panel() {
     `<details open><summary>Pressure matrix</summary>${matrix(u, 'p')}</details>` +
     `<details open><summary>Resilience matrix</summary>${matrix(u, 'r')}</details>`;
 }
-document.addEventListener('click', e => { const r = e.target.closest('[data-go]'); if (r) { const id = r.dataset.go; if (U[id].level !== level) { sel = id; setLevel(U[id].level); } else select(id); } });
+// Re-rendering the map and panel above the tables changes their height; keep the clicked element where it is on screen.
+function keepInPlace(el, fn) { const before = el.getBoundingClientRect().top; fn(); window.scrollBy(0, el.getBoundingClientRect().top - before); }
+document.addEventListener('click', e => { const r = e.target.closest('[data-go]'); if (r) { const id = r.dataset.go; keepInPlace(r, () => { if (U[id].level !== level) { sel = id; setLevel(U[id].level); } else select(id); }); } });
 function select(id) { sel = id; drawMap(); panel(); document.querySelectorAll('tr.sel').forEach(x => x.classList.remove('sel')); document.querySelectorAll(`tr[data-go="${id}"]`).forEach(x => x.classList.add('sel')); }
 
 // ── Table of all units at the selected level ──
@@ -437,7 +439,7 @@ function table() {
   document.getElementById('tunits').innerHTML = `<tr><th>Unit</th><th>${level === 'biotop' ? 'Biotope (Swedish, from the NVI)' : 'Composition'}</th><th class="n">ha</th><th class="n">Expert</th><th class="n">Status</th><th class="n">Class</th>${CATS.map(c => `<th>${esc(BY[c].short || BY[c].name)}</th>`).join('')}<th class="n">Pressure</th><th class="n">Resil.</th><th class="n">Future</th><th class="n">Filled</th><th class="n">Missing</th></tr>` +
     us.map(u => `<tr class="clk${u.id === sel ? ' sel' : ''}" data-go="${u.id}"><td><b>${esc(u.name)}</b></td><td>${level === 'biotop' ? `${esc(u.biotop.slice(0, 44))}<br><span class="src">${esc(u.naturtyp)}</span>` : `<div class="comp">${u.parts.map(p => `<i style="width:${(p.fraction * 100).toFixed(2)}%;background:${kc(p.klass)}"></i>`).join('')}</div><span class="src">${u.parts.filter(p => p.fraction >= 0.03).slice(0, 6).map(p => `${esc(p.id)} ${fmt(p.fraction * 100)} %`).join(' · ')}</span>`}</td><td class="n">${fmt(u.area_ha, 2)}</td><td class="n"><span class="kl" data-k="${Math.round(u.expert_klass)}">${fmt(u.expert_klass, level === 'biotop' ? 0 : 1)}</span></td><td class="n">${fmt(u.dims.status)}</td><td class="n"><span class="kl" data-k="${u.nvx_klass}">${u.nvx_klass}</span></td>${CATS.map(c => `<td>${bar(u.scores[c], cc(c))}</td>`).join('')}<td class="n">${fmt(u.dims.pressure)}</td><td class="n">${fmt(u.dims.resilience)}</td><td class="n">${fmt(u.dims.future)}</td><td class="n">${fmt(u.fraction_filled * 100)} %</td><td class="n">${fmt(u.fraction_missing * 100)} %</td></tr>`).join('');
 }
-document.getElementById('tabs').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setLevel(b.dataset.t); });
+document.getElementById('tabs').addEventListener('click', e => { const b = e.target.closest('button'); if (b) keepInPlace(document.getElementById('tabs'), () => setLevel(b.dataset.t)); });
 
 // ── Index tree ──
 function treeHtml(b, d) {
