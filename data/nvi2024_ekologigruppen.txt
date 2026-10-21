@@ -1,0 +1,2394 @@
+Eksjö Ustorp 1:6, Naturvärdesinventering
+
+Naturvärdesinventering (NVI) enligt SIS 199000:2023, vid fastighet Ustorp 1:6, Eksjö kommun
+
+Om rapporten
+
+BESTÄLLARE Insamlingstiftelsen Framtidens Natur & Kulturarv Beställarens kontaktperson: Sindre Magnusson Telefon: 070 214 43 67
+
+UTFÖRANDE ORGANISATION Ekologigruppen AB (organisationsnummer: 556342-2285) Ekologigruppens kontaktperson: Maya Edlund Adress huvudkontor: Åsögatan 121, 116 24 Stockholm Telefon: 08-525 201 00 www.ekologigruppen.se
+
+UPPDRAGET Titel: Eksjö Ustorp 1: 6, Naturvärdesinventering Slutversion: 21 februari 2025 Rapporten bör citeras: Ekologigruppen 2024. Eksjö Ustorp 1: 6, Naturvärdesinventering. Uppdragsansvarig: Maya Edlund Fältinventering: Maya Edlund, Rikard Anderberg Rapport: Maya Edlund GIS och kartor: Maya Edlund Intern granskning av rapport: Rikard Anderberg 2024-06-29 Foton (om inget annat anges): © Maya Edlund Internt projektnummer: 10779 Bild på framsidan från Naturvärdesbiotop 1
+
+1
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025 Innehåll
+
+Sammanfattning 2
+
+Bakgrund och syfte 3 Omfattning och avgränsningar 4
+
+Metod 5 NVI – grundutförande 5
+
+Allmän områdesbeskrivning 6 Landskapsområden 6 Vattensystem 8 Historisk markanvändning 9 Naturvårdsstatus och övriga utpekanden 9
+
+Naturvärdesbiotoper 10 Högt naturvärde – naturvärdesklass 2 12 Påtagligt naturvärde – naturvärdesklass 3 14 Visst naturvärde – naturvärdesklass 4 16 Lågt- och ej naturvärde 17
+
+Värdearter 17 Skyddade arter 19 Rödlistade arter 20 Övriga intressanta värdearter 21
+
+Invasiva främmande arter 22
+
+Referenser 23
+
+Bilaga 1 Katalog med naturvärdesbiotoper Bilaga 2 Artkatalog Bilaga 3 Metod för naturvärdesinventering
+
+2
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025 Sammanfattning
+
+Ekologigruppen har på uppdrag av Insamlingstiftelsen Framtidens Natur & Kulturarv genomfört en naturvärdesinventering (NVI), där naturvärdesklass 1–4 har ingått. Resultatet utgör ett kunskapsunderlag i arbetet med att utveckla naturvärdena på platsen.
+
+Området präglas av igenväxande jordbrukslandskap och unga skogar präglade av skogsbruk Skogsbeståndens ålder varierar något, men är generellt ganska låga. Områdets naturmark är starkt präglad av pågående skogsbruk och igenväxning av tidigare öppnare mark. Flertalet gräsytor som tidigare nyttjats som åker är idag inte aktivt brukade, och på flera äldre betesmarker har betet upphört.
+
+Höga naturvärden är främst knutna till jordbrukslandskapets gräsmarker De högsta naturvärdena i området är främst knutna till dess kärlväxtflora, där bland annat många naturvårdsrelevanta arter knutna till olika typer av markförhållanden förekommer. Det förekommer tre naturvärdesbiotoper med högt naturvärde - naturvärdesklass 2 där värdena är särskilt höga.
+
+Värdearter förekommer i varierande grad i området I området förekommer 102 naturvårdsarter varav de flesta är värdearter och ligger till grund för naturvärdesbedömningen. 16 rödlistade och 16 fridlysta arter förekommer, bland annat förekommer vårstarr rikligt och spritt inom inventeringsområdet, vårstarr är rödlistad som nära hotad (NT).
+
+3
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025 Bakgrund och syfte
+
+Ekologigruppen har på uppdrag av Insamlingstiftelsen Framtidens Natur & Kulturarv genomfört en naturvärdesinventering (NVI), där naturvärdesklass 1–4 har ingått. Resultatet utgör ett kunskapsunderlag i arbetet med att utveckla naturvärdena på platsen. Kartläggningsområdet omfattar ett inventeringsområde överensstämmer med fastighet Eksjö Ustorp 1:6, vilken utgörs av tre delområden (Figur 1). Kartläggningsområdet ligger på södra sidan av sjön Solgen, mellan Eksjö och Vetlanda i Eksjö kommun. Läge och avgränsning framgår av Figur 1. Där framgår också områdets relation till kända naturvärden i omgivande landskap.
+
+Figur 1. Kartläggningsområdets läge och relation till kända områdesskydd och naturvårdsavtal av betydelse för biologisk mångfald. Blå polygon visar fastighetsgräns för fastighet Eksjö Ustorp 1:6. Artfynd och strandskydd redovisas inte i kartan.
+
+4
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025 Omfattning och avgränsningar
+
+I en naturvärdesinventering (NVI) enligt SIS-standard ingår endast kartläggning av områden med värde för biologisk mångfald. Bedömningen beskriver endast det aktuella naturvärdet, historiskt eller potentiellt framtida naturvärde bedöms inte. Inventeringen redovisar och beskriver naturvärdesbiotoper (avgränsade områden) som har naturvärdesklass 1–4 utifrån en standardiserad skala. Områden med lägre naturvärde redovisas inte närmare. Detta uppdrag omfattar en naturvärdesinventering (NVI) på fältnivå, i enlighet med SIS- standard (SS 199000:2023). Omfattningen av detta uppdrag redovisas i Tabell 1.
+
+Tabell 1. Omfattning och geografisk avgränsning av detta uppdrag.
+
+Kategori Ambitionsnivå och tillägg
+
+Nivå Fält
+
+Omfattning Naturvärdesklass 1–4
+
+Detaljeringsgrad Medel - minsta karterbara enhet 0,1 hektar
+
+5
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025 Metod
+
+NVI – grundutförande I detta avsnitt sammanfattas metod för naturvärdesbedömning enligt SIS. Ekologigruppens tillämpning av metoden beskrivs mer ingående i Bilaga 3 och i detalj i standardens Krav och vägledningsdokument, samt tekniska specifikation (SIS 2023 och SIS TS 2023). I en naturvärdesinventering avgränsas och värderas områden avseende deras betydelse för biologisk mångfald. Dessa avgränsade områden kallas naturvärdesbiotoper. Varje naturvärdesbiotop tilldelas en naturvärdesklass och bedömningen utgår från ett områdes biotopkvaliteter (biotopvärde) och vilka arter som utnyttjar det (artvärde). Fältinventeringen utfördes av Maya Edlund och Rikard Anderberg den 7 och 8 maj år 2024.
+
+Osäkerhet i bedömningen Inventeringsområdet fältbesöktes i början av maj. Artvärden är av denna anledning framför allt bedömda från förekomster av mossor, lavar, vedsvampar, samt spår av vedlevande insekter och tidiga kärlväxtarter. Den tidiga inventeringsperioden medförde att flera värdearter bland högsommararter av kärlväxter, marklevande svampar, fåglar, insekter inte kunnat inventeras. Naturvärdesinventeringen har dock genomförts med god säkerhet då biotopvärdena bedöms som säkra och värdearter inom flera av de viktigaste artgrupperna för de förekommande biotoptyperna har kunnat inventeras. God säkerhet innebär att ytterligare inventering eller kompletterande fördjupade inventeringar sannolikt inte leder till att naturvärdesbedömningen kommer att ändras.
+
+Preliminär bedömning En naturvärdesbiotop kan ha en preliminär bedömning av naturvärdesklass eller en preliminär avgränsning. Detta innebär att bedömningen ej kunnat göras med god säkerhet, exempelvis på grund av att inventeringen genomförts vid en tidpunkt olämplig för inventering av avgörande artgrupper eller om naturvärdesbiotopen inte fältinventerats. Preliminär bedömning kan också anges om det är en naturvärdesbiotop som sträcker sig långt utanför inventeringsområdet och tillgänglig miljöinformation saknas. I det aktuella området har dock biotopvärdena bedömts som säkra.
+
+6
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025 Allmän områdesbeskrivning
+
+Inventeringsområdet som är 57 hektar stort utgörs främst av yngre skog och trädesåker/gräsmark. Jordarterna är till största del sandiga och utgörs främst av isälvssediment och sandiga moräner. Berggrunden utgörs av både sura (Tonalit-granodiorit) och intermediära till basiska (Gabbroid-dioritoid) bergarter. Skogsbeståndens ålder varierar något, men är generellt ganska låga. Områdets skogsmark är starkt präglade av pågående skogsbruk och det förekommer ungskog uppkommen av igenväxning av tidigare öppnare mark. Flertalet gräsytor som tidigare nyttjats som åker är idag inte aktivt brukade, och på flera äldre betesmarker har betet upphört.
+
+Landskapsområden Kartläggningsområdet består av fyra landskapsområden, utav dessa är tre värdelandskap. Avgränsade landskapsområden och värdelandskap anges i Tabell 2.
+
+Tabell 2. Avgränsade landskapsområden och värdelanskap inom kartläggningsområdet.
+
+Landskapsområde Nyckelkaraktär Värdelandskap
+
+1 Ädellövmiljö Ja
+
+2 Åker och gräsmarker Ja
+
+3 Sammanhängande skogsområden Nej
+
+4 Genomsilad fuktskog Ja
+
+Lanskapsområden och värdelandskap
+
+Landskapsområden är landskapsavsnitt med särskilda karaktärsdrag, såsom särskilda landformer, arter, naturtyper eller någon form av mänsklig påverkan. Landskapsområden kan sträcka sig även utanför inventeringsområdet.
+
+Värdelandskap är ett landskapsområde med särskild betydelse för biologisk mångfald. De utgörs av naturvärdesbiotoper i en eller flera biotoptyper som tillsammans bildar ett sammanhängande landskap med större betydelse för biologisk mångfald.
+
+1 – Ädellövmiljö Värdelandskap 1 omfattar naturvärdesbiotop 19 (Figur 5). Värdelandskapet utgörs huvudsakligen av en ädellövsmiljö med något äldre träd än större delen av inventeringsområdet. Ytan är viktig för ädellövskontinuiteten (både i tid och rum) i området och utgör ett område som är värdefullt för arter knutna till ädellövträd. Här och där i inventeringsområdet och dess närhet finns äldre ädellövträd med exempelvis förekomster av almlav på gamla askar strax utanför inventeringsområdet (rödlistad som sårbar, VU). Värdelandskapets träd kommer inom en ganska snar framtid kunna fungera som ersättningsträd till dessa.
+
+7
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025 2 – Åker- och gräsmarker vid Ustorp
+
+Värdelandskap 2 omfattar bland annat naturvärdesbiotoperna 2, 3, 5, 16, 17, 18 och sträcker sig utanför inventeringsområdet (Figur 5). Värdelandskapet utgörs huvudsakligen av torr, öppen och i stora delar näringsfattig mark (delar av åkermarken är dock näringsrikare). Värdelandskapet är framför allt viktigt för gräsmarksarter, där exempelvis vårstarr (rödlistad som nära hotad, NT) är en av områdets karaktärsarter. Trots att vallåkrar och icke-brukad åkermark har lite fattigare flora är värdefulla gräsmarksarter på spridning in från åkerrenar, vägkanter och befintlig gräsmark.
+
+3 – Sammanhängande skogsområde vid Ustorp Landskapsområde 3 utgörs av de sammanhängande skogsyor som omgärdar området. Generellt har de något lägre naturvärden och ingår inte i ett värdelandskap, men de fyller trots detta en viktig funktion eftersom de utgör spridningsvägar i landskapet för mindre krävande arter.
+
+Figur 2. Landskapsområden och värdelandskap som avgränsats inom och i anslutning till inventeringsområdet.
+
+4 – Genomsilad skog Värdelandskap 4 motsvarar naturvärdesbiotop 1 samt en av nyckelbiotop utpekad av Skogsstyrelsen 2002 (Figur 5) och utgörs av en basiskt påverkad skog med källpåverkan. Värdelandskapet har värden för arter knutna till källmiljöer och miljöer med hög och jämn luftfuktighet, exempelvis gullpudra.
+
+8
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025 Vattensystem
+
+I Figur 3 nedan redovisas vilka vattensystem (avrinningsområden, hav, sjöar och vattendrag) som förekommer inom inventeringsområdet. Vidare redovisas den senaste klassificeringen av ekologisk status eller ekologisk potential enligt Vattenkartan (VISS). Vattensystemen uppströms och nedströms inventeringsområdet visas inte i sin helhet, men dess koppling till inventeringsområdet framgår av kartan. Fastigheten Eksjö Ustorp 1:6 ligger i anslutning till sjön Solgen och inom dess avrinningsområde. Sjön bedöms idag ha måttlig ekologisk status.
+
+Figur 3. I kartan redovisas kända vattensystem samt senaste klassificeringen av ekologisk status från VISS.
+
+9
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025 Historisk markanvändning
+
+Stora delar av fastigheten har fördelningen av skog och öppen mark varit mer eller mindre densamma under lång tid (Figur 4), men det aktiva jordbruket har skalats ned kraftigt, och utgörs i dagsläget av viss vallodling och mindre areal betesmark. Flera gräsmarker som tidigare sannorlikt har betats är idag under igenväxning, och åkerytor har flerårig vall där den vilda floran i vissa fall har börjat etablera sig från vägkanter och åkerrenar. I de områden som tidigare utgjorts av skog finns generellt även skog även idag, men aktivt skogsbruk har bedrivits och skogarna är över lag unga med tydliga spår av skogsbruk. Generellt finns få gamla träd.
+
+Figur 4. Fastigheten Eksjö Ustorp 1:6 på ortofoto från 1960. Ortofotot är hämtat från Lantmäteriets databas över historiska ortofoton.
+
+Naturvårdsstatus och övriga utpekanden
+
+Skydd enligt miljöbalken Nedan redovisas områden med skydd enligt miljöbalken.
+
+Biotopskydd Generella biotopskydd finns inom inventeringsområdet, främst i form av Stenmurar i jordbruksmark, dock har ingen fördjupad inventering av generellt biotopskydd ingått i detta uppdrag.
+
+10
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025 Naturreservat
+
+Inga naturreservat korsar fastigheten eller det utökade inventeringsområdet.
+
+Riksintresse Varken fastigheten eller det utökade inventeringsområdet omfattas av riksintressen.
+
+Övriga naturvårdsutpekanden
+
+Nyckelbiotoper I den södra/sydöstra delen av inventeringsområdet ligger en nyckelbiotop (Figur 1), som i stora delar överlappar med naturvärdesbiotop 1 (se nedan). Den är cirka 1,6 hektar och utgörs av lövsumpskog. I de sydvästra och nordvästra delarna av inventeringsområdet finns objekt med skogliga naturvärden enligt Skogsstyrelsen (Figur 1). Dessa utgörs av en ädellövskog som överlappar med biotop 19 (se nedan) och en brant som överlappar med biotop 24 (se nedan). Naturvärdesbiotoper
+
+Naturvärdesinventeringen har resulterat i 31 avgränsade naturvärdesbiotoper (Figur 5, Tabell 3), vilka sammanfattas nedan. I bilaga 1 redovisas respektive naturvärdesbiotop i detalj och med representativa bilder. Tre naturvärdesbiotoper med högt naturvärde, 14 naturvärdesbiotoper med påtagligt naturvärde och 14 naturvärdesbiotoper med visst naturvärde har urskilts (Figur 5, Tabell 3). Naturvärdesbiotoper med högsta naturvärde har inte påträffats i området. Övriga delar av området bedöms ej ha naturvärde.
+
+Mer om naturvärdesbiotoper
+
+Naturvärdesbiotoper har inget direkt lagligt skydd men i miljöbalkens inledande paragraf (1 kap. 1 §) anges att lagen ska tillämpas så att värdefulla naturmiljöer skyddas och vårdas samt att den biologiska mångfalden bevaras. Miljöbalkens hushållningsbestämmelser (3 kap. 3 §) anger dessutom att mark- och vattenområden som är särskilt känsliga från ekologisk synpunkt skall så långt som möjligt skyddas mot åtgärder som kan skada naturmiljön. Naturvärdesbiotoper med naturvärdesklass 1 och 2 är särskilt känsliga från ekologisk synpunkt.
+
+Tabell 3. Avgränsade naturvärdesbiotoper med objektnummer, naturvärdesklass, biotoptyp och säkerhet i bedömning (god säkerhet eller preliminär bedömning).
+
+ID Naturvärdesklass Biotoptyp Bedömning
+
+1 Högt naturvärde - naturvärdesklass 2 Klibbalskog God säkerhet
+
+2 Påtagligt naturvärde - naturvärdesklass 3 Äldre kulturmiljö God säkerhet
+
+3 Visst naturvärde - naturvärdesklass 4 Träda God säkerhet
+
+11
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025
+
+ID Naturvärdesklass Biotoptyp Bedömning
+
+4 Påtagligt naturvärde - naturvärdesklass 3 Öppen gräsmark God säkerhet
+
+5 Visst naturvärde - naturvärdesklass 4 Stenröse God säkerhet
+
+6 Påtagligt naturvärde - naturvärdesklass 3 Hässle God säkerhet
+
+7 Påtagligt naturvärde - naturvärdesklass 3 Triviallövskog God säkerhet
+
+8 Påtagligt naturvärde - naturvärdesklass 3 Igenväxningsmark God säkerhet
+
+9 Visst naturvärde - naturvärdesklass 4 Yngre produktionsskog God säkerhet
+
+10 Högt naturvärde - naturvärdesklass 2 Lövsumpskog God säkerhet
+
+11 Påtagligt naturvärde - naturvärdesklass 3 Björkskog God säkerhet
+
+12 Visst naturvärde - naturvärdesklass 4 Flerårsvall God säkerhet
+
+13 Påtagligt naturvärde - naturvärdesklass 3 Igenvuxen hagmark God säkerhet
+
+14 Visst naturvärde - naturvärdesklass 4 Kärr God säkerhet
+
+15 Påtagligt naturvärde - naturvärdesklass 3 Buskbryn God säkerhet
+
+16 Påtagligt naturvärde - naturvärdesklass 3 Öppen betesmark God säkerhet
+
+17 Visst naturvärde - naturvärdesklass 4 Flerårsvall God säkerhet
+
+18 Påtagligt naturvärde - naturvärdesklass 3 Äldre betespräglad skog God säkerhet
+
+19 Högt naturvärde - naturvärdesklass 2 Ädellövskog God säkerhet
+
+20 Visst naturvärde - naturvärdesklass 4 Barrskog God säkerhet
+
+21 Påtagligt naturvärde - naturvärdesklass 3 Äldre betespräglad skog God säkerhet
+
+22 Visst naturvärde - naturvärdesklass 4 Hygge God säkerhet
+
+23 Visst naturvärde - naturvärdesklass 4 Björkskog God säkerhet
+
+24 Påtagligt naturvärde - naturvärdesklass 3 Granskog God säkerhet
+
+25 Påtagligt naturvärde - naturvärdesklass 3 Sumpskog God säkerhet
+
+26 Visst naturvärde - naturvärdesklass 4 Yngre produktionsskog God säkerhet
+
+27 Visst naturvärde - naturvärdesklass 4 Björkskog God säkerhet
+
+28 Påtagligt naturvärde - naturvärdesklass 3 Vägren God säkerhet
+
+29 Visst naturvärde - naturvärdesklass 4 Björkskog God säkerhet
+
+30 Visst naturvärde - naturvärdesklass 4 Björkskog God säkerhet
+
+12
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025 Figur 5. Naturvärdesbiotopernas läge och fördelning inom inventeringsområdet. De högsta naturvärdena inom området finns i naturvärdesbiotoperna 1, 10 och 19. Detaljerad beskrivning av alla naturvärdesbiotoper finns i bilaga 1.
+
+Högt naturvärde – naturvärdesklass 2 I inventeringsområdet har tre naturvärdesbiotoper med högt naturvärde (se faktaruta) avgränsats (Figur 5). Naturvärdesbiotoperna utgörs av biotoptypen Lövsumpskog (biotop 10) Lövsumpskog/klibbalskog (biotop 1), samt Ädellövskog (biotop 19).
+
+Lövsumpskogar med högt naturvärde Naturvärdesbiotop 1 utgörs av en sumpskogsmiljö (Figur 6). Trädskiktet är naturligt föryngrat, men gamla träd saknas, och äldre flygbilder tyder på att biotopen tidigare varit något öppnare. Trädskiktet utgörs främst av klibbal och glasbjörk, med mindre inslag av bland annat ask. I buskskiktet ingår bland annat gråvide. Fältskiktet är ormbunks- och örtrikt med inslag av flera naturvårdsarter, exempelvis kärrfibbla och gullpudra, som indikerar rörligt markvatten. Bottenskiktet är ganska artrikt och domineras av mossor, med vissa inslag av naturvårdsarter
+
+Mer om naturvärdesklass 2 - Högt naturvärde
+
+Denna klass omfattas av områden med stor särskild betydelse för biologisk mångfald, och som har har väsentliga kvaliteter typiska för naturliga ekosystem. Här finns goda livsmiljöer för naturvårdsarter och ofta förekommer rödlistade och hotade arter. Områden med högt naturvärde är värdekärnor för biologisk mångfald i en nationell och regional grön infrastruktur. Varje enskilt område med denna naturvärdesklass bedöms vara av särskild betydelse för att upprätthålla biologisk mångfald på regional eller nationell nivå (SIS 2023).
+
+13
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025 som gynnas av hög och jämn luftfuktighet, exempelvis trubbfjädermossa. I anslutning till en
+
+angränsande mindre väg finns torrare brynmiljöer. Trots att trädskiktet är ungt finns viss sockelbildning i delar av biotopen, vilket tyder på viss kontinuitet. Mängden död ved är lägre än önskvärd, särskilt stammar med grövre dimensioner och stammar med vattenkontakt saknas. I biotopens blötare partier, samt i en minde damm i den västra delen finns potential för groddjur. Naturvädesbiotop 10 utgörs av ett mindre skogskärr med gran, tall, klibbal och glasbjörk, kring ett mindre stråk med stående vatten och tydligt hygrofil vegetation med starr, vitmossor och andra vattenkrävande arter. Träden i och kring biotopen är överlag tämligen unga (runt 40– 70 år) men enstaka äldre granar och tallar förekommer också. Död ved förekommer i viss mängd, delvis blöt ved nere i kärret, samt enstaka lågor och stubbar runt om. Kärret torkar troligen upp delvis under sommaren, och bedöms inte ha några särskilda värden för groddjur. Biotopens värden är knutna till död ved i olika nedbrytningsstadier av olika trädslag, vilket gynnar många arter i olika organismgrupper. Den fuktiga miljön gynnar många mossor och kärlväxter. Flera naturvårdsarter noterades i objektet, bland annat de ovanliga lavarna gammelgranslav och kattfotslav, samt vedsvampen gullgröppa, en vedsvamp som är knuten till död barrträdsved. Objektet bedöms ha god utvecklingspotential som blandsumpskog.
+
+Ädellövskogsmiljöer med högt naturvärde Naturvärdesbiotop 19 utgörs av en sydsluttande ädellövskog som domineras av ek i den västra delen, och av skogslönn och ask i den östra. (Figur 6). Träden är äldst i östra delen, där de äldsta bedöms vara strax över 100 år gamla. Ekarna i väster är mest tämligen unga, men enstaka äldre träd förekommer också. Biotopen har delvis prägel av mänsklig påverkan, troligen av bete historiskt, och äldre flygbilder tyder på att trädskiktet har varit glesare än idag. I biotopen finns stort inslag av unga hasselbuskar, och marken är påtagligt basiskt påverkad. Floran är tämligen rik, av lågörtstyp med rikt inslag av blåsippa i den västra delen. Ovanliga signalarter som svart trolldruva, rostfläck, sten- och trädporella samt grynig filtlav (NT) finns i biotopen, som dessutom bedöms har goda förutsättningar för att hysa en rik marksvampsflora knutet till ek och hassel.
+
+14
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025 Figur 6. Naturvärdesbiotop 1 (till vänster) och naturvärdesbiotop 19 (till höger) bedöms ha högt naturvärde.
+
+Påtagligt naturvärde – naturvärdesklass 3 I inventeringsområdet har 14 naturvärdesbiotoper med påtagligt naturvärde (se faktaruta) avgränsats (Figur 5).
+
+Naturvärdesbiotoperna inom värdeklassen utgörs av betespräglad skog (biotop 18, 21), björkskog (biotop 11), buskbryn (biotop 15), granskog (biotop 24), hässle (biotop 6), igenvuxen hagmark (biotop 13), igenväxningsmark (biotop 8), stenmur (biotop 4), sumpskog (biotop 25), triviallövskog (biotop 7), vägren (biotop 28), äldre kulturmiljö (biotop 2), och öppen tidigare betesmark (16).
+
+Kulturmiljöer med gräsmarksprägel med påtagligt naturvärde Naturvärdesbiotop 18 och 21 utgörs av (tidigare) betad skog (Figur 7) De utgörs av mindre skogspartier som visar spår av tidigare bete, men lämnats (sannolikt under en viss tid) för att börja växa igen. I biotopen finns flera naturvårdsarter som gynnas av hävd, bland annat de rödlistade arterna solvända och vårstarr, som båda är rödlistade som nära hotade (NT).
+
+Mer om naturvärdesklass 3 - Påtagligt naturvärde
+
+Denna klass omfattas av områden med påtaglig särskild betydelse för biologisk mångfald. Dessa områden har kvaliteter som är typiska för naturliga ekosystem men saknar lång kontinuitet eller den naturlighet som präglar naturvärdesklass 1 eller 2. Områden med påtagligt naturvärde innehåller oftast livsmiljöer för naturvårdsarter och bidrar till en nationell och regional grön infrastruktur för biologisk mångfald. Den totala arealen av dessa områden har särskild betydelse för att bevara biologisk mångfald i Sverige. Enskilda områden kan lokalt ha stor särskild betydelse för biologisk mångfald där landskapet i övrigt är påverkat och har brist på biologisk mångfald (SIS 2023).
+
+15
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025 Biotop 13 utgörs av en mindre gräsyta med vildmatning, som visar spår av att ha varit öppen
+
+under längre tid. Fältskiktet är bitvis näringspåverkat med exempelvis kirskål och hundkäx, bitvis med inslag av gräsmarksarter, exempelvis vårstarr (NT). Biotop 2 utgörs av en äldre gårdsmiljö med ladugårdsbyggnader och bostadshus, med omgivande näringspåverkad gräs/buskmark. I delar finns en utpräglad torrmarksvegetation, med hävdgynnade arter som svinrot, vårstarr och backsmörblomma (samtliga rödlistade som nära hotade, NT). Biotop 16 utgörs av öppen tidigare åker/betesmark gräsmark med kantzoner av skogsbryn med inslag av blommande och bärande buskar och träd. Stora delar av gräsmarken är näringspåverkad, med trivial flora dominerad av konkurrenskraftiga gräs och örter. Främst i brynzonerna mot angränsande skogsbiotoper finns dock ett större inslag av sandig och näringsfattig mark, och här är floran påtagligt rikare, med flera naturvårdsarter, exempelvis vårstarr, sommarfibbla och solvända (samtliga nära hotade, NT) Biotop 8 har tidigare brukats som åker men håller i dagsläget på att växa igen. Flera hävdgynnade naturvårdsarter finns, bland annat backsmörblomma, svinrot och vårstarr (samtliga nära hotade, NT). Biotop 28 utgörs av en grusad skogsbilväg med intilliggande grusiga/sandiga vägrenar. Marken är näringsfattig och väldränerad vilket skapar goda förutsättningar för kärlväxter knutna till öppna fattiga gräsmarker. Objektet är till stora delar soligt har flera förekomster av gräsmarksarter, bland annat blåsuga och vårstarr (NT). Biotop 4 utgörs av en liten, öppen åkeryta bevuxen med mest gräs (vallodling) med omgiven av en förfallen stenmur. Marken är delvis näringsfattig, delvis svagt gödselpåverkad, med torrare och fattigare förhållanden i ytterkanterna. Betesgynnade arter som knölsmörblomma förekommer. Biotop 6 utgörs av en till hälften öppen, till hälften trädklädd f.d. betesmark med enstaka aspar, granar, alar och hasselbuskar. Norra delen utgörs av ett hässle med mest unga, tämligen tättväxande hasselbuskar och markskikt med lågörtsvegetation. Biotopen har inslag av äldre träd av asp och tall samt enstaka träd med bohål finns i objektets södra delar, i kanten av den ännu öppna delen av gräsmarken. Vårstarr (NT) förekommer sparsamt.
+
+Lövmiljöer med påtagligt naturvärde Biotop 11 utgörs av gles, öppen, igenväxande lövblandskog med björk, skogsek, hassel, gran, tall och sälg. Död ved förekommer sparsamt i objektet, mest som avverkningsrester från skogsbruket. Tecken på visst basisk påverkan finns i objektet. Biotop 15 utgörs av en ung, enkelskiktad och till största del slyartad triviallövskog, med främst björk, men med inslag av andra lövträd och gran. I buskskiktet finns ett stort inslag av hassel, där vissa buketter är något äldre. I anslutning till intilliggande åkerbiotop finns en gammal körväg och ett stengärde. Fältskiktet är i delar örtrikt och i stora delar lundartat. I söder finns en mindre, men naturligt meandrande bäck. Biotop 7 utgörs av ung, björkdominerad produktionsskog med inslag av gran och asp. Skogen är tydligt påverkad av sentida skogsbruk, men också delvis av igenväxningskaraktär. En mindre berghäll med basiska mineral finns i objektets östra del, och kring denna växer ett bestånd med asp. Mindre stråk av fuktig mark förkommer inom i objektet, men dessa är skadade av dikning och har inte några högre värden. Främst bottenskiktet har inslag av naturvårdsarer, exempelvis fällmossa och stenporella som båda gynnas av jämn luftfuktighet.
+
+16
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025 Barrskogsmiljöer med påtagligt naturvärde
+
+Biotop 24 utgörs av en starkt sluttande granskog med stort inslag av död ved, främst av gran, men även bitvis av död lövträdsved. Marken i objektet visar spår av lätt basisk påverkan. Floran är inte påtagligt rik, men har visst inslag av naturvårdsarter som ekbräken och blåsippa. Skogen är påtagligt påverkad av granbarkborreangrepp, och större delen av den döda veden har uppkommit av denna anledning. Biotop 25 utgörs av ett mindre stråk med gransumpskog kring en mindre skogsbäck, omgivet av yngre produktionsskogar. Trädskiktet i biotopen är mest ungt (40–70 år) men är påtagligt äldre än i omgivande biotoper. Marken är påtagligt fuktig, med täta mosstäcken och förekomster av fuktgynnade kärlväxter och lavar, bland annat skorplaven glansfläck. Död ved förekommer i viss mängd i objektet, dock mest klena lågor och äldre avverkningsstubbar grön sköldmossa finns i anslutning till den döda veden. Visst inslag av lövträd (klibbal och glasbjörk) finns också i objektet.
+
+Figur 7. Naturvärdesbiotop 18 (till vänster) och naturvärdesbiotop 16 (till höger) bedöms ha påtagligt naturvärde.
+
+Visst naturvärde – naturvärdesklass 4 I inventeringsområdet har 14 naturvärdesbiotoper med visst naturvärde (se faktaruta) avgränsats (Figur 5). I naturvärdesklassen ingår bland annat naturvärdesbiotoper såsom triviallövsskogar (som till stor del domineras av björk) och barrskogar som är präglade av skogsbruk, samt av flerårsvall. I flera av dessa förekommer naturvårdsarter som är knutna till öppna gräsmarker, vilka sannolikt till stor del är en rest från en tid då området var betydligt öppnare. Generellt är biotopvärdena låga, medan artvärdet i flera objekt är något högre, i vissa fall påtagligt högre med större inslag av naturvårdsarter.
+
+17
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025 Mer om naturvärdesklass 4 - Visst naturvärde
+
+Denna klass omfatts av områden med viss särskild betydelse för biologisk mångfald, och som har vissa biotopkvaliteter av betydelse för biologisk mångfald. Här kan finnas livsmiljöer för naturvårdsarter, och dessa områden bidrar till grön infrastruktur för biologisk mångfald åtminstone på lokal nivå. Den totala arealen av dessa områden har viss särskild betydelse för att bevara biologisk mångfald i Sverige. Enskilda områden kan lokalt ha särskild betydelse för biologisk mångfald där landskapet i övrigt är påverkat och har brist på biologisk mångfald (SIS 2023).
+
+Lågt- och ej naturvärde Inom inventeringsområdet finns ytor som har låga eller ej bedöms hysa naturvärden. De utgörs främst av tomtmark och hyggen. Värdearter
+
+En värdeart är en art med specifika krav på sin miljö. Begreppet naturvårdsarter är något bredare och innefattar även andra arter som ofta omnämns i naturvårdssammanhang, såsom rödlistade arter som inte har specifika krav på sin livsmiljö (se vidare information i faktarutan nedan). I området har 106 naturvårdsarter, inklusive värdearter, påträffats i samband med naturvärdesinventeringen eller är kända från databasen Artportalen. Från Artportalen har endast artfynd som bedömts som rimliga inkluderats. Förekomster av alla påträffade skyddade arter, rödlistade arter och arter med mycket högt samt högt signalvärde finns listade i Tabell 4. En fullständig förteckning av alla noterade värdearter i området, inkluderande rödlistade arter med lägre signalvärde, samt information om vad arterna indikerar, finns i Bilaga 2.
+
+Mer om naturvårdsarter och värdearter
+
+Naturvårdsarter är utpekade av myndigheter i olika inventeringar och sammanhang. De sammanfattas av SLU ArtDatabanken i rapporten ”Naturvårdsarter” (Hallingbäck 2013). Exempel på naturvårdsarter är rödlistade arter, fridlysta arter, Skogsstyrelsens signalarter och typiska arter.
+
+De arter som är relevanta att använda vid bedömningen av naturvärden kallas värdearter. Genom sin förekomst signalerar arten att det finns naturvärden i ett område och att det kan finnas fler sällsynta och/eller rödlistade arter. Många värdearter är också naturvårdsarter, men kan även vara Jordbruksverkets ängs- och betesmarksarter och Ekologigruppens egna värdearter (exempelvis regionalt sällsynta arter och nyckelarter som formar livsmiljöer). Värdearterna delas in i fyra olika kategorier utifrån deras signalvärde (mycket högt, högt, påtagligt och visst) vilket baseras på artens miljökrav och sällsynthet. Signalvärdet är en glidande skala som också varierar geografiskt.
+
+18
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025 Tabell 4. Funna värdearter och naturvårdsarter i området. Tabellen innefattar skyddade arter, rödlistade arter
+
+och arter med mycket högt och högt signalvärde. ’Skydd’ anger vilka paragrafer i artskyddsförordningen (ASF) som skyddar arten och ’R.K’ anger rödlistningskategori enligt följande: NT - nära hotad, VU - sårbar, EN - starkt hotad. Tabellen är sorterad så att skyddade arter listas först, därefter rödlistade arter, samt sist övriga värdearter sorterade efter signalvärde.
+
+Svenskt namn Skydd ASF
+
+/R.K
+
+Signalvärde Förekommer i
+
+naturvärdesbiotop
+
+Källa
+
+Buskskvätta NT / § 4 Påtagligt Biotop: - Artportalen 2024
+
+Entita NT / § 4 Visst Biotop: 2 Artportalen 2024
+
+Gulsparv NT / § 4 Visst Biotop: 1, 2 Artportalen 2024,
+
+Ekologigruppen 2024
+
+Spillkråka NT / § 4 Påtagligt Biotop: 2, 9, 24, 27 Artportalen 2024,
+
+Ekologigruppen 2024
+
+Tornseglare EN / § 4 Visst Biotop: 15, 16 Artportalen 2024
+
+Svartvit flugsnappare
+
+NT / § 4 Visst Biotop: 1, 6, 8, 19,
+
+26
+
+Ekologigruppen 2024, Artportalen 2024
+
+Ärtsångare NT / § 4 Visst Biotop: 6 Ekologigruppen 2024
+
+Gröngöling § 4 Visst Biotop: 1 Ekologigruppen 2024
+
+Mindre vattensalamander
+
+§ 6 Visst Biotop: 4 Artportalen 2010
+
+Revlummer § 9 Obetydligt Biotop: 14 Ekologigruppen 2024
+
+Skogsödla § 6 Visst Biotop: 17 Ekologigruppen 2024
+
+Liljekonvalj § 9 Obetydligt Biotop: 1, 7, 8, 11,
+
+13, 15, 17, 21
+
+Ekologigruppen 2024
+
+Vanlig groda § 6 Påtagligt Biotop: 15 Ekologigruppen 2024
+
+Nattviol § 8 Påtagligt Biotop: 4, 16 Ekologigruppen 2024
+
+Blåsippa § 8 Visst Biotop: 716, 19, 24,
+
+26, 28, 29, 30
+
+Ekologigruppen 2024
+
+Grön sköldmossa § 8 Påtagligt Biotop: 9, 15, 20, 23,
+
+25, 27
+
+Ekologigruppen 2024
+
+Ask EN Visst Biotop: 1, 19 Ekologigruppen 2024
+
+Grynig filtlav NT Högt Biotop: 19 Ekologigruppen 2024
+
+Svinrot NT Högt Biotop: 2, 8 Ekologigruppen 2024,
+
+Artportalen 2024
+
+Backsmörblomma NT Högt Biotop: 2, 8 Ekologigruppen 2024
+
+Sommarfibbla NT Påtagligt Biotop: 16 Ekologigruppen 2024
+
+Solvända NT Högt Biotop: 16, 18 Ekologigruppen 2024
+
+19
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025
+
+Svenskt namn Skydd ASF
+
+/R.K
+
+Signalvärde Förekommer i
+
+naturvärdesbiotop
+
+Källa
+
+Vårstarr NT Högt Biotop: 13, 16, 18, 2,
+
+21, 28, 6, 8, 9
+
+Ekologigruppen 2024
+
+Tallticka NT Högt Biotop: 27 Artportalen 2024
+
+Lungrot VU Visst Biotop: 2 Ekologigruppen 2024
+
+Svart trolldruva - Högt Biotop: 19 Ekologigruppen 2024
+
+Skyddade arter I området förekommer 16 arter som är skyddade enligt svensk lag (SFS 2007:845, se faktaruta nedan). Förekomsterna av arterna redovisas nedan samt i Tabell 4 och Bilaga 2.
+
+Artskyddsförordningen
+
+Artskyddsförordningen är en svensk lagstiftning som bland annat innebär fridlysning av arter, däribland alla vilda fågelarter, alla grod- och kräldjursarter, alla fladdermöss och ett antal andra djur och växter. Olika arter har olika skydd beroende på vilken paragraf i artskyddsförordningen som reglerar respektive art. Förenklat kan man säga att alla de listade arterna är fridlysta, det vill säga att det inte är tillåtet att samla in, skada eller döda de listade arterna. Dispens från förbuden för vilda fåglar, samt andra djur och växter uppräknade i bilaga 1, kan endast erhållas om projektet eller planen är av allt överskuggande allmänintresse. Därför är det i de flesta fall alltid nödvändigt att genomföra skyddsåtgärder för att undvika dispensprövning. Dispenskraven för arter listade i bilaga 2 är inte lika stränga.
+
+Skyddade fågelarter enligt 4 § artskyddsförordningen 8 naturvårdsrelevanta fågelarter har noterats inom inventeringsområdet (Tabell 4). I denna rapport har endast fågelarter inkluderats i de fall dessa utgör sådana arter där hänsyn behöver tas för att bibehålla populationen av fågelarten på en tillfredställande nivå. Dessa kallas här för naturvårdsrelevanta arter och omfattar arter som är rödlistade arter (se faktaruta), arter som är listade med N i artskyddsförordningen samt sådana arter som uppvisar en starkt negativ trend lokalt eller nationellt. Alla vilda fåglar i Sverige är skyddade enligt 4 §, men till skillnad mot de arter som omfattas av skyddet i 4 a § artskyddsförordningen, är inte fåglarnas livsmiljöer skyddade i sig. Dock är det förbjudet att avsiktligt störa vilda fåglar, särskilt under deras häcknings- och uppfödningsperiod, om detta riskerar att den lokala populationen inte kan bibehållas på en tillfredställande nivå.
+
+Skyddade arter enligt 6, 8 och 9 §§ artskyddsförordningen 3 arter som är skyddade enligt 6 §, 3 arter som är skyddade enligt 8 § och 3 arter som är skyddade enligt 9 § artskyddsförordningen har noterats inom inventeringsområdet (Tabell 4).
+
+20
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025 I artskyddsförordningens Bilaga 2 listas fridlysta arter som är skyddade enligt 6, 8 och 9 §§.
+
+Arterna skyddas på olika sätt från att dödas, skadas eller störas. Skyddet rör endast arterna och i mindre utsträckning deras livsmiljö.
+
+Figur 8. Tre arter skyddade enligt § 6, ter enligt § 8 och 3 enligt § 9 påträffades i området. Till vänster: Grön sköldmossa är en mossa som är funnen i flera naturvärdesbiotoper i området. Arten är skyddad enligt 8 §. Till höger: Mindre vattensalamander är har rapporterats från naturvärdesbiotop 4 i artportalen 2010, och är skyddat enligt 6 §. Bilden är inte tagen i området.
+
+Rödlistade arter 16 rödlistade arter noterades från området vid denna inventering, eller är kända från artportalen. (Tabell 4). Majoriteten av dessa rödlistade arter (13 stycken) tillhör hotkategorin nära hotade arter (NT), en utgörs av sårbara arter (VU), och en utgörs av starkt hotade arter (EN). Rödlistade arter som också är skyddade enligt artskyddsförordningen behandlas i avsnittet ”Skyddade arter” ovan. För mer information om rödlistan, se faktarutan nedan.
+
+Rödlistan
+
+Den svenska rödlistan utarbetas av ArtDatabanken. Rödlistan uppdateras vart femte år och den senaste rödlistan gavs ut 2020 (SLU ArtDatabanken 2020). Rödlistan i sig innebär inget skydd utan anger olika arters risk att dö ut från Sverige. Arterna listas i olika rödlistkategorier beroende på artens status. Det finns sex rödlistningskategorier: (RE) nationellt utdöd, (CR) akut hotad, (EN) starkt hotad, (VU) sårbar, (NT) nära hotad och (DD) kunskapsbrist. För arter i kategrierna CR, EN och VU används samligsbreppet hotade arter. Arter utan känd minskning eller negativ påverkan och med tillräckligt stor population klassas som livskraftiga (LC).
+
+21
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025 Figur 9. Till vänster: Vårstarr är ett halvgräs som växer på ängs- och naturbetesmarker. Den är rödlistad som nära hotad (NT) och är funnen i flera biotoper i området. Till höger: Lungrot är en växt som främst hittas i kulturmiljöer. Den är rödlistad som sårbar (VU) och är funnen vid gården i biotop 2.
+
+Övriga intressanta värdearter I samband med inventeringen påträffades många naturvårdsrelevanta arter knutna till näringsfattiga gräsmarker, exempelvis blåsuga, samt flera arter som är knutna till källpåverkad mark, exempelvis gullpudra och kärrfibbla, samt arter knutna till områden med hög och jämn luftfuktighet, exempelvis trädporella och fällmossa.
+
+22
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025 Invasiva främmande arter
+
+Inom inventeringsområdet har enbart en invasiv främmande art (blomsterlupin) noterats i samband med fältbesök eller finns registrerade från området i databasen Artportalen. Arten redovisas i Tabell 5 nedan. Någon fördjupad inventering av invasiva främmande arter har inte ingått i detta uppdrag, vilket innebär att det kan förekomma fler arter eller förekomster av invasiva arter än vad Tabell 5 nedan visar. Eftersökta arter innefattar invasiva arter enligt Europaparlamentets och rådets förordning (EU) nr 1143/201 samt invasiva främmande arter som finns med på Naturvårdsverkets och Hav- och vattenmyndighetens (HaV) förslag på nationell lista (Naturvårdsverket 2023 och Havs- och vattenmyndigheten 2023).
+
+Tabell 5. Invasiva arter funna inom inventeringsområdet i samband med naturvärdesinventeringen samt fynd från Artportalen.
+
+Svenskt namn Förteckning Förekommer i
+
+naturvärdesbiotop
+
+Källa
+
+Blomsterlupin Naturvårdsverket Objekt: 8, 11, 28 Ekologigruppen 2024
+
+23
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025 Referenser
+
+Tryckta källor:
+
+(EU) nr 1143/2014. Europaparlamentets och rådets förordning om förebyggande och hantering av introduktion och spridning av invasiva främmande arter.
+
+Hallingbäck, T. (red.) 2013. Naturvårdsarter. ArtDatabanken SLU. Uppsala.
+
+Naturvårdsverket. 2004. Rapport 5411. Åtgärdsprogram för särskilt skyddsvärda träd i kulturlandskapet. Naturvårdsverket, Stockholm.
+
+Naturvårdsverket. 2009. Handbok 2009:2. Handbok för artskyddsförordningen. Del 1 – fridlysning och dispenser. Naturvårdsverket.
+
+Naturvårdsverket. 2012. Rapport 6496. Åtgärdsprogram för särskilt skyddsvärda träd - mål och åtgärder 2012–2016. Naturvårdsverket, Stockholm.
+
+Naturvårdsverket. 2021a. Inventering av skyddsvärda träd i kulturlandskapet. Version 3.0 2021-10-12.
+
+Naturvårdsverket. 2021b. NV-04616-2. Uppdaterad åtgärdstabell 2021-2025 för Åtgärdsprogram för särskilt skyddsvärda träd. Naturvårdsverket, Stockholm.
+
+Nitare, J. 2019. Skyddsvärd skog – Naturvårdsarter och andra kriterier för naturvärdesbedömning. Skogsstyrelsen, Jänköping.
+
+SFS 2007:845. Artskyddsförordning.
+
+SFS 1998:1252. Förordning om områdesskydd enligt miljöbalken m.m.
+
+Svenska Institutet för Standarder (SIS). 2023. Naturvärdesinventering (NVI) – Kartläggning och värdering av biologisk mångfald – Krav och vägledning. SS 199000:2023. Svenska Institutet för Standarder.
+
+Svenska Institutet för Standarder. 2023:1. SIS Teknisk specifikation 2023. Naturvärdesinventering avseende biologisk mångfald (NVI) – Kartläggning och värdering av biologisk mångfald – Dataproduktspecifikation och listor med biotopbeteckningar. SS/TS 199002:2023. Svenska Institutet för Standarder.
+
+SLU ArtDatabanken. 2020. Rödlistade arter i Sverige 2020. SLU, Uppsala.
+
+Digitala källor:
+
+Artportalen 2024, rapportsystem för arter. http://www.artportalen.se/
+
+Halmstad kommun 2024. Strandskydd. https://www.halmstad.se/byggaboochmiljo/bygganyttandraellerriva/ strandskydd.n421.html
+
+HaV 2024. Förordningar och regelverk om invasiva främmande arter. https://www.havochvatten.se/arter-och- livsmiljoer/invasiva-frammande-arter/stod-for-dig-som-arbetar-med-invasiva-frammande-arter/forordningar-och- handlingsplan/forordningar-och-regelverk-om-invasiva-frammande-arter.html\#h-Nationellforteckning
+
+Jordbruksverket. Databasen TUVA, resultat av ängs- och betesmarksinventeringen. https://jordbruksverket.se/e-tjanster- databaser-och-appar/e-tjanster-och-databaser-stod/tuva
+
+Lantmäteriet. Historiska kartor, digitalt kartarkiv. https://www.lantmateriet.se/sv/Kartor-och-geografisk-information/Historiska- kartor/
+
+Naturvårdsverket 2023. Nationell lista invasiva främmande arter. https://www.naturvardsverket.se/om-oss/aktuellt/nyheter- och-pressmeddelanden/2023/juni/forslag-pa-nationell-forteckning-over-invasiva-frammande-arterny-sida/
+
+Naturvårdsverket 2024a. Skyddad natur, databas över skyddade områden. https://skyddadnatur.naturvardsverket.se/
+
+24
+
+Eksjö Ustorp 1:6, Naturvärdesinventering Slutversion 21 februari 2025 Naturvårdsverket 2024b. Samråd om åtgärder på särskilt skyddsvärda träd. http://www.naturvardsverket.se/Stod-i-
+
+miljoarbetet/Vagledningar/Samhallsplanering/Samrad-vid-andring-av-naturmiljon/sarskilt-skyddsvarda-trad/
+
+SGU. Sveriges Geologiska Undersökning, kartvisaren. https://apps.sgu.se/kartvisare
+
+SLU ArtDatabanken Fynddata 2024. Webverktyg för sökning av fynddata av artobservationer. https://fynddata.artdatabanken.se/
+
+SLU ArtDatabanken . Artfakta. Webverktyg för sökning om fakta om arter. https://artfakta.se/artbestamning/
+
+Bilaga 1. Katalog över naturvärdesbiotoper
+
+I denna katalog beskrivs de enskilda naturvärdesbiotoper som avgränsats vid naturvärdes- inventeringen. Beskrivningen uppfyller de krav på dokumentation som ställs enligt SIS-standard SS 199000:2023 för naturvärdesinventering avseende biologisk mångfald (NVI). Karta som visar inventeringsområdets och naturvärdesbiotopernas läge och utbredning finns i huvudrapporten och i det GIS-underlag som vi levererar till beställaren.
+
+Läsinstruktion Varje naturvärdesbiotop beskrivs i ett objektsblad på 1–3 sidor. Naturvärdesbiotoperna är sorterade i stigande nummerordning. I beskrivningen ingår kartläggningsinformation, ett fotografi som ger en upplevelse av naturmiljön, en sammanfattande beskrivning, tabell över viktiga biotopstrukturer och element, en motivering till vald naturvärdesklass, samt en tabell över påträffade och kända värdearter, skyddade arter och rödlistade arter.
+
+Naturvärdesklass För varje naturvärdesbiotop har en samlad bedömning av naturvärde gjorts baserat på bedömningsgrunderna för artvärde och biotopvärde (se beskrivning i Bilaga 3, Metod för naturvärdesbedömning). Grund för både art- och biotopvärde redovisas i objektsbladet. Följande naturvärdeklasser ingår i SIS standard:
+
+▪ Högsta naturvärde (klass 1). Områden med mycket stor särskild betydelse för biologisk mångfald
+
+▪ Högt naturvärde (klass 2). Områden med stor särskild betydelse för biologisk mångfald
+
+▪ Påtagligt naturvärde (klass 3). Områden med påtaglig särskild betydelse för biologisk mångfald Vid detaljeringsgrad detalj, eller som tillägg, ingår också följande naturvärdesklass:
+
+▪ Visst naturvärde (klass 4). Områden med viss särskild betydelse för biologisk mångfald Termer och begrepp följer SIS standard. För mer information om metodik se bilaga 3 (Metod för naturvärdesbedömning) samt SIS-standard SS 199000:2023 och kompletterande teknisk specifikation SIS/TS 199002:2023.
+
+Natura 2000-naturtyper En bedömning görs i fall objektet uppfyller kvalitetskrav på att klassas som Natura 2000-naturtyp eller ej. Detta görs oavsett om inventeringsområdet ligger inom eller utanför ett utpekat Natura 2000-område. Varje enskild naturvärdesbiotop kan överensstämma med en eller flera olika Natura 2000-naturtyper.
+
+Värdearter För varje naturvärdesbiotop presenteras en tabell över de värdearter som noterats. Tabellen är sorterad så att arter med mycket högt signalvärde listas först och arter med visst signalvärde listas sist. Inom respektive signalartskategori så listas arterna i alfabetisk ordning efter svenskt namn.
+
+1\. Genomsilad lövsumpskog
+
+Naturvärdesklass: Högt naturvärde - naturvärdesklass 2
+
+Naturtyp: Skog och Buskmark
+
+Areal (ha): 3,9180
+
+Del av värdelandskap: Ja
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Förekommer
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Skog och Buskmark: Klibbalskog, Lövsumpskog, Alkärr
+
+Nyckelbiotopstatus: Uppfyller kvalitetskrav på nyckelbiotop
+
+Landskapsområde: Genomsilad skog Beskrivning: Naturvärdesbiotopen utgörs av en sumpskogsmiljö med rörligt markvatten. Trädskiktet är naturligt föryngrat, men gamla träd saknas. Trädskikt utgörs främst av klibbal och glasbjörk, med mindre inslag av bland annat ask. I buskskiktet ingår bland annat gråvide. Fältskiktet är ormbunks- och örtrikt med inslag av flera naturvårdsarter. Bottenskiktet är ganska artrikt och domineras av mossor, med vissa inslag av naturvårdsarter. I anslutning till en angränsande mindre väg finns torrare brynmiljöer. Trots att trädskiktet är ungt finns viss sockelbildning i delar av biotopen. Mängden död ved är lägre än önskvärd, särskilt stammar med grövre dimensioner och stammar med vattenkontakt saknas. I blötare partier, samt i en minde tjärn finns potential för groddjur. Beskrivning av art- och biotopvärden: Området bedöms ha ett högt artvärde och högt biotopvärde. Motiv för naturvärdesbedömning: Biotopens värden är främst knutna till förekomster av kärlväxter, exempelvis förekommer gullpudra och kärrfibbla rikligt, samt vissa förekomster av mossor, exempelvis trubbfjädermossa. Motiv för biotopvärde: Negativt påverkad biotop med viss naturlighet eller kontinuitet. Biotop som är sällsynt eller påtagligt minskande i ett nationellt perspektiv.
+
+Biotop med hög särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande i ett nationellt perspektiv. Motiv för artvärde: Betydelsefull förekomst av värdearter med påtagligt signalvärde.
+
+Betydelsefull förekomst av värdearter med visst signalvärde.
+
+Preliminär bedömning: Säker Naturvårdsförutsättningar:
+
+Kontinuitet: Begränsad trädkontinuitet (\<100 år)
+
+Beståndsålder: 40-70 år
+
+Markfuktighet: Våt
+
+Naturlighet: Meandrande, Naturligt föryngrat, Ogödslat, Flerskiktat
+
+Påverkan: Första generationen skog, Igenväxning med träd
+
+§
+
+Inventerad av: Maya Edlund den 13 maj 2024
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Status Art Åldersklass Grovlek Nyckelelement Frekvens Dött liggande Glasbjörk Enstaka till sparsamt (1-5 m3/ha) Dött liggande Gran Enstaka till sparsamt (1-5 m3/ha) Dött liggande Klibbal Enstaka till sparsamt (1-5 m3/ha) Dött liggande Sälg
+
+Sällsynt (\<1 m3/ha)
+
+Sällsynt (\<1 /ha) Levande Asp Mycket grov
+
+Övriga värdeelement
+
+Strukturtypen saknas inom objektet
+
+Naturvårdsarter
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet Gullpudra (Chrysosplenium alternifolium) Ett stort antal Påtagligt rikkärrsindikator, Skogsstyrelsens signalart, Typisk art Maya Edlund
+
+Trubbfjädermossa trichomanoides) (Homalia
+
+Flera Påtagligt Skogsstyrelsens signalart, Typisk art Maya Edlund
+
+Kärrfibbla (Crepis paludosa) Ett stort antal Påtagligt Skogsstyrelsens signalart, Typisk art Maya Edlund
+
+Stjärtmes (Aegithalos caudatus) Påtagligt Ekologigruppens signalart § Maya Edlund
+
+Gröngöling (Picus viridis) Påtagligt tidigare rödlistad art (2015) § Maya Edlund
+
+Hasselmossa angustirete) (Eurhynchium
+
+Flera Visst Ekologigruppens signalart Maya Edlund
+
+Kärrviol (Viola palustris) Flera Visst Typisk art Maya Edlund
+
+Ekbräken dryopteris) (Gymnocarpium
+
+Enstaka Visst Ekologigruppens signalart, Typisk art Maya Edlund
+
+Ormbär (Paris quadrifolia) Flera Visst Skogsstyrelsens signalart, Typisk art Maya Edlund
+
+Ask (Fraxinus excelsior) Flera Visst Rödlistad art: Starkt hotad (EN) Maya Edlund
+
+Lundbräken (Dryopteris dilatata) Enstaka Visst Ekologigruppens signalart Maya Edlund
+
+Stor tujamossa (Thuidium tamariscinum) Ett stort antal Visst Ekologigruppens signalart Maya Edlund
+
+Svartvit flugsnappare (Ficedula hypoleuca) Visst Skyddad art: AFS § 4 (rödlistad fågelart), Rödlistad art: Nära hotad (NT)
+
+§ Maya Edlund
+
+Gulsparv (Emberiza citrinella) Visst Skyddad art: AFS § 4 (rödlistad fågelart), Rödlistad art: Nära hotad (NT) § Maya Edlund
+
+Liljekonvalj (Convallaria majalis) Flera Obetydligt Skyddad art: AFS § 9, Typisk art § Maya Edlund
+
+Olvon (Viburnum opulus) Enstaka Skogsstyrelsens signalart Maya Edlund
+
+2\. Gårdsmiljö
+
+Naturvärdesklass: Påtagligt naturvärde - naturvärdesklass 3
+
+Naturtyp: Antropogen terrester miljö
+
+Areal (ha): 0,6786
+
+Del av värdelandskap: Ja
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Förekommer
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Antropogen terrester miljö: Äldre kulturmiljö, Byggnad
+
+Nyckelbiotopstatus: Uppfyller ej kvalitetskrav på nyckelbiotop eller NVO
+
+Landskapsområde: Åker och gräsmarker Beskrivning: Biotopen utgörs av en äldre gårdsmiljö med ladugårdsbyggnader och bostadshus, med omgivande näringspåverkad gräs/buskmark. En ladugård är gammal, med rikligt med hål och skrymslen samt en öppen stensatt grund. Runt huskroppen utgörs biotopen av öppen mark med älggräs, brännässla, hallon och andra näringsgynnade arter. Enstaka blommande träd (sälg och fågelbär) och slån växer runt huset, samt en äldre hassel. På västra sidan finns en landvägen med torrmarksvegetation. Gården korsas av grusvägar och har inslag av andra unga lövträd och trädgårdsmiljöer. Motiv för naturvärdesbedömning: Biotopens värden är knutna till förekomsten av äldre ekonomibyggnader som kan fungera som livsmiljöer för fåglar och fladdermöss. Vägkanterna runt gårdsmiljön är delvis näringsfattiga och sandiga med artrik flora med inslag av exempelvis bockrot, mandelblomma, lungrot och vårstarr. Den ovanliga laven sotlav noterades på en äldre staketstolpe vid gården. Motiv för biotopvärde: Kraftigt negativt påverkad biotop. Biotop som är vanligt förekommande såväl nationellt som regionalt och lokalt. Biotop med viss särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande i ett lokalt, regionalt eller nationellt perspektiv. Motiv för artvärde: Förekomst av organismsamhällen med låg artdiversitet som domineras av vanligt förekommande arter. Sparsam förekomst av värdearter med högt signalvärde. Måttlig förekomst av värdearter med påtagligt signalvärde.
+
+Måttlig förekomst av värdearter med visst signalvärde.
+
+Preliminär bedömning: Nej
+
+Preliminär avgränsning: Nej
+
+Fortsätter utanför inventeringssområdet: Nej Naturvårdsförutsättningar:
+
+§
+
+Inventerad av: Rikard Anderberg den 08 maj 2024
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Strukturtypen saknas inom objektet
+
+Övriga värdeelement
+
+Värdeelementtyp Värdeelement Nyckelelement Frekvens/Täckningsgrad Värdefulla buskar Hassel
+
+Sällsynt (\<1 ha)
+
+Naturvårdsarter
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet Svinrot (Scorzonera humilis) Enstaka Högt Rödlistad art: Nära hotad (NT), ängs- och betesart, Typisk art Rikard Anderberg
+
+Backsmörblomma (Ranunculus polyanthemos) Enstaka Högt Rödlistad art: Nära hotad (NT), ängs- och betesart Rikard Anderberg
+
+Vårstarr (Carex caryophyllea) Flera Högt Rödlistad art: Nära hotad (NT), ängs- och betesart, Typisk art Rikard Anderberg
+
+Sotlav (Cyphelium inquinans) Enstaka Påtagligt Skogsstyrelsens signalart, Typisk art Rikard Anderberg
+
+Knölsmörblomma (Ranunculus bulbosus) Flera Påtagligt ängs- och betesart, Typisk art Rikard Anderberg
+
+Sälgsandbi (Andrena vaga) Enstaka Påtagligt Typisk art Rikard Anderberg
+
+Entita (Poecile palustris) Påtagligt Skyddad art: AFS § 4 (rödlistad fågelart), Rödlistad art: Nära hotad (NT), Typisk art § Artportalen 2024
+
+Spillkråka (Dryocopus martius) Påtagligt Skyddad art: AFS § 4 (Mark. N), Rödlistad art: Nära hotad (NT) § Artportalen 2024
+
+Knippfryle (Luzula campestris) Enstaka Visst ängs- och betesart, Typisk art Rikard Anderberg
+
+Mandelblomma granulata) (Saxifraga
+
+Enstaka Visst ängs- och betesart, Typisk art Rikard Anderberg
+
+Sydvårbrodd odoratum) (Anthoxanthum
+
+Enstaka Visst ängs- och betesart, Typisk art Rikard Anderberg
+
+Lungrot (Blitum bonus- henricus) Enstaka Visst Rödlistad art: Sårbar (VU) Rikard Anderberg
+
+Svavelticka sulphureus) (Laetiporus
+
+Enstaka Visst Typisk art Rikard Anderberg
+
+Stor persicifolia) blåklocka (Campanula
+
+Flera Visst ängs- och betesart, Typisk art Rikard Anderberg
+
+Vårarv (Cerastium semidecandrum) Enstaka Visst ängs- och betesart Rikard Anderberg
+
+Bockrot (Pimpinella saxifraga) Enstaka Visst ängs- och betesartl, Typisk art Rikard Anderberg
+
+Gulsparv (Emberiza citrinella) Enstaka Visst Skyddad art: AFS § 4 (rödlistad fågelart), Rödlistad art: Nära hotad (NT) § Rikard Anderberg
+
+Gullviva (Primula veris) Enstaka Visst ängs- och betesart, Typisk art § Rikard Anderberg
+
+3\. Trädesåker
+
+Naturvärdesklass: Visst naturvärde - naturvärdesklass 4
+
+Naturtyp: Antropogen terrester miljö
+
+Areal (ha): 0,9888
+
+Del av värdelandskap: Ja
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Ingen känd förekomst
+
+Inventerad av: Rikard Anderberg den 08 maj 2024
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Antropogen terrester miljö: Träda, Åkermark,
+
+Landskapsområde: Åker och gräsmarker Beskrivning: Biotopen utgörs av en öppen, näringsrik vallåker dominerad av vallgräs, maskrosor och enstaka korsblommiga arter, som backtrav och backskärvfrö. Floran är inte särskilt rik, men marken är något siltig och flera olika vildbin noterades födosökande på olika blommor, bland annat gökbin och sandbin. Stenrösen förekommer i och i norra delen av åkermarken.
+
+Beskrivning av art- och biotopvärden: Området bedöms ha ett visst artvärde och obetydligt biotopvärde. Motiv för naturvärdesbedömning: Biotopen har inga särskilda artvärden sett till floran, men har värden för vildbin. Den sällsynta skinnbaggen bräsmabärfis noterades födosökande med ett exemplar. Objektets läge i ett äldre kulturlandskap medför vissa värden som födosöksmiljö för arter som bor i angränsande objekt. Motiv för biotopvärde: Kraftigt negativt påverkad biotop. Biotop som är vanligt förekommande såväl nationellt som regionalt och lokalt. Biotop med viss särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande i ett lokalt, regionalt eller nationellt perspektiv. Motiv för artvärde: Sparsam förekomst av värdearter med påtagligt signalvärde.
+
+Naturvårdsförutsättningar:
+
+Påverkan: Tydlig gödselpåverkan/övergödning
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Strukturtypen saknas inom objektet
+
+Övriga värdeelement
+
+Strukturtypen saknas inom objektet
+
+Naturvårdsarter
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Bräsmabärfis dominulus) (Eurydema
+
+Enstaka Påtagligt tidigare rödlistad art (2015) Rikard Anderberg
+
+Mandelblomma granulata) (Saxifraga
+
+Enstaka Visst ängs- och betesart, Typisk art Rikard Anderberg
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet
+
+4\. Öppen gräsmark
+
+Naturvärdesklass: Påtagligt naturvärde - naturvärdesklass 3
+
+Naturtyp: Antropogen terrester miljö
+
+Areal (ha): 0,5409
+
+Del av värdelandskap: Nej
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Förekommer
+
+§
+
+Inventerad av: Rikard Anderberg den 08 maj 2024
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Antropogen terrester miljö: Stenmur, Kultiverad gräsmark Beskrivning: Biotopen utgörs av en liten, öppen gräsmark omgiven av en förfallen stenmur. Marken är delvis näringsfattig, delvis svagt gödselpåverkad, med torrare och fattigare förhållanden i ytterkanterna. Troligen utgör objektet en tidigare åkermark. Viss igenväxning med asp sker i objektets norra del. Floran bär spår av näringsfattiga soliga förhållanden, och objektet bedöms ha god utvecklingspotential om ängsskötsel eller bete upptas.
+
+Beskrivning av art- och biotopvärden: Området bedöms ha ett påtagligt artvärde och visst biotopvärde. Motiv för naturvärdesbedömning: Biotopens värden är knutna till inslaget av något sandig/siltig gräsmark med näringsfattiga markförhållanden, vilket förekommer i objektets östra del. Större delen av den öppna gräsmarken är dock svagt näringspåverkad med sämre förutsättningar för rik flora. Enstaka naturvårdsarter noterades i östra delen av biotopen, bland annat ängsviol och nattviol/grönvit nattviol. Motiv för biotopvärde: Negativt påverkad biotop med viss naturlighet eller kontinuitet. Biotop som är mindre vanlig i ett nationellt, regionalt eller lokalt perspektiv. Biotop med viss särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande i ett lokalt, regionalt eller nationellt perspektiv. Motiv för artvärde: Förekomst av organismsamhällen med måttligt hög artdiversitet, i ett lokalt perspektiv eller viss artdiversitet i ett regionalt eller nationellt perspektiv. Förekomst av organismsamhällen med andra kännetecken, som är typiska för biotoper med särskild betydelse för biologisk mångfald. Måttlig förekomst av värdearter med påtagligt signalvärde.
+
+Betydelsefull förekomst av värdearter med visst signalvärde. Naturvårdsförutsättningar:
+
+Påverkan: Svag gödselpåverkan/övergödning
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Strukturtypen saknas inom objektet
+
+Övriga värdeelement
+
+Strukturtypen saknas inom objektet
+
+Naturvårdsarter
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Knölsmörblomma Enstaka Påtagligt ängs- och betesart, Typisk art Rikard Anderberg
+
+(Ranunculus bulbosus)
+
+Enstaka Påtagligt Skyddad art: AFS § 8, ängs- och betesart, Typisk art Nattviol (Platanthera bifolia) § Rikard Anderberg
+
+Flera Visst ängs- och betesart, Typisk art Knippfryle (Luzula campestris) Rikard Anderberg
+
+Flera Visst Ekologigruppens signalart Ängsviol (Viola canina) Rikard Anderberg
+
+Flera Visst Ekologigruppens signalart Åkervädd (Knautia arvensis) Rikard Anderberg
+
+Flera Visst ängs- och betesart, Typisk art Sydvårbrodd (Anthoxanthum odoratum) Rikard Anderberg
+
+Enstaka Visst ängs- och betesart, Typisk art Mandelblomma (Saxifraga granulata) Rikard Anderberg
+
+Enstaka Visst ängs- och betesart, Typisk art Jungfrulin (Polygala vulgaris) Rikard Anderberg
+
+Visst Skyddad art: AFS § 6 Mindre vattensalamander (Lissotriton vulgaris) § Artportalen 2010
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet
+
+5\. Stenrösen/åkerholme
+
+Naturvärdesklass: Visst naturvärde - naturvärdesklass 4
+
+Naturtyp: Antropogen terrester miljö, Berg och sten
+
+Areal (ha): 0,1017
+
+Del av värdelandskap: Ja
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Förekommer
+
+§
+
+Inventerad av: Rikard Anderberg den 08 maj 2024
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Antropogen terrester miljö: Stenröse
+
+Berg och sten: Bergknalle
+
+Landskapsområde: Åker och gräsmarker Beskrivning: Biotopen utgörs av två större stenrösen kring en mindre berghäll som bildar en sammanhängande åkerholme i en öppen vallåker. Marken är till stor del tydligt näringspåverkad, men små partier med näringsfattiga förhållanden finns också. Floran domineras av gräs med visst inslag av torrmarksarter som gulmåra och mandelblomma. Mellan rösena växer enstaka yngre björkar och ett äldre fågelbär. Flera arter gökbin noterades flygande kring objektet. Beskrivning av art- och biotopvärden: Området bedöms ha ett visst artvärde och visst biotopvärde. Motiv för naturvärdesbedömning: Biotopens värden är knutna till den öppna, sandiga,steniga miljön med inslag av nektarväxter, vilket skapar goda förutsättningar för bin och andra nektarätande insekter. Flera arter vildbin noterades födosöka i objektet, bland annat glödsandbi, och två arter gökbin. Den steniga miljön skapar också viktiga livsmiljöer för insekter och kräldjur. Artvärdet bedöms vara visst då mest triviala naturvårdsarter noterades. Motiv för biotopvärde: Negativt påverkad biotop med viss naturlighet eller kontinuitet. Biotop som är mindre vanlig i ett nationellt, regionalt eller lokalt perspektiv. Biotop med viss särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande i ett lokalt, regionalt eller nationellt perspektiv. Motiv för artvärde:
+
+Måttlig förekomst av värdearter med visst signalvärde. Naturvårdsförutsättningar:
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Strukturtypen saknas inom objektet
+
+Övriga värdeelement
+
+Värdeelementtyp Värdeelement Nyckelelement Frekvens/Täckningsgrad Kulturlämning Röse Solexponerad
+
+Naturvårdsarter
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Gulmåra (Galium verum) Flera Visst ängs- och betesart Rikard Anderberg
+
+Flera Visst Ekologigruppens signalart Åkervädd (Knautia arvensis) Rikard Anderberg
+
+Enstaka Visst ängs- och betesart, Typisk art Tjärblomster (Viscaria vulgaris) Rikard Anderberg
+
+Flera Visst ängs- och betesart, Typisk art Gullviva (Primula veris) § Rikard Anderberg
+
+Enstaka Obetydligt Typisk art Stenbräken (Cystopteris fragilis) Rikard Anderberg
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet
+
+6\. Igenväxande hagmark
+
+Naturvärdesklass: Påtagligt naturvärde - naturvärdesklass 3
+
+Naturtyp: Skog och Buskmark, Naturliga gräsmarker
+
+Areal (ha): 2,5441
+
+Del av värdelandskap: Nej
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Förekommer
+
+§
+
+Inventerad av: Rikard Anderberg den 08 maj 2024
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Skog och Buskmark: Hässle, Blandskog
+
+Naturliga gräsmarker: Igenväxningsmark, Betesmark Beskrivning: Biotopen utgörs av en till hälften öppen, till hälften trädklädd f.d. Betesmark med enstaka aspar, granar, alar och hasselbuskar. Norra delen utgörs av ett hässle med mest unga, tämligen tättväxande hasselbuskar och markskikt med lågörtsvegetation. Objektet har inslag av äldre träd av asp och tall samt enstaka träd med bohål finns i objektets södra delar, i kanten av den ännu öppna delen av gräsmarken.
+
+Beskrivning av art- och biotopvärden: Området bedöms ha ett påtagligt artvärde och visst biotopvärde. Motiv för naturvärdesbedömning: Biotopens biotopvärden är knutna till de solexponerade asparna, med bohål, den små stråken av öppen, näringsfattig gräsmark och det täta hässlet. Objektet har förekomster av flera naturvårdsarter, dock mest arter med lägre signalvärden såsom ärtsångare (NT), åkervädd och kantarellmussling. Enstaka plantor av vårstarr (NT) noterades också, och arten är en mycket god signalart för värdefulla gräsmarker. Motiv för biotopvärde: Negativt påverkad biotop med viss naturlighet eller kontinuitet. Biotop som är mindre vanlig i ett nationellt, regionalt eller lokalt perspektiv. Biotop med viss särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande i ett lokalt, regionalt eller nationellt perspektiv. Motiv för artvärde: Sparsam förekomst av värdearter med högt signalvärde.
+
+Betydelsefull förekomst av värdearter med visst signalvärde.
+
+Preliminär bedömning: Säker Naturvårdsförutsättningar:
+
+Påverkan: Igenväxning med träd, Igenväxning med buskar, Svag gödselpåverkan/övergödning
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Status Art Åldersklass Grovlek Nyckelelement Frekvens Dött liggande Gran Enstaka till sparsamt (1-5 m3/ha) Levande Asp Nästan gammal Grov Enstaka till sparsam (1-10 st/ha) Levande Asp Ung Bohål Enstaka till sparsam (1-10 st/ha) Levande Gran Nästan gammal Enstaka till sparsam (1-10 st/ha) Levande Tall Gammal Enstaka till sparsam (1-10 st/ha) Övriga värdeelement
+
+Strukturtypen saknas inom objektet
+
+Naturvårdsarter
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet Vårstarr (Carex caryophyllea) Enstaka Högt Rödlistad art: Nära hotad (NT), ängs- och betesart, Typisk art Rikard Anderberg
+
+Åkervädd (Knautia arvensis) Flera Visst Ekologigruppens signalart Rikard Anderberg
+
+Kantarellmussling crispa) (Plicatura
+
+Enstaka Visst Ekologigruppens signalart Rikard Anderberg
+
+Sammetsdaggkåpa (Alchemilla glaucescens) Flera Visst Typisk art Rikard Anderberg
+
+Gulmåra (Galium verum) Enstaka Visst ängs- och betesart Rikard Anderberg
+
+Liten rotundifolia) blåklocka (Campanula
+
+Enstaka Visst ängs- och betesart, Typisk art Rikard Anderberg
+
+Sydvårbrodd odoratum) (Anthoxanthum
+
+Flera Visst ängs- och betesart, Typisk art Rikard Anderberg
+
+Alticka (Inonotus radiatus) Enstaka Visst Ekologigruppens signalart Rikard Anderberg
+
+Ärtsångare (Sylvia curruca) Enstaka Visst Skyddad art: AFS § 4 (rödlistad fågelart), Rödlistad art: Nära hotad (NT) § Rikard Anderberg
+
+Svartvit flugsnappare (Ficedula hypoleuca) Enstaka Visst Skyddad art: AFS § 4 (rödlistad fågelart), Rödlistad art: Nära hotad (NT)
+
+§ Rikard Anderberg
+
+Kuddticka (Phellinus punctatus) Enstaka Obetydligt Ekologigruppens signalart Rikard Anderberg
+
+7\. Ung lövskog
+
+Naturvärdesklass: Påtagligt naturvärde - naturvärdesklass 3
+
+Naturtyp: Skog och Buskmark, Berg och sten
+
+Areal (ha): 2,2091
+
+Del av värdelandskap: Nej
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Förekommer
+
+§
+
+Inventerad av: Rikard Anderberg den 08 maj 2024
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Skog och Buskmark: Triviallövskog
+
+Berg och sten: Bergknalle Beskrivning: Biotopen utgörs av ung (20-40 år), björkdominerad produktionsskog med inslag av gran och asp. Skogen är tydligt påverkad av sentida skogsbruk, men också delvis av igenväxningskaraktär på f.d. öppen hargmark. Äldre träd saknas i princip helt i objektet. En mindre berghäll med basiska mineral finns i objektets östra del, och kring denna växer ett bestånd med asp. Mindre stråk av fuktig mark förkommer inom i objektet, men dessa är skadade av dikning och har inte några högre värden. Motiv för naturvärdesbedömning: Biotopens värden är knutna till viss inslag av död ved, samt den basiska bergväggen som skapar en livsmiljö för ovanliga mossor. Artvärdet är helt knutet till de arter som noterades på och kring den basiska bergväggen: mossorna stenporella och fällmossa, samt kärlväxterna vätteros och blåsippa. Motiv för biotopvärde: Kraftigt negativt påverkad biotop. Biotop som är vanligt förekommande såväl nationellt som regionalt och lokalt. Biotop med viss särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande i ett lokalt, regionalt eller nationellt perspektiv. Motiv för artvärde: Förekomst av organismsamhällen med andra kännetecken, som är typiska för biotoper med särskild betydelse för biologisk mångfald. Normalt finns inga förekomster av värdearter eller så är de för få eller för glest förekommande för att indikera att biotopen har någon särskild betydelse för biologisk mångfald. Betydelsefull förekomst av värdearter med påtagligt signalvärde.
+
+Måttlig förekomst av värdearter med visst signalvärde. Naturvårdsförutsättningar:
+
+Påverkan: Första generationen skog, Kalavverkat, Igenväxning med träd
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Status Art Åldersklass Grovlek Nyckelelement Frekvens Dött liggande Gran Klent Enstaka till sparsamt (1-5 m3/ha) Dött liggande Gran Barklös Enstaka till sparsamt (1-5 m3/ha) Dött liggande Triviallövträd Klent Enstaka till sparsamt (1-5 m3/ha) Dött stående Skogsek Ung Barklös Sällsynt (\<1 m3/ha) Dött stående Tall Högstubbe, barklös, hackmärken efter hackspettar Sällsynt (\<1 m3/ha) Levande Vårtbjörk Gammal Solexponerad
+
+Sällsynt (\<1 /ha)
+
+Övriga värdeelement
+
+Frekvens/Täckningsgrad Värdeelementtyp Värdeelement Nyckelelement
+
+Sällsynt (\<1 ha) Geologiska strukturer Bergvägg/Lodyta Västexponerad
+
+Naturvårdsarter
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet Fällmossa (Antitrichia curtipendula) Enstaka Påtagligt Skogsstyrelsens signalart, Typisk art Rikard Anderberg
+
+Stenporella (Porella cordaeana) Enstaka Påtagligt Skogsstyrelsens signalart, Typisk art Rikard Anderberg
+
+Vätteros (Lathraea squamaria) Enstaka Påtagligt Skogsstyrelsens signalart, Typisk art Rikard Anderberg
+
+Blåsippa (Hepatica nobilis) Flera Påtagligt Skyddad signalart, art: Typisk AFS art § 8, Skogsstyrelsens § Rikard Anderberg
+
+Långfliksmossa curvifolia) (Nowellia
+
+Flera Visst Ekologigruppens signalart Rikard Anderberg
+
+Stubbspretmossa (Herzogiella seligeri) Flera Visst Skogsstyrelsens signalart, Typisk art Rikard Anderberg
+
+Björksplintborre ratzeburgi) (Scolytus
+
+Enstaka Visst Skogsstyrelsens signalart Rikard Anderberg
+
+Timmerticka (Antrodia sinuosa) Enstaka Obetydligt Ekologigruppens signalart, Typisk art Rikard Anderberg
+
+Liljekonvalj (Convallaria majalis) Flera Obetydligt Skyddad art: AFS § 9, Typisk art § Rikard Anderberg
+
+8\. Igenväxande åkermark
+
+Naturvärdesklass: Påtagligt naturvärde - naturvärdesklass 3
+
+Naturtyp: Antropogen terrester miljö
+
+Areal (ha): 0,5228
+
+Del av värdelandskap: Nej
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Förekommer
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Antropogen terrester miljö: Igenväxningsmark
+
+Nyckelbiotopstatus: Uppfyller ej kvalitetskrav på nyckelbiotop eller NVO Beskrivning: Naturvärdesbiotopen utgörs av en igenväxande tidigare åkermark. Trädskiktet är glest och utgörs främst av uppskattningsvis 40-50 årig gran. Buskskiktet består av hallon, samt i kanten av biotopen av hassel, där flera buketter verkar ha längre kontinuitet. De är i flera fall nedsatta av vedsvamp, exempelvis kuddticka och alticka. På döda stammar finns även hasselticka. Fältskiktet är heterogent: i stora delar är näringspåverkan uppenbar, med inslag av exempelvis hundkäx, brännässla och tuvtåtel. I torrare partier finns flera arter som är knutna till näringsfattiga gräsmarker, exempelvis vårstarr och backsmörblomma. I biotopen finns förutsättningar för att utöka floravärdena, främst genom att röja gran, samt kontinuerlig bortförsel av växtmaterial för att utarma marken.
+
+Beskrivning av art- och biotopvärden: Området bedöms ha ett påtagligt artvärde och visst biotopvärde. Motiv för naturvärdesbedömning: Biotopvärdet är främst knutet till dess relativt artrika fältskikt, med inslag av mer krävande gräsmarksarter. Motiv för biotopvärde: Negativt påverkad biotop med viss naturlighet eller kontinuitet. Biotop som är vanligt förekommande såväl nationellt som regionalt och lokalt. Biotop med viss särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande i ett lokalt, regionalt eller nationellt perspektiv. Motiv för artvärde: Sparsam förekomst av värdearter med högt signalvärde. Måttlig förekomst av värdearter med påtagligt signalvärde.
+
+Betydelsefull förekomst av värdearter med visst signalvärde.
+
+Preliminär bedömning: Viss osäkerhet Naturvårdsförutsättningar:
+
+Kontinuitet: Begränsad hävdkontinuitet (\<100 år)
+
+Beståndsålder: 20-40 år
+
+Påverkan: Igenväxning med träd, Första generationen skog
+
+§
+
+Inventerad av: Maya Edlund den 13 maj 2024
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Strukturtypen saknas inom objektet
+
+Övriga värdeelement
+
+Strukturtypen saknas inom objektet
+
+Naturvårdsarter
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Backsmörblomma (Ranunculus polyanthemos) Flera Högt Rödlistad art: Nära hotad (NT), ängs- och betesart Maya Edlund
+
+Vårstarr (Carex caryophyllea) Enstaka Högt Rödlistad art: Nära hotad (NT), ängs- och betesart, Typisk art Maya Edlund
+
+Svinrot (Scorzonera humilis) Högt Rödlistad art: Nära hotad (NT), ängs- och betesart, Typisk art Artportalen 2024
+
+Blåsuga (Ajuga pyramidalis) Enstaka Påtagligt ängs- och betesart, Typisk art Maya Edlund
+
+Hasselticka (Dichomitus campestris) Flera Påtagligt Skogsstyrelsens signalart, Typisk art Maya Edlund
+
+Vitmåra (Galium boreale) Flera Visst Ekologigruppens signalart Maya Edlund
+
+Knippfryle (Luzula campestris) Flera Visst ängs- och betesart, Typisk art Maya Edlund
+
+Liten rotundifolia) blåklocka (Campanula
+
+Flera Visst ängs- och betesart, Typisk art Maya Edlund
+
+Prästkrage vulgare) (Leucanthemum
+
+Enstaka Visst ängs- och betesart, Typisk art Maya Edlund
+
+Åkervädd (Knautia arvensis) Flera Visst Ekologigruppens signalart Maya Edlund
+
+Mandelblomma granulata) (Saxifraga
+
+Flera Visst ängs- och betesart, Typisk art Maya Edlund
+
+Gulmåra (Galium verum) Flera Visst ängs- och betesart Maya Edlund
+
+Alticka (Inonotus radiatus) Visst Ekologigruppens signalart Maya Edlund
+
+Svartvit flugsnappare (Ficedula hypoleuca) Visst Skyddad art: AFS § 4 (rödlistad fågelart), Rödlistad art: Nära hotad (NT)
+
+§ Maya Edlund
+
+Kuddticka (Phellinus punctatus) Obetydligt Ekologigruppens signalart Maya Edlund
+
+Liljekonvalj (Convallaria majalis) Flera Obetydligt Skyddad art: AFS § 9, Typisk art § Maya Edlund
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Art Frekvens Indikatorvärde Arttyp Referens
+
+Blomsterlupin Flera Starkt negativ Invasiv art: Nationellt Maya Edlund
+
+9\. Ung blandskog
+
+Naturvärdesklass: Visst naturvärde - naturvärdesklass 4
+
+Naturtyp: Skog och Buskmark
+
+Areal (ha): 2,9720
+
+Del av värdelandskap: Nej
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Förekommer
+
+Naturvårdsarter
+
+§
+
+Inventerad av: Rikard Anderberg den 08 maj 2024
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Skog och Buskmark: Yngre produktionsskog, triviallövskog Beskrivning: Biotopen domineras av ung produktionsskog, främst planterad granskog, men även till vissdel av igenväxningsskog dominerad av unga björkar. Marken är mest torr-frisk, och inga påtagligt fuktiga delar noterades. Biotopen korsas i västra delen av en äldre körväg som nu har prägel av näringsfattig gräsmark, där de flesta av biotopens naturvårdsarter också noterades. Motiv för naturvärdesbedömning: Biotopens värden är nästan helt knutna till värdena kring den gamla körvägen, med flora som karaktäriseras av arter knutna till näringsfattiga gräsmarker, som vårstarr, blåsuga, bockrot och blåklockor. Grön sköldmossa noterades på en äldre granstubbe inne i den täta ungskogen. Då objektets värden är knutna till gräsmarksarter kan arealen sådan mark med fördel ökas i anslutning till området. Motiv för biotopvärde: Kraftigt negativt påverkad biotop. Biotop som är vanligt förekommande såväl nationellt som regionalt och lokalt. Biotop som inte har någon särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande, utöver grundläggande processer och funktioner. Motiv för artvärde: Sparsam förekomst av värdearter med högt signalvärde. Måttlig förekomst av värdearter med påtagligt signalvärde.
+
+Måttlig förekomst av värdearter med visst signalvärde. Naturvårdsförutsättningar:
+
+Påverkan: Planterat, Första generationen skog
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Status Art Åldersklass Grovlek Nyckelelement Frekvens Dött liggande Gran Klent Enstaka till sparsamt (1-5 m3/ha) Dött liggande Tall Barklös, brunrötad ved Enstaka till sparsamt (1-5 m3/ha) Övriga värdeelement
+
+Strukturtypen saknas inom objektet
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Enstaka Vårstarr (Carex caryophyllea) Högt Rödlistad art: Nära hotad (NT), ängs- och betesart, Typisk art Rikard Anderberg
+
+Brudborste (Cirsium heterophyllum) Enstaka Påtagligt ängs- och betesart, Ekologigruppens signalart, Typisk art Rikard Anderberg
+
+Blåsuga (Ajuga pyramidalis) Enstaka Påtagligt ängs- och betesart, Typisk art Rikard Anderberg
+
+Spillkråka (Dryocopus martius) Påtagligt Skyddad art: AFS § 4 (Mark. N), Rödlistad art: Nära hotad (NT) § Artportalen 2024
+
+Grön sköldmossa (Buxbaumia viridis) Enstaka Påtagligt Skyddad art: AFS § 8, Skogsstyrelsens signalart, tidigare rödlistad art (-2010), Typisk art
+
+§ Rikard Anderberg
+
+Åkervädd (Knautia arvensis) Enstaka Visst Ekologigruppens signalart Rikard Anderberg
+
+Vitmåra (Galium boreale) Flera Visst Ekologigruppens signalart Rikard Anderberg
+
+Stubbspretmossa (Herzogiella seligeri) Enstaka Visst Skogsstyrelsens signalart, Typisk art Rikard Anderberg
+
+Liten rotundifolia) blåklocka (Campanula
+
+Enstaka Visst ängs- och betesart, Typisk art Rikard Anderberg
+
+Stor persicifolia) blåklocka (Campanula
+
+Enstaka Visst ängs- och betesart, Typisk art Rikard Anderberg
+
+Bockrot (Pimpinella saxifraga) Enstaka Visst ängs- och betesartl, Typisk art Rikard Anderberg
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet
+
+10\. Blandsumpskog/kärr
+
+Naturvärdesklass: Högt naturvärde - naturvärdesklass 2
+
+Naturtyp: Skog och Buskmark
+
+Areal (ha): 0,3952
+
+Del av värdelandskap: Nej
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Ingen känd förekomst
+
+Inventerad av: Rikard Anderberg den 08 maj 2024
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Skog och Buskmark: Lövsumpskog, Gransumpskog Natura naturtyp: Taiga : Icke-natura Beskrivning: Biotopen utgörs av ett mindre skogskärr med gran, tall, klibbal och glasbjörk, kring ett mindre stråk med stående vatten och tydligt hygrofil vegetation med starr, vitmossor och andra vattenkrävande arter. Träden i och kring biotopen är överlag tämligen unga (runt 40-70 år) men enstaka äldre granar och tallar förekommer också. Död ved förekommer i viss mängd, delvis blöt ved nere i kärret, samt enstaka lågor och stubbar runt om. Kärret torkar troligen upp delvis under sommaren, och bedöms inte ha några särskilda värden för groddjur. Beskrivning av art- och biotopvärden: Området bedöms ha ett högt artvärde och högt biotopvärde. Motiv för naturvärdesbedömning: Biotopens värden är knutna till död ved i olika nedbrytningsstadier av olika trädslag, vilket gynnar många arter i olika organismgrupper. Den fuktiga miljön gynnar många mossor och kärlväxter. Flera naturvårdsarter noterades i objektet, bland annat de ovanliga lavarna gammelgranslav och kattfotslav, samt signalarten gullgröppa som är knuten till död barrträdsved. Objektet bedöms ha god utvecklingspotential som blandsumpskog. Motiv för biotopvärde: Biotop som inte uppnår ett referensförhållande eller idealtillstånd men som har god naturlighet, kontinuitet och endast liten negativ påverkan. Biotop som är ovanlig i ett nationellt eller regionalt perspektiv. Biotop med påtaglig särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande i ett regionalt eller nationellt perspektiv. Motiv för artvärde: Förekomst av organismsamhällen med måttligt hög artdiversitet i ett regionalt eller nationellt perspektiv. Betydelsefull förekomst av värdearter med påtagligt signalvärde.
+
+Måttlig förekomst av värdearter med visst signalvärde. Naturvårdsförutsättningar:
+
+Naturlighet: Flerskiktat, Luckigt trädskikt, Naturligt föryngrat, Olikåldrigt
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Status Art Åldersklass Grovlek Nyckelelement Frekvens Dött liggande Glasbjörk Vedsvamprik, brunrötad ved Enstaka till sparsamt (1-5 m3/ha) Dött liggande Tall Gammal Barklös Enstaka till sparsamt (1-5 m3/ha) Dött stående Tall Högstubbe Enstaka till sparsamt (1-5 m3/ha) Dött stående Tall Barklös Enstaka till sparsamt (1-5 m3/ha) Levande Gran Gammal Enstaka till sparsam (1-10 st/ha) Levande Tall Gammal Enstaka till sparsam (1-10 st/ha)
+
+Övriga värdeelement
+
+Strukturtypen saknas inom objektet
+
+Naturvårdsarter
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet Jättesvampmal boletella) (Scardia
+
+Enstaka Påtagligt Skogsstyrelsens signalart, tidigare rödlistad art (2015) Rikard Anderberg
+
+Gullgröppa aureus) (Pseudomerulius
+
+Enstaka Påtagligt Skogsstyrelsens signalart Rikard Anderberg
+
+Kattfotslav (Arthonia leucopellaea) Enstaka Påtagligt Skogsstyrelsens signalart, Typisk art Rikard Anderberg
+
+Långfliksmossa curvifolia) (Nowellia
+
+Flera Visst Ekologigruppens signalart Rikard Anderberg
+
+Björksplintborre ratzeburgi) (Scolytus
+
+Enstaka Visst Skogsstyrelsens signalart Rikard Anderberg
+
+Gammelgranslav (Lecanactis abietina) Enstaka Visst Ekologigruppens signalart, Typisk art Rikard Anderberg
+
+11\. Gles lövskog
+
+Naturvärdesklass: Påtagligt naturvärde - naturvärdesklass 3
+
+Naturtyp: Skog och Buskmark
+
+Areal (ha): 0,7966
+
+Del av värdelandskap: Nej
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Förekommer
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Skog och Buskmark: Björkskog, Ekskog Beskrivning: Biotopen utgörs av gles, öppen lövblandskog med björk, skogsek, hassel, gran, tall och sälg. Trädskiktet är mest runt 40-70 år, men enstaka något äldre träd förekommer också. Större delen av granbeståndet har fällts, men enstaka granar kvarstår. Marken är torr-frisk med lågörtsvegetation med rikligt med vitsippa, midsommarblomster och frylen. Död ved förekommer sparsamt i objektet, mest som avverkningsrester från skogsbruket. Visst basisk påverkan finns i objektet.
+
+Beskrivning av art- och biotopvärden: Området bedöms ha ett påtagligt artvärde och visst biotopvärde. Motiv för naturvärdesbedömning: Biotopen har nyligen gallrats på gran, och utgörs nu av gles lövskog med inslag av hasselbuketter. Biotopvärdet är knutet till de solexponerade lövträden, samt den basiska, något näringsfattiga marken. Floran präglas av lundarter och gräsmarksarter. Visst inslag finns ännu av gran och tall, och biotopen är på dessa platser mer sluten, och mindre lämplig som livsmiljö för gräsmark/lundarter. Flera bin noterades födosökande, bland annat gökbin och rödmurarbi. Motiv för biotopvärde: Negativt påverkad biotop med viss naturlighet eller kontinuitet. Biotop som är mindre vanlig i ett nationellt, regionalt eller lokalt perspektiv. Biotop med viss särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande i ett lokalt, regionalt eller nationellt perspektiv. Motiv för artvärde: Måttlig förekomst av värdearter med påtagligt signalvärde.
+
+Måttlig förekomst av värdearter med visst signalvärde. Naturvårdsförutsättningar:
+
+Naturlighet: Luckigt trädskikt
+
+Påverkan: Plockhugget
+
+§
+
+Inventerad av: Rikard Anderberg den 08 maj 2024
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Status Art Åldersklass Grovlek Nyckelelement Frekvens Dött liggande Gran Enstaka till sparsamt (1-5 m3/ha) Dött liggande Rönn Enstaka till sparsamt (1-5 m3/ha) Dött liggande Vårtbjörk Enstaka till sparsamt (1-5 m3/ha) Dött stående Vårtbjörk Vedsvamprik, högstubbe Enstaka till sparsamt (1-5 m3/ha) Övriga värdeelement
+
+Värdeelementtyp Värdeelement Nyckelelement Frekvens/Täckningsgrad Värdefulla buskar Hassel Enstaka till sparsam (1-10/ha)
+
+Naturvårdsarter
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Blåsuga (Ajuga pyramidalis) Enstaka Påtagligt ängs- och betesart, Typisk art Rikard Anderberg
+
+Stjärtmes (Aegithalos caudatus) Enstaka Påtagligt Ekologigruppens signalart § Rikard Anderberg
+
+Stor persicifolia) blåklocka (Campanula
+
+Enstaka Visst ängs- och betesart, Typisk art Rikard Anderberg
+
+Åkervädd (Knautia arvensis) Enstaka Visst Ekologigruppens signalart Rikard Anderberg
+
+Sydvårbrodd odoratum) (Anthoxanthum
+
+Enstaka Visst ängs- och betesart, Typisk art Rikard Anderberg
+
+Ängsviol (Viola canina) Enstaka Visst Ekologigruppens signalart Rikard Anderberg
+
+Liljekonvalj (Convallaria majalis) Flera Obetydligt Skyddad art: AFS § 9, Typisk art § Rikard Anderberg
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Art Frekvens Indikatorvärde Arttyp Referens
+
+Blomsterlupin Starkt negativ Invasiv art: Nationellt Rikard Anderberg
+
+12\. VallåkerNaturvärdesklass: Visst naturvärde - naturvärdesklass 4
+
+Naturtyp: Antropogen terrester miljö
+
+Areal (ha): 0,7315
+
+Del av värdelandskap: Nej
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Ingen känd förekomst
+
+Inventerad av: Maya Edlund den 13 maj 2024
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Antropogen terrester miljö: Flerårsvall, Åkerren
+
+Nyckelbiotopstatus: Uppfyller ej kvalitetskrav på nyckelbiotop eller NVO Beskrivning: Naturvärdesbiotopen utgörs av en åker och åkerren med inslag av gräsmarksarter. Substratet är sandigt och i jordblottor förekommer vanliga arter av vildbin, bland annat glödsandbi.
+
+Beskrivning av art- och biotopvärden: Området bedöms ha ett påtagligt artvärde och visst biotopvärde. Motiv för naturvärdesbedömning: Biotopens värden är knutna till det sandiga substratet med förekomster av gräsmarksarter och vildbin. Motiv för biotopvärde: Negativt påverkad biotop med viss naturlighet eller kontinuitet. Biotop som är mindre vanlig i ett nationellt, regionalt eller lokalt perspektiv. Biotop med viss särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande i ett lokalt, regionalt eller nationellt perspektiv. Motiv för artvärde: Förekomst av organismsamhällen med måttligt hög artdiversitet i ett regionalt eller nationellt perspektiv.
+
+Måttlig förekomst av värdearter med visst signalvärde.
+
+Preliminär bedömning: Säker Naturvårdsförutsättningar:
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Strukturtypen saknas inom objektet
+
+Övriga värdeelement
+
+Strukturtypen saknas inom objektet
+
+Naturvårdsarter
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Liten rotundifolia) blåklocka (Campanula
+
+Flera Visst ängs- och betesart, Typisk art Maya Edlund
+
+Ängsviol (Viola canina) Flera Visst Ekologigruppens signalart Maya Edlund
+
+Vitmåra (Galium boreale) Flera Visst Ekologigruppens signalart Maya Edlund
+
+Enstaka Visst ängs- och betesart, Typisk art Prästkrage (Leucanthemum vulgare) Maya Edlund
+
+Flera Visst ängs- och betesart, Typisk art Mandelblomma (Saxifraga granulata) Maya Edlund
+
+Flera Visst Ekologigruppens signalart Åkervädd (Knautia arvensis) Maya Edlund
+
+Flera Visst ängs- och betesartl, Typisk art Bockrot (Pimpinella saxifraga) Maya Edlund
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet
+
+13\. Glänta med viltmatning
+
+Naturvärdesklass: Påtagligt naturvärde - naturvärdesklass 3
+
+Naturtyp: Skog och Buskmark
+
+Areal (ha): 0,2314
+
+Del av värdelandskap: Nej
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Förekommer
+
+Naturvårdsarter
+
+§
+
+Inventerad av: Maya Edlund den 13 maj 2024
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Skog och Buskmark: Igenvuxen hagmark
+
+Nyckelbiotopstatus: Uppfyller ej kvalitetskrav på nyckelbiotop eller NVO Beskrivning: Naturvärdesbiotopen utgörs av en mindre gräsyta med vildmatning, som visar spår av att ha varit öppen under längre tid. Trädskiktet är ungt, ytan håller bitvis på att växa igen. Trädskiktet utgörs av björk- och aspuppslag, och är kantad av en brynmiljö med hassel. Fältskiktet är bitvis näringspåverkat med exempelvis kirskål och hundkäx, bitvis med inslag av gräsmarksarter.
+
+Beskrivning av art- och biotopvärden: Området bedöms ha ett högt artvärde och visst biotopvärde. Motiv för biotopvärde: Negativt påverkad biotop med viss naturlighet eller kontinuitet. Biotop som är mindre vanlig i ett nationellt, regionalt eller lokalt perspektiv. Biotop med viss särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande i ett lokalt, regionalt eller nationellt perspektiv. Motiv för artvärde: Förekomst av organismsamhällen med hög artdiversitet i ett regionalt eller nationellt perspektiv. Förekomst mångfald. av organismsamhällen med andra kännetecken, som är typiska för biotoper med särskild betydelse för biologisk Sparsam förekomst av värdearter med högt signalvärde. Sparsam förekomst av värdearter med påtagligt signalvärde.
+
+Betydelsefull förekomst av värdearter med visst signalvärde.
+
+Preliminär bedömning: Säker Naturvårdsförutsättningar:
+
+Kontinuitet: Avbruten hävd
+
+Beståndsålder: 20-40 år
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Strukturtypen saknas inom objektet
+
+Övriga värdeelement
+
+Strukturtypen saknas inom objektet
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Enstaka Högt Rödlistad art: Nära hotad (NT), ängs- och betesart, Typisk art Vårstarr (Carex caryophyllea) Maya Edlund
+
+Flera Påtagligt ängs- och betesart, Ekologigruppens signalart, Typisk art Brudborste (Cirsium heterophyllum) Maya Edlund
+
+Flera Visst Ekologigruppens signalart Åkervädd (Knautia arvensis) Maya Edlund
+
+Enstaka Visst ängs- och betesart, Typisk art Stor blåklocka (Campanula persicifolia) Maya Edlund
+
+Visst Ekologigruppens signalart, Typisk art Vanlig tallört (Monotropa hypopitys) Maya Edlund
+
+Flera Visst ängs- och betesart, Typisk art Liten blåklocka (Campanula rotundifolia) Maya Edlund
+
+Flera Visst ängs- och betesartl, Typisk art Bockrot (Pimpinella saxifraga) Maya Edlund
+
+Flera Visst ängs- och betesartl, Typisk art Bockrot (Pimpinella saxifraga) Maya Edlund
+
+Flera Obetydligt Skyddad art: AFS § 9, Typisk art Liljekonvalj (Convallaria majalis) § Maya Edlund
+
+Flera Ekologigruppens signalart bergmynta (Clinopodium vulgare) Maya Edlund
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet
+
+14\. Björkkärr
+
+Naturvärdesklass: Visst naturvärde - naturvärdesklass 4
+
+Naturtyp: Myr, Skog och Buskmark
+
+Areal (ha): 0,4424
+
+Del av värdelandskap: Nej
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Ingen känd förekomst
+
+Inventerad av: Rikard Anderberg den 09 maj 2024
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Myr: Kärr
+
+Skog och Buskmark: Lövsumpskog, Underbiotoptyp: Björksumpskog/björkkärr Beskrivning: Biotopen utgörs av ett litet, tidigare tallbevuxna fattigkärr som nu är klätt med unga glasbjörkar. Högstubbar av gran och tall samt länder barrlågor visar på historiskt trädskikt. Stubbar och socklar av björk saknas, och björken har troligen nyligen etablerats. Marken är fuktig, trots dikning i söder, med typisk fattigkärrsflora med tuvull och vitmossor.
+
+Beskrivning av art- och biotopvärden: Området bedöms ha ett påtagligt artvärde och visst biotopvärde. Motiv för naturvärdesbedömning: Biotopens värden är knutna till den försumpade, näringsfattiga miljön med typisk flora för naturtypen. Skogsbruk och dikning har orsakat stark negativ påverkan, men objektet bedöms alltjämnt ha visst värde knutet till den ovanliga naturtypen. Motiv för biotopvärde: Negativt påverkad biotop med viss naturlighet eller kontinuitet. Biotop som är mindre vanlig i ett nationellt, regionalt eller lokalt perspektiv. Biotop med viss särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande i ett lokalt, regionalt eller nationellt perspektiv. Motiv för artvärde: Förekomst nationellt perspektiv. av organismsamhällen med måttligt hög artdiversitet, i ett lokalt perspektiv eller viss artdiversitet i ett regionalt eller Förekomst mångfald. av organismsamhällen med andra kännetecken, som är typiska för biotoper med särskild betydelse för biologisk Betydelsefull förekomst av värdearter med visst signalvärde. Naturvårdsförutsättningar:
+
+Kontinuitet: Begränsad trädkontinuitet (\<100 år)
+
+Beståndsålder: 20-40 år
+
+Påverkan: Dikat, Kalavverkat
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Status Art Åldersklass Grovlek Nyckelelement Frekvens Dött liggande Glasbjörk Ung Klent Tämligen allmänt (5-15 m3/ ha) Dött liggande Gran Barklös, brunrötad ved Enstaka till sparsamt (1-5 m3/ha) Dött liggande Tall Barklös Enstaka till sparsamt (1-5 m3/ha) Dött stående Gran Högstubbe, hackmärken efter Enstaka till sparsamt (1-5 hackspettar m3/ha) Dött stående Tall Högstubbe, barklös, hackmärken Enstaka till sparsamt (1-5 efter hackspettar
+
+m3/ha)
+
+Övriga värdeelement
+
+Strukturtypen saknas inom objektet
+
+Naturvårdsarter
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet Praktvitmossor (Sphagnum magellanicum s. lat.) Enstaka Visst Typisk art Rikard Anderberg
+
+Ängsull (Eriophorum angustifolium) Enstaka Visst Ekologigruppens signalart Rikard Anderberg
+
+Tuvull (Eriophorum vaginatum) Ett stort antal Obetydligt Typisk art Rikard Anderberg
+
+Brokvitmossa russowii) (Sphagnum
+
+Flera Rikard Anderberg
+
+Sumpvitmossa palustre) (Sphagnum
+
+Flera Rikard Anderberg
+
+klubbvitmossa angustifolium) (Sphagnum
+
+Flera Rikard Anderberg
+
+15\. Ung lövskog
+
+Naturvärdesklass: Påtagligt naturvärde - naturvärdesklass 3
+
+Naturtyp: Skog och Buskmark
+
+Areal (ha): 1,4655
+
+Del av värdelandskap: Nej
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Förekommer
+
+Naturvårdsarter
+
+§
+
+Inventerad av: Maya Edlund den 13 maj 2024
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Skog och Buskmark: Buskbryn, Lövskog, Björkskog
+
+Nyckelbiotopstatus: Uppfyller ej kvalitetskrav på nyckelbiotop eller NVO Beskrivning: Naturvärdesbiotopen utgörs av en ung, enkelskiktad och till största del slyartad triviallövskog, med främst björk, men med inslag av andra lövträd och gran. I buskskiktet finns ett stort inslag av hassel, där vissa buketter är något äldre. I anslutning till intilliggande åkerbiotop finns en gammal körväg och ett stengärde. Fältskiktet är i delar örtrikt och i stora delar lundartat. I söder finns en mindre, men naturligt meandrande bäck. Motiv för naturvärdesbedömning: Biotopens värden är främst knutna till det ganska örtrika fältskiktet. Motiv för biotopvärde: Kraftigt negativt påverkad biotop. Biotop som är vanligt förekommande såväl nationellt som regionalt och lokalt. Biotop som inte har någon särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande, utöver grundläggande processer och funktioner. Motiv för artvärde: Förekomst av organismsamhällen med måttligt hög artdiversitet, i ett lokalt perspektiv eller viss artdiversitet i ett regionalt eller nationellt perspektiv. Måttlig förekomst av värdearter med påtagligt signalvärde.
+
+Måttlig förekomst av värdearter med visst signalvärde.
+
+Preliminär bedömning: Säker Naturvårdsförutsättningar:
+
+Kontinuitet: Begränsad trädkontinuitet (\<100 år)
+
+Beståndsålder: 20-40 år
+
+Påverkan: Igenväxning med träd
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Status Art Åldersklass Grovlek Nyckelelement Frekvens Dött liggande Triviallövträd Tämligen allmänt (5-15 m3/ ha) Dött stående Tall Barklös Sällsynt (\<1 m3/ha) Övriga värdeelement
+
+Strukturtypen saknas inom objektet
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet Brudborste (Cirsium heterophyllum) Flera Påtagligt ängs- och betesart, Ekologigruppens signalart, Typisk art Maya Edlund
+
+Grön sköldmossa (Buxbaumia viridis) Enstaka Påtagligt Skyddad art: AFS § 8, Skogsstyrelsens signalart, tidigare rödlistad art (-2010), Typisk art
+
+§ Maya Edlund
+
+Stubbspretmossa (Herzogiella seligeri) Enstaka Visst Skogsstyrelsens signalart, Typisk art Maya Edlund
+
+Långfliksmossa curvifolia) (Nowellia
+
+Enstaka Visst Ekologigruppens signalart Maya Edlund
+
+Åkervädd (Knautia arvensis) Flera Visst Ekologigruppens signalart Maya Edlund
+
+Stor antipyretica) näckmossa (Fontinalis
+
+Flera Visst Maya Edlund
+
+Kärrviol (Viola palustris) Flera Visst Typisk art Maya Edlund
+
+Ekbräken (Gymnocarpium dryopteris) Flera Visst Ekologigruppens signalart, Typisk art Maya Edlund
+
+Hultbräken connectilis) (Phegopteris
+
+Enstaka Visst Typisk art Maya Edlund
+
+Bockrot (Pimpinella saxifraga) Flera Visst ängs- och betesartl, Typisk art Maya Edlund
+
+Tornseglare (Apus apus) Skyddad Visst fågelart), (EN) art: AFS § 4 (rödlistad Rödlistad art: Starkt hotad § Artportalen 2024
+
+Vanlig groda (Rana temporaria) Enstaka Visst Skyddad art: AFS § 6 § Maya Edlund
+
+Gullviva (Primula veris) Visst ängs- och betesart, Typisk art § Maya Edlund
+
+Liljekonvalj (Convallaria majalis) Ett stort antal Obetydligt Skyddad art: AFS § 9, Typisk art § Maya Edlund
+
+16\. Öppen betesmark/gräsmark
+
+Naturvärdesklass: Påtagligt naturvärde - naturvärdesklass 3
+
+Naturtyp: Naturliga gräsmarker
+
+Areal (ha): 2,5336
+
+Del av värdelandskap: Ja
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Förekommer
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Naturliga gräsmarker: Öppen betesmark
+
+Landskapsområde: Åker och gräsmarker Beskrivning: Biotopen utgörs av en öppen gräsmark/ tidigare betesmark med kantzoner av skogsbryn med inslag av blommande och bärande buskar och träd. Stora delar av gräsmarken är näringspåverkad, med trivial flora dominerad av konkurrenskraftiga gräs och örter. Främst i brynzonerna mot angränsande skogsbiotoper finns dock ett större inslag av sandig och näringsfattig mark, och här är floran påtagligt rikare. Ett mindre odlingsröse finns i objektets södra del.
+
+Beskrivning av art- och biotopvärden: Området bedöms ha ett högt artvärde och visst biotopvärde. Motiv för naturvärdesbedömning: Biotopens naturvärden är knutna till de sandiga och näringsfattiga delarna av gräsmarker, vilka utgör lämpliga och betydelsefulla livsmiljöer för såväl växter som diverse insekter. Flera arter vildbin noterades födosökande och grävande i brynzonerna, bland annat gökbin, sandbin och blodbin. Floran är bitvis rik, med inslag av arter som solvända, vårstarr, mandelblomma, blåsuga och nattvioler. Motiv för biotopvärde: Negativt påverkad biotop med viss naturlighet eller kontinuitet. Biotop som är mindre vanlig i ett nationellt, regionalt eller lokalt perspektiv. Biotop med viss särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande i ett lokalt, regionalt eller nationellt perspektiv. Motiv för artvärde: Förekomst av organismsamhällen med måttligt hög artdiversitet i ett regionalt eller nationellt perspektiv. Förekomst mångfald. av organismsamhällen med andra kännetecken, som är typiska för biotoper med särskild betydelse för biologisk Förekomst av många värdearter, som är fördelade inom värdepyramidens allra flesta nivåer. Måttlig förekomst av värdearter med högt signalvärde. Betydelsefull förekomst av värdearter med påtagligt signalvärde.
+
+Betydelsefull förekomst av värdearter med visst signalvärde. Naturvårdsförutsättningar:
+
+Påverkan: Svag gödselpåverkan/övergödning
+
+§
+
+Inventerad av: Rikard Anderberg den 08 maj 2024
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Strukturtypen saknas inom objektet
+
+Övriga värdeelement
+
+Värdeelementtyp Värdeelement Nyckelelement Frekvens/Täckningsgrad Brynmiljöer Ädellövrika bryn Solexponerat
+
+Kulturlämning Röse
+
+Naturvårdsarter
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet Vårstarr (Carex caryophyllea) Ett stort antal Högt Rödlistad art: Nära hotad (NT), ängs- och betesart, Typisk art Rikard Anderberg
+
+Solvända (Helianthemum nummularium) Ett stort antal Högt Rödlistad art: Nära hotad (NT), ängs- och betesart, Typisk art Rikard Anderberg
+
+Sommarfibbla hispidus) (Leontodon
+
+Enstaka Högt Rödlistad art: Nära hotad (NT), ängs- och betesart, Typisk art Rikard Anderberg
+
+Väddklint (Centaurea scabiosa) Enstaka Påtagligt Ekologigruppens signalart Rikard Anderberg
+
+Blåsuga (Ajuga pyramidalis) Enstaka Påtagligt ängs- och betesart, Typisk art Rikard Anderberg
+
+Nattviol (Platanthera bifolia) Enstaka Påtagligt Skyddad art: AFS § 8, ängs- och betesart, Typisk art § Rikard Anderberg
+
+Blåsippa (Hepatica nobilis) Enstaka Påtagligt Skyddad signalart, art: Typisk AFS art § 8, Skogsstyrelsens § Rikard Anderberg
+
+Åkervädd (Knautia arvensis) Flera Visst Ekologigruppens signalart Rikard Anderberg
+
+Mandelblomma granulata) (Saxifraga
+
+Flera Visst ängs- och betesart, Typisk art Rikard Anderberg
+
+Sydvårbrodd odoratum) (Anthoxanthum
+
+Flera Visst ängs- och betesart, Typisk art Rikard Anderberg
+
+Gulmåra (Galium verum) Flera Visst ängs- och betesart Rikard Anderberg
+
+Stor persicifolia) blåklocka (Campanula
+
+Enstaka Visst ängs- och betesart, Typisk art Rikard Anderberg
+
+Knippfryle (Luzula campestris) Flera Visst ängs- och betesart, Typisk art Rikard Anderberg
+
+Liten rotundifolia) blåklocka (Campanula
+
+Enstaka Visst ängs- och betesart, Typisk art Rikard Anderberg
+
+Ängsviol (Viola canina) Enstaka Visst Ekologigruppens signalart Rikard Anderberg
+
+Jungfrulin (Polygala vulgaris) Enstaka Visst ängs- och betesart, Typisk art Rikard Anderberg
+
+Bockrot (Pimpinella saxifraga) Flera Visst ängs- och betesartl, Typisk art Rikard Anderberg
+
+Käringtand (Lotus corniculatus) Enstaka Visst Typisk art Rikard Anderberg
+
+Tornseglare (Apus apus) Visst Skyddad fågelart), (EN) art: AFS § 4 (rödlistad Rödlistad art: Starkt hotad § Artportalen 2024
+
+Ängssyra (Rumex acetosa) Flera Ekologigruppens signalart Rikard Anderberg
+
+Backtujamossa assimile) (Thuidium
+
+Enstaka Ekologigruppens signalart Rikard Anderberg
+
+17\. Åkerträda med stenmurar
+
+Naturvärdesklass: Visst naturvärde - naturvärdesklass 4
+
+Naturtyp: Antropogen terrester miljö
+
+Areal (ha): 2,7707
+
+Del av värdelandskap: Ja
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Förekommer
+
+Naturvårdsarter
+
+§
+
+Inventerad av: Maya Edlund den 08 maj 2024
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Antropogen terrester miljö: Flerårsvall, Stenmur, Åkerren, Flerårsvall
+
+Nyckelbiotopstatus: Uppfyller ej kvalitetskrav på nyckelbiotop eller NVO
+
+Landskapsområde: Åker och gräsmarker Beskrivning: Naturvärdesobjektet utgörs av trädesåker som omgärdas av stengärden. Fältskiktet är i stora delar artfattigt med odlad vall, men i kanrzonerna är floran något rikare, med inslag av gräsmarksarter, som till viss del sprider sig utåt i åkern. Stengärdet har påväxt av mossor och lavar, men av vanliga arter. Längs kanterna finns bärande buskar och träd, främst hassel och fågelbär. Jordmånen finns. är siltig, vid öppna fläckar sågs vildbin, exempelvis rödmurarbi, och förutsättningar för att skapa värden för vildbin Racomitrium
+
+Beskrivning av art- och biotopvärden: Området bedöms ha ett påtagligt artvärde och visst biotopvärde. Motiv för naturvärdesbedömning: Värdena i biotopen är dels knutna till stengärdena, som utgör en livsmiljö för kräldjur, dels för vildbin. De bärande träden har vissa värden för polinatörer och fåglar. Eftersom de relevanta artgrupperna kräver mer djupgående inventeringar är värdeklassen preliminär. Motiv för biotopvärde: Negativt påverkad biotop med viss naturlighet eller kontinuitet. Biotop som är mindre vanlig i ett nationellt, regionalt eller lokalt perspektiv. Biotop med viss särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande i ett lokalt, regionalt eller nationellt perspektiv. Motiv för artvärde:
+
+Betydelsefull förekomst av värdearter med visst signalvärde.
+
+Preliminär bedömning: Nej Naturvårdsförutsättningar:
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Strukturtypen saknas inom objektet
+
+Övriga värdeelement
+
+Strukturtypen saknas inom objektet
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Enstaka Visst Ekologigruppens signalart, Typisk art Ekbräken (Gymnocarpium dryopteris) Maya Edlund
+
+Visst Ekologigruppens signalart Åkervädd (Knautia arvensis) Maya Edlund
+
+Enstaka Visst Ekologigruppens signalart Rödklint (Centaurea jacea) Maya Edlund
+
+Flera Visst Ekologigruppens signalart Vitmåra (Galium boreale) Maya Edlund
+
+Ett stort antal Visst ängs- och betesart, Typisk art Mandelblomma (Saxifraga granulata) Maya Edlund
+
+Flera Visst ängs- och betesart Gulmåra (Galium verum) Maya Edlund
+
+Enstaka Visst Ekologigruppens signalart Allélav (Anaptychia ciliaris) Maya Edlund
+
+Sparsam förekomst Visst ängs- och betesart, Typisk art Liten blåklocka (Campanula rotundifolia) Maya Edlund
+
+Flera Visst ängs- och betesartl, Typisk art Bockrot (Pimpinella saxifraga) Maya Edlund
+
+Sparsam förekomst Visst Skyddad art: AFS § 6 Skogsödla (Zootoca vivipara) § Maya Edlund
+
+Enstaka Visst ängs- och betesart, Typisk art Gullviva (Primula veris) § Maya Edlund
+
+God förekomst Obetydligt Skyddad art: AFS § 9, Typisk art Liljekonvalj (Convallaria majalis) § Maya Edlund
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet
+
+18\. Trädklädd holme
+
+Naturvärdesklass: Påtagligt naturvärde - naturvärdesklass 3
+
+Naturtyp: Skog och Buskmark
+
+Areal (ha): 0,4140
+
+Del av värdelandskap: Ja
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Förekommer
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Skog och Buskmark: Äldre betespräglad skog, Blandskog, igenvuxen hagmark
+
+Landskapsområde: Åker och gräsmarker Beskrivning: Naturvärdesbiotopen utgörs av ett mindre skogsparti som visar spår av tidigare bete. Trädskiktet utgörs av bland annat ek, tall, rönn, björk och fågelbär. I buskskiktet ingår bland annat hassel enar och måbär. Fältskiktet domineras av smalbladiga gräs som kruståtel, men har inslag av gräsmarksarter. Marken är stenbunden. Bottenskiktet utgörs av vanliga skogsmossor och stoft- och näringsgynnade lavar.
+
+Beskrivning av art- och biotopvärden: Området bedöms ha ett påtagligt artvärde och påtagligt biotopvärde. Motiv för naturvärdesbedömning: Biotopens värden är främst knutna till fältskiktets inslag av gräsmarksarter. Motiv för biotopvärde: Negativt påverkad biotop med viss naturlighet eller kontinuitet. Biotop som är mindre vanlig i ett nationellt, regionalt eller lokalt perspektiv. Biotop med påtaglig särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande i ett regionalt eller nationellt perspektiv. Motiv för artvärde: Sparsam förekomst av värdearter med högt signalvärde. Sparsam förekomst av värdearter med påtagligt signalvärde.
+
+Måttlig förekomst av värdearter med visst signalvärde.
+
+Preliminär bedömning: Säker Naturvårdsförutsättningar:
+
+Kontinuitet: Avbruten hävd
+
+Beståndsålder: 40-70 år
+
+§
+
+Inventerad av: Maya Edlund den 13 maj 2024
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Status Art Åldersklass Grovlek Nyckelelement Frekvens Dött liggande Björkar Enstaka till sparsamt (1-5 m3/ha) Dött stående Björkar Vedsvamprik Enstaka till sparsamt (1-5 m3/ha) Övriga värdeelement
+
+Strukturtypen saknas inom objektet
+
+Naturvårdsarter
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet Vårstarr (Carex caryophyllea) Flera Högt Rödlistad art: Nära hotad (NT), ängs- och betesart, Typisk art Maya Edlund
+
+Solvända nummularium) (Helianthemum
+
+Enstaka Högt Rödlistad art: Nära hotad (NT), ängs- och betesart, Typisk art Maya Edlund
+
+Hasselticka campestris) (Dichomitus
+
+Enstaka Påtagligt Skogsstyrelsens signalart, Typisk art Maya Edlund
+
+Lundtrav (Arabis hirsuta) Enstaka Påtagligt ängs- och betesart, Typisk art Maya Edlund
+
+Knippfryle (Luzula campestris) Flera Visst ängs- och betesart, Typisk art Maya Edlund
+
+Mandelblomma granulata) (Saxifraga
+
+Ett stort antal Visst ängs- och betesart, Typisk art Maya Edlund
+
+Gulmåra (Galium verum) Flera Visst ängs- och betesart Maya Edlund
+
+Liten rotundifolia) blåklocka (Campanula
+
+Flera Visst ängs- och betesart, Typisk art Maya Edlund
+
+Gullviva (Primula veris) Flera Visst ängs- och betesart, Typisk art § Maya Edlund
+
+19\. Ädellövslänt
+
+Naturvärdesklass: Högt naturvärde - naturvärdesklass 2
+
+Naturtyp: Skog och Buskmark
+
+Areal (ha): 3,4386
+
+Del av värdelandskap: Ja
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Förekommer
+
+§
+
+Inventerad av: Rikard Anderberg den 09 maj 2024
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Skog och Buskmark: Ädellövskog, Äldre betespräglad skog, Ekskog, aspskog
+
+Natura naturtyp: Näringsrik ekskog : icke-natura
+
+Landskapsområde: Ädellövmiljöl Beskrivning: Biotopen utgörs av en sydsluttande ädellövskog som domineras av ek i den västra delen, och av skogslönn och ask i den östra. Träden är äldst i östra delen, där de äldsta bedöms vara strax över 100 år gamla. Ekarna i väster är mest tämligen unga, men enstaka äldre träd förekommer också. Biotopen har delvis prägel av mänsklig påverkan, troligen av bete historiskt, och trädskiktet har troligen varit glesare än idag. I biotopen finns stort inslag av unga hasselbuskar, och marken är påtagligt basiskt påverkad. Floran är tämligen rik, av lågörtstyp med rikt inslag av blåsippa i den västra delen. Små berghällar förekommer här och där i biotopen, och även dessa har en basiskt präglad mossflora med arter som stenporella och guldlockmossa. Beskrivning av art- och biotopvärden: Området bedöms ha ett högt artvärde och mycket högt biotopvärde. Motiv för naturvärdesbedömning: Biotopvärdet är knutet till den basiskt påverkade och näringsrika miljön som skapar goda förutsättningar för lundflora. Objektet är artrikt med ovanliga signalarter som svart trolldruva, rostfläck, sten- och trädporella samt grynig filtlav (NT). Objektet har goda förutsättningar för att hysa en rik marksvampsflora knutet till ek och hassel. Motiv för biotopvärde: Biotop negativ som påverkan. inte uppnår ett referensförhållande eller idealtillstånd men som har god naturlighet, kontinuitet och endast liten Biotop som är sällsynt eller påtagligt minskande i ett nationellt perspektiv. Biotop med påtaglig särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande i ett regionalt eller nationellt perspektiv. Motiv för artvärde: Förekomst av organismsamhällen med hög artdiversitet i ett regionalt eller nationellt perspektiv. Förekomst biologisk mångfald. av organismsamhällen med andra kännetecken, som är typiska för biotoper med stor särskild betydelse för Måttlig förekomst av värdearter med högt signalvärde. Betydelsefull förekomst av värdearter med påtagligt signalvärde.
+
+Betydelsefull förekomst av värdearter med visst signalvärde. Naturvårdsförutsättningar:
+
+Naturlighet: Flerskiktat, Luckigt trädskikt, Naturligt föryngrat, Olikåldrigt
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Status Art Åldersklass Grovlek Nyckelelement Frekvens Dött liggande Ask Enstaka till sparsamt (1-5 m3/ha) Dött liggande Gran Barklös, brunrötad ved Enstaka till sparsamt (1-5 m3/ha) Dött liggande Skogsek Barklös Enstaka till sparsamt (1-5 m3/ha) Dött stående Skogsek Ung Uppsprucken bark Enstaka till sparsamt (1-5 m3/ha)
+
+Naturvårdsarter Art Frekvens Signalvärde Naturvårdsartstyper ReferensSällsynt (\<1 m3/ha) Dött stående Sötkörsbär Gammal Barklös Sällsynt (\<1 /ha) Levande Ask Nästan gammal
+
+Sällsynt (\<1 /ha) Levande Ask Gammal
+
+Enstaka till sparsam (1-10 st/ha) Levande Asp Ung Bohål
+
+Enstaka till sparsam (1-10 st/ha) Levande Skogsek Gammal
+
+Enstaka till sparsam (1-10 st/ha) Levande Skogslönn Nästan gammal
+
+Sällsynt (\<1 /ha) Levande Skogslönn Gammal
+
+Övriga värdeelement
+
+Frekvens/Täckningsgrad Värdeelementtyp Värdeelement Nyckelelement
+
+Enstaka till sparsam (1-10/ha) Geologiska strukturer Bergvägg/Lodyta Sydexponerad
+
+Enstaka till sparsam (1-10/ha) Värdefulla buskar Hassel Gammal
+
+Enstaka Högt Rödlistad art: Nära hotad (NT), Skogsstyrelsens signalart, Typisk art Grynig filtlav (Peltigera collina) Rikard Anderberg
+
+Enstaka Påtagligt Skogsstyrelsens signalart, Typisk art Lönnlav (Bacidia rubella) Rikard Anderberg
+
+Enstaka Påtagligt Ekologigruppens signalart Liten punktlav (Acrocordia cavata) Rikard Anderberg
+
+Flera Påtagligt Skogsstyrelsens signalart, Typisk art Guldlockmossa (Homalothecium sericeum) Rikard Anderberg
+
+Enstaka Påtagligt Skogsstyrelsens signalart, Typisk art Svart trolldruva (Actaea spicata) Rikard Anderberg
+
+Enstaka Påtagligt Skogsstyrelsens signalart, Typisk art Stenporella (Porella cordaeana) Rikard Anderberg
+
+Enstaka Påtagligt Skogsstyrelsens signalart, Typisk art Fällmossa (Antitrichia curtipendula) Rikard Anderberg
+
+Enstaka Påtagligt Skogsstyrelsens signalart, Typisk art Trädporella (Porella platyphylla) Rikard Anderberg
+
+Enstaka Påtagligt Skogsstyrelsens signalart, Typisk art Rostfläck (Arthonia vinosa) Rikard Anderberg
+
+Enstaka Påtagligt Ekologigruppens signalart Allémossa (Leucodon sciuroides) Rikard Anderberg
+
+Flera Påtagligt Skyddad art: AFS § 8, Skogsstyrelsens signalart, Typisk art Blåsippa (Hepatica nobilis) § Rikard Anderberg
+
+Enstaka Visst Rödlistad art: Starkt hotad (EN) Ask (Fraxinus excelsior) Rikard Anderberg
+
+Enstaka Visst Ekologigruppens signalart Ängsviol (Viola canina) Rikard Anderberg
+
+Flera Visst Skogsstyrelsens signalart, Typisk art Ormbär (Paris quadrifolia) Rikard Anderberg
+
+Enstaka Smågrynig knopplav (biatora efflorescens) Visst Ekologigruppens signalart Rikard Anderberg
+
+Svartvit flugsnappare (Ficedula hypoleuca) Enstaka Visst Skyddad art: AFS § 4 (rödlistad fågelart), Rödlistad art: Nära hotad (NT)
+
+§ Rikard Anderberg
+
+Gullviva (Primula veris) Flera Visst ängs- och betesart, Typisk art § Rikard Anderberg
+
+Backtujamossa assimile) (Thuidium
+
+Flera Ekologigruppens signalart Rikard Anderberg
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet
+
+20\. Barrblandskog, granskog
+
+Naturvärdesklass: Visst naturvärde - naturvärdesklass 4
+
+Naturtyp: Skog och Buskmark
+
+Areal (ha): 3,8445
+
+Del av värdelandskap: Nej
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Förekommer
+
+Naturvårdsarter
+
+§
+
+Inventerad av: Maya Edlund den 13 maj 2024
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Skog och Buskmark: Barrskog, Björkskog, Granskog, Produktionsskog
+
+Nyckelbiotopstatus: Uppfyller ej kvalitetskrav på nyckelbiotop eller NVO Beskrivning: Naturvärdesbiotopen utgörs av ganska ung granskog, blandskog och mindre partier med större lövinslag, främst björk. Buskskiktet utgörs främst av strödda hasslar. Fuktighetregimen är heterogen, med inslag av fuktigare partier. I gläntor är fält- och bottenskiktet något artrikare, men det utgörs främst av vanliga arter.
+
+Beskrivning av art- och biotopvärden: Området bedöms ha ett visst artvärde och obetydligt biotopvärde. Motiv för naturvärdesbedömning: Biotopens värden är främst i form av vardagsnatur. Motiv för biotopvärde: Kraftigt negativt påverkad biotop. Biotop som är vanligt förekommande såväl nationellt som regionalt och lokalt. Biotop som inte har någon särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande, utöver grundläggande processer och funktioner. Motiv för artvärde: Sparsam förekomst av värdearter med påtagligt signalvärde.
+
+Måttlig förekomst av värdearter med visst signalvärde.
+
+Preliminär bedömning: Säker Naturvårdsförutsättningar:
+
+Kontinuitet: Begränsad trädkontinuitet (\<100 år)
+
+Beståndsålder: 40-70 år
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Status Art Åldersklass Grovlek Nyckelelement Frekvens Dött liggande Björkar Enstaka till sparsamt (1-5 m3/ha) Dött liggande Gran Enstaka till sparsamt (1-5 m3/ha) Övriga värdeelement
+
+Strukturtypen saknas inom objektet
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Enstaka Grön sköldmossa (Buxbaumia viridis) Påtagligt Skyddad art: AFS § 8, Skogsstyrelsens signalart, tidigare rödlistad art (-2010), Typisk art
+
+§ Maya Edlund
+
+Stor tujamossa (Thuidium tamariscinum) Ett stort antal Visst Ekologigruppens signalart Maya Edlund
+
+Liten rotundifolia) blåklocka (Campanula
+
+Enstaka Visst ängs- och betesart, Typisk art Maya Edlund
+
+Ekbräken dryopteris) (Gymnocarpium
+
+Enstaka Visst Ekologigruppens signalart, Typisk art Maya Edlund
+
+Hultbräken connectilis) (Phegopteris
+
+Enstaka Visst Typisk art Maya Edlund
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet
+
+21\. Trädklädd holme
+
+Naturvärdesklass: Påtagligt naturvärde - naturvärdesklass 3
+
+Naturtyp: Skog och Buskmark
+
+Areal (ha): 0,4608
+
+Del av värdelandskap: Nej
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Förekommer
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Skog och Buskmark: Äldre betespräglad skog, Blandskog, Barrblandskog, Igenvuxen hagmark
+
+Nyckelbiotopstatus: Uppfyller ej kvalitetskrav på nyckelbiotop eller NVO Beskrivning: Naturvärdesbiotopen utgörs av ett område som visar spår efter att tidigare har betats och varit mer öppet, men lämnats för att börja växa igen. I trädskiktet ingår bland annat tall, med inslag av bland annat gran, björk och ek. Vissa träd (främst tall) är något äldre. I buskskiktet finns bland annat gamla enar, getapel, hassel, hagtorn och måbär. Fält- och bottenskiktet är ganska fattigt i partier, men i partier med inslag av gräsmarksarter. Marken är stenbunden.
+
+Beskrivning av art- och biotopvärden: Området bedöms ha ett påtagligt artvärde och visst biotopvärde.
+
+Motiv för naturvärdesbedömning: Biotopens värden är främst knutna till förekomster av gräsmarksarter. Motiv för biotopvärde: Negativt påverkad biotop med viss naturlighet eller kontinuitet. Biotop som är mindre vanlig i ett nationellt, regionalt eller lokalt perspektiv. Biotop med viss särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande i ett lokalt, regionalt eller nationellt perspektiv. Motiv för artvärde: Sparsam förekomst av värdearter med högt signalvärde.
+
+Måttlig förekomst av värdearter med visst signalvärde.
+
+Preliminär bedömning: Säker Naturvårdsförutsättningar:
+
+Kontinuitet: Avbruten hävd
+
+Beståndsålder: 70-100 år Naturgivna förutsättningar: Naturligt näringsfattiga förhållandenNaturvårdsarter §
+
+Inventerad av: Maya Edlund den 13 maj 2024
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Status Art Åldersklass Grovlek Nyckelelement Frekvens Dött liggande Gran Enstaka till sparsamt (1-5 m3/ha) Dött liggande Tall Enstaka till sparsamt (1-5 m3/ha) Övriga värdeelement
+
+Strukturtypen saknas inom objektet
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet Vårstarr (Carex caryophyllea) Enstaka Högt Rödlistad art: Nära hotad (NT), ängs- och betesart, Typisk art Maya Edlund
+
+Knippfryle (Luzula campestris) Flera Visst ängs- och betesart, Typisk art Maya Edlund
+
+Ängsviol (Viola canina) Visst Ekologigruppens signalart Maya Edlund
+
+Åkervädd (Knautia arvensis) Enstaka Visst Ekologigruppens signalart Maya Edlund
+
+Gulmåra (Galium verum) Flera Visst ängs- och betesart Maya Edlund
+
+Bockrot (Pimpinella saxifraga) Flera Visst ängs- och betesartl, Typisk art Maya Edlund
+
+Gullviva (Primula veris) Enstaka Visst ängs- och betesart, Typisk art § Maya Edlund
+
+Liljekonvalj (Convallaria majalis) Enstaka Obetydligt Skyddad art: AFS § 9, Typisk art § Maya Edlund
+
+22\. Hygge
+
+Naturvärdesklass: Visst naturvärde - naturvärdesklass 4
+
+Naturtyp: Skog och Buskmark
+
+Areal (ha): 1,1213
+
+Del av värdelandskap: Nej
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Ingen känd förekomst
+
+Inventerad av: Maya Edlund den 13 maj 2024
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Skog och Buskmark: Hygge
+
+Nyckelbiotopstatus: Uppfyller ej kvalitetskrav på nyckelbiotop eller NVO Beskrivning: Naturvärdesbiotopen utgörs av ett hygge, med ett mindre antal högstubbar lämnade, samt några björkar och ekar, samt ett visst uppslag av sly och buskar. I fältskiktet finns enstaka kvarstående gräsmarksarter drar upp klassningen något.
+
+Beskrivning av art- och biotopvärden: Området bedöms ha ett visst artvärde och obetydligt biotopvärde. Motiv för naturvärdesbedömning: Biotopens värden är främst kopplade till de spridda förekomsterna av kvarstående gräsmarksarter. Sannolikt kan biotopen ganska snabbt återfå gräsmarksvärden om exempelvis bete sätts in. Motiv för biotopvärde: Kraftigt negativt påverkad biotop. Biotop som är vanligt förekommande såväl nationellt som regionalt och lokalt. Biotop som inte har någon särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande, utöver grundläggande processer och funktioner. Motiv för artvärde: Sparsam förekomst av värdearter med påtagligt signalvärde.
+
+Måttlig förekomst av värdearter med visst signalvärde.
+
+Preliminär bedömning: Viss osäkerhet Naturvårdsförutsättningar:
+
+Påverkan: Kalavverkat, Dränerande körskador, Död ved bortrensad
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Strukturtypen saknas inom objektet
+
+Övriga värdeelement
+
+Strukturtypen saknas inom objektet
+
+Naturvårdsarter
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Blåsuga (Ajuga pyramidalis) Flera Påtagligt ängs- och betesart, Typisk art Maya Edlund
+
+Mandelblomma granulata) (Saxifraga
+
+Enstaka Visst ängs- och betesart, Typisk art Maya Edlund
+
+Enstaka Visst Ekologigruppens signalart Ängsviol (Viola canina) Maya Edlund
+
+Flera Visst ängs- och betesart, Typisk art Stor blåklocka (Campanula persicifolia) Maya Edlund
+
+Flera Visst Typisk art Pillerstarr (Carex pilulifera) Maya Edlund
+
+Enstaka Visst Ekologigruppens signalart Åkervädd (Knautia arvensis) Maya Edlund
+
+Enstaka Visst Ekologigruppens signalart, Typisk art Ekbräken (Gymnocarpium dryopteris) Maya Edlund
+
+Enstaka Visst ängs- och betesartl, Typisk art Bockrot (Pimpinella saxifraga) Maya Edlund
+
+Enstaka Skogsstyrelsens signalart Olvon (Viburnum opulus) Maya Edlund
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet
+
+23\. Ung produktionsskog
+
+Naturvärdesklass: Visst naturvärde - naturvärdesklass 4
+
+Naturtyp: Skog och Buskmark, Myr
+
+Areal (ha): 5,4619
+
+Del av värdelandskap: Nej
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Förekommer
+
+Naturvårdsarter
+
+§
+
+Inventerad av: Rikard Anderberg den 09 maj 2024
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Skog och Buskmark: Björkskog, Granskog, Yngre produktionsskog
+
+Myr: Kärr Beskrivning: Biotopen utgörs helt av yngre produktionsskog, främst björk och gran. Marken i objektet är till större delar torr, men mindre inslag av sumpmåra med ung björk finns också. Floran är av hedtyp i större delen av objektet, med dominans av ris och gräs. Visst inslag av död ved finns i de fuktigare delarna av objektet, och här noterades de flesta naturvårdsarterna. Objektet har eventuellt varit mer öppet historiskt, men förekomsten av äldre avverkningsstubbar vittnar om visst trädskikt.
+
+Beskrivning av art- och biotopvärden: Området bedöms ha ett visst artvärde och obetydligt biotopvärde. Motiv för naturvärdesbedömning: Biotopens värde är knutet till de fuktiga och sumpiga delarna i objektets sydöstra delar. De torrare skogarna runt omkring dessa är mindre artrika men bedöms kunna ha visst värde för vanliga arter. Då inga betydande förekomster av naturvårdsarter noterades bedöms artvärdet vara obetydligt. Motiv för biotopvärde: Kraftigt negativt påverkad biotop. Biotop som är vanligt förekommande såväl nationellt som regionalt och lokalt. Biotop med viss särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande i ett lokalt, regionalt eller nationellt perspektiv. Motiv för artvärde: Sparsam förekomst av värdearter med påtagligt signalvärde.
+
+Måttlig förekomst av värdearter med visst signalvärde. Naturvårdsförutsättningar:
+
+Påverkan: Första generationen skog, Planterat, Kalavverkat, Igenväxning med träd
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Status Art Åldersklass Grovlek Nyckelelement Frekvens Dött liggande Gran Ung Klent, barklös, brunrötad ved Enstaka till sparsamt (1-5 m3/ha) Dött stående Glasbjörk Högstubbe, hackmärken efter Enstaka till sparsamt (1-5 hackspettar m3/ha) Dött stående Sälg Ung Hackmärken efter hackspettar Sällsynt (\<1 m3/ha) Övriga värdeelement
+
+Strukturtypen saknas inom objektet
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet Grön sköldmossa (Buxbaumia viridis) Enstaka Påtagligt Skyddad art: AFS § 8, Skogsstyrelsens signalart, tidigare rödlistad art (-2010), Typisk art
+
+§ Rikard Anderberg
+
+Långfliksmossa curvifolia) (Nowellia
+
+Enstaka Visst Ekologigruppens signalart Rikard Anderberg
+
+Stubbspretmossa (Herzogiella seligeri) Enstaka Visst Skogsstyrelsens signalart, Typisk art Rikard Anderberg
+
+Åkervädd (Knautia arvensis) Enstaka Visst Ekologigruppens signalart Rikard Anderberg
+
+Ormbär (Paris quadrifolia) Visst Skogsstyrelsens signalart, Typisk art Artportalen 2024
+
+24\. Granbrant
+
+Naturvärdesklass: Påtagligt naturvärde - naturvärdesklass 3
+
+Naturtyp: Skog och Buskmark
+
+Areal (ha): 3,0744
+
+Del av värdelandskap: Nej
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Förekommer
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Skog och Buskmark: Granskog, Brantskog Beskrivning: Biotopen utgörs av en starkt sluttande, 40-70 årig granskog med stort inslag av död ved, främst av gran, men även bitvis av död lövträdsved. Marken är till stora delar blockig, och små lodväggar förekommer på flera platser. Marken i objektet visar spår av lätt basisk påverkan. Floran är inte påtagligt rik, men har visst inslag av naturvårdsarter som ekbräken och blåsippa. Skogen är påtagligt påverkad av granbarkborreangrepp, och större delen av den döda veden har uppkommit av denna anledning.
+
+Beskrivning av art- och biotopvärden: Området bedöms ha ett påtagligt artvärde och visst biotopvärde. Motiv för naturvärdesbedömning: Biotopens värden är knutna till den stora mängden död granved, som ännu inte utvecklat påtagligt höga värden, men som på sikt kommer bli en viktig resurs för många arter vedsvampar och insekter. Artvärdet bedöms vara visst, knutet till enstaka naturvårdsarters som björksplintborre och blåsippa. Hackmärken av spillkråka noterades på flera träd i biotopen, och arten nyttjar den troligen som födosöksmiljö snarare än häckplats. Motiv för biotopvärde: Negativt påverkad biotop med viss naturlighet eller kontinuitet. Biotop som är mindre vanlig i ett nationellt, regionalt eller lokalt perspektiv. Biotop med viss särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande i ett lokalt, regionalt eller nationellt perspektiv. Motiv för artvärde: Förekomst av organismsamhällen med låg artdiversitet som domineras av vanligt förekommande arter. Normalt finns inga förekomster av värdearter eller så är de för få eller för glest förekommande för att indikera att biotopen har någon särskild betydelse för biologisk mångfald. Måttlig förekomst av värdearter med påtagligt signalvärde.
+
+Måttlig förekomst av värdearter med visst signalvärde. Naturvårdsförutsättningar:
+
+Kontinuitet: Begränsad skoglig kontinuitet (\<100 år)
+
+Beståndsålder: 40-70 år
+
+Påverkan: Tvåskiktat
+
+§
+
+Inventerad av: Rikard Anderberg den 09 maj 2024
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Status Art Åldersklass Grovlek Nyckelelement Frekvens Dött liggande Asp Klent Enstaka till sparsamt (1-5 m3/ha) Dött liggande Gran Tämligen allmänt (5-15 m3/ ha) Dött liggande Sälg Enstaka till sparsamt (1-5 m3/ha) Dött liggande Vårtbjörk Enstaka till sparsamt (1-5 m3/ha) Dött stående Gran Insektshål och gångar, barklös Tämligen allmänt (5-15 m3/ ha)
+
+Enstaka till sparsamt (1-5 m3/ha) Dött stående Oxel Vedsvamprik
+
+Enstaka till sparsamt (1-5 m3/ha) Dött stående Vårtbjörk Högstubbe
+
+Enstaka till sparsamt (1-5 m3/ha) Dött stående Vårtbjörk Hackmärken efter hackspettar, insektshål och gångar
+
+Enstaka till sparsam (1-10 st/ha) Levande Tall Gammal
+
+Enstaka till sparsam (1-10 st/ha) Levande Tall Nästan gammal
+
+Övriga värdeelement
+
+Frekvens/Täckningsgrad Värdeelementtyp Värdeelement Nyckelelement
+
+Geologiska strukturer Storblockigt
+
+Naturvårdsarter
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet Spillkråka (Dryocopus martius) Enstaka Påtagligt Skyddad art: AFS § 4 (Mark. N), Rödlistad art: Nära hotad (NT) § Rikard Anderberg
+
+Blåsippa (Hepatica nobilis) Flera Påtagligt Skyddad signalart, art: Typisk AFS art § 8, Skogsstyrelsens § Rikard Anderberg
+
+Ekbräken dryopteris) (Gymnocarpium
+
+Enstaka Visst Ekologigruppens signalart, Typisk art Rikard Anderberg
+
+Björksplintborre ratzeburgi) (Scolytus
+
+Enstaka Visst Skogsstyrelsens signalart Rikard Anderberg
+
+25\. Gransumpskog
+
+Naturvärdesklass: Påtagligt naturvärde - naturvärdesklass 3
+
+Naturtyp: Skog och Buskmark, Vattendrag
+
+Areal (ha): 0,6306
+
+Del av värdelandskap: Nej
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Förekommer
+
+Naturvårdsarter
+
+§
+
+Inventerad av: Rikard Anderberg den 09 maj 2024
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Skog och Buskmark: Sumpskog, Granskog, Gransumpskog
+
+Vattendrag: Bäck Beskrivning: Biotopen utgörs av ett mindre stråk med gransumpskog kring en mindre skogsbäck, omgivet av yngre produktionsskogar. Trädskiktet i biotopen är mest ungt (40-70 år) men är påtagligt äldre än i omgivande biotoper. Marken är påtagligt fuktig, med täta mosstäcken och förekomster av fuktgynnade kärlväxter. Död ved förekommer i viss mängd i objektet, dock mest klena lågor och äldre avverkningsstubbar. Visst inslag av lövträd (klibbal och glasbjörk) finns också i objektet. Beskrivning av art- och biotopvärden: Området bedöms ha ett påtagligt artvärde och påtagligt biotopvärde. Motiv för naturvärdesbedömning: Biotopens värden är knutna till den fuktiga, slutna miljön med tydlig hygrofil prägel på vegetationen. Den fuktiga miljön skapar goda förutsättningar för många ovanliga och krävande arter. Objektet bedöms ha god utvecklingspotential om det lämnas för fri utveckling. Artvärdet är knutet till spridda förekomster av naturvårdsarter, såsom den skyddade arten grön sköldmossa, samt arter knutna till den fuktiga miljön som glansfläck, bäckrundmossa och kärrviol. Motiv för biotopvärde: Negativt påverkad biotop med viss naturlighet eller kontinuitet. Biotop som är ovanlig i ett nationellt eller regionalt perspektiv. Biotop med påtaglig särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande i ett regionalt eller nationellt perspektiv. Motiv för artvärde: Förekomst av organismsamhällen med andra kännetecken, som är typiska för biotoper med särskild betydelse för biologisk mångfald. Måttlig förekomst av värdearter med påtagligt signalvärde.
+
+Betydelsefull förekomst av värdearter med visst signalvärde. Naturvårdsförutsättningar:
+
+Påverkan: Plockhugget, Röjt, Tvåskiktat
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Status Art Åldersklass Grovlek Nyckelelement Frekvens Dött liggande Gran Klent Enstaka till sparsamt (1-5 m3/ha) Levande Klibbal Nästan gammal Sällsynt (\<1 /ha) Övriga värdeelement
+
+Strukturtypen saknas inom objektet
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet Grön sköldmossa (Buxbaumia viridis) Enstaka Påtagligt Skyddad art: AFS § 8, Skogsstyrelsens signalart, tidigare rödlistad art (-2010), Typisk art
+
+§ Rikard Anderberg
+
+Bäckrundmossa (Rhizomnium punctatum) Flera Visst rikkärrsindikator Rikard Anderberg
+
+Stor tujamossa (Thuidium tamariscinum) Ett stort antal Visst Ekologigruppens signalart Rikard Anderberg
+
+Kärrviol (Viola palustris) Flera Visst Typisk art Rikard Anderberg
+
+Glansfläck (Arthonia spadicea) Enstaka Visst Ekologigruppens signalart, Typisk art Rikard Anderberg
+
+Gammelgranslav (Lecanactis abietina) Flera Visst Ekologigruppens signalart, Typisk art Rikard Anderberg
+
+Hultbräken (Phegopteris connectilis) Flera Visst Typisk art Rikard Anderberg
+
+26\. Ung planteringsskog
+
+Naturvärdesklass: Visst naturvärde - naturvärdesklass 4
+
+Naturtyp: Skog och Buskmark
+
+Areal (ha): 4,6693
+
+Del av värdelandskap: Nej
+
+Skyddsstatus: Ingen
+
+Skyddade arter: Förekommer
+
+Naturvårdsarter
+
+§
+
+Inventerad av: Rikard Anderberg den 09 maj 2024
+
+Områdesbeskrivning
+
+Natur och biotoptyp: Skog och Buskmark: Yngre produktionsskog, Granskog, Björkskog Beskrivning: Biotopen utgörs av ung, nyligen gallringsröjd produktionsskog med gran och vårtbjörk. Enstaka äldre tallar finns kvarlämnade i objektet. Marken är mest torr och näringsfattig med täcken av husmossa, gräs och ris. Död ved förekommer tämligen allmänt, dock endast som rester av skogsbruket i form av klena lövlågor. Marken är mest frisk-torr, men ett mindre område med fuktig mark finns i den södra delen av objektet.
+
+Beskrivning av art- och biotopvärden: Området bedöms ha ett visst artvärde och obetydligt biotopvärde. Motiv för naturvärdesbedömning: Biotopens naturvärde är knutet till inslaget av fuktig mark och död ved, vilket skapar viktiga livsmiljöer för många arter. Enstaka äldre tallar som finns kvar i objektet bidrar också positivt till biotopvärdet. Artvärdet är begränsat, och den enda naturvårdsarten som noterades var blåsippa, om än tämligen rimligtvis denna. Motiv för biotopvärde: Negativt påverkad biotop med viss naturlighet eller kontinuitet. Biotop som är vanligt förekommande såväl nationellt som regionalt och lokalt. Biotop som inte har någon särskild betydelse för naturliga populationers långsiktiga utveckling och bevarande, utöver grundläggande processer och funktioner. Motiv för artvärde:
+
+Måttlig förekomst av värdearter med visst signalvärde. Naturvårdsförutsättningar:
+
+Värdeelement: Naturvärdesträd och trädstrukturer
+
+Status Art Åldersklass Grovlek Nyckelelement Frekvens Dött liggande Klibbal Fuktig Enstaka till sparsamt (1-5 m3/ha) Dött liggande Vårtbjörk Klent Tämligen allmänt (5-15 m3/ ha) Levande Tall Nästan gammal Enstaka till sparsam (1-10 st/ha) Levande Vårtbjörk Nästan gammal Enstaka till sparsam (1-10 st/ha) Övriga värdeelement
+
+Strukturtypen saknas inom objektet
+
+Art Frekvens Signalvärde Naturvårdsartstyper Referens
+
+Flera Blåsippa (Hepatica nobilis) Påtagligt Skyddad signalart, art: Typisk AFS art § 8, Skogsstyrelsens § Rikard Anderberg
+
+Svartvit flugsnappare (Ficedula hypoleuca) Visst Skyddad art: AFS § 4 (rödlistad fågelart), Rödlistad art: Nära hotad (NT)
+
+§ Artportalen 2024
+
+Invasiva arter, negativa indikatorarter och övriga arter
+
+Ej noterat i objektet
+
+[\#4](#4)   
+[\#4](#4)   
+[\#6](#6)   
+[\#7](#7)   
+[\#7](#7)   
+[\#8](#8)   
+[\#8](#8)   
+[\#10](#10)   
+[\#11](#11)   
+[\#11](#11)   
+[\#12](#12)   
+[\#14](#14)   
+[\#16](#16)   
+[\#18](#18)   
+[\#19](#19)   
+[\#19](#19)   
+[\#21](#21)   
+[\#22](#22)   
+[\#23](#23)   
+[\#24](#24)   
+[\#25](#25)   
+[\#5](#5)   
+[\#14](#14)   
+[\#14](#14)   
+[\#14](#14)   
+[\#20](#20)   
+[\#20](#20)   
+[\#20](#20)   
+[\#20](#20)   
+[\#24](#24)   
+[\#24](#24)   
+<http://www.artportalen.se/>   
